@@ -1,0 +1,8654 @@
+{
+  "mcp_tools": [
+    "prowl_analyze",
+    "prowl_call_tool",
+    "prowl_export_report",
+    "prowl_generate_artifact",
+    "prowl_get_error_feed",
+    "prowl_get_session",
+    "prowl_get_stats",
+    "prowl_get_tool_info",
+    "prowl_list_playbooks",
+    "prowl_list_sessions",
+    "prowl_list_tools",
+    "prowl_reset_session",
+    "prowl_schedule_cancel",
+    "prowl_schedule_create",
+    "prowl_schedule_list",
+    "prowl_schedule_pause",
+    "prowl_schedule_resume",
+    "prowl_search_tools",
+    "prowl_session_status",
+    "prowl_start_session",
+    "prowl_test_tool",
+    "prowl_tool_info"
+  ],
+  "tools": {
+    "airbnb_property": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "adults",
+        "check_in_date",
+        "check_out_date",
+        "currency",
+        "property_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "property_id"
+      ]
+    },
+    "airbnb_property_reviews": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page",
+        "property_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "property_id"
+      ]
+    },
+    "airbnb_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "adults",
+        "check_in_date",
+        "check_out_date",
+        "currency",
+        "next_page_token",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "amazon_offers": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "amazon_domain",
+        "asin",
+        "page"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "asin"
+      ]
+    },
+    "amazon_product": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "amazon_domain",
+        "asin"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "asin"
+      ]
+    },
+    "amazon_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "amazon_domain",
+        "category_id",
+        "page",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "apple_app_store": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country",
+        "lang",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "apple_product": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country",
+        "product_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_id"
+      ]
+    },
+    "apple_product_reviews": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country",
+        "page",
+        "product_id",
+        "sort_by"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_id"
+      ]
+    },
+    "baidu_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "bing_images": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "device",
+        "language",
+        "location",
+        "market_code",
+        "page",
+        "q",
+        "safe_search",
+        "time_period",
+        "time_period_max",
+        "time_period_min"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "bing_news": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "device",
+        "language",
+        "location",
+        "market_code",
+        "num",
+        "page",
+        "q",
+        "safe_search",
+        "time_period",
+        "time_period_max",
+        "time_period_min"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "bing_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "device",
+        "language",
+        "location",
+        "market_code",
+        "num",
+        "page",
+        "q",
+        "safe_search",
+        "time_period",
+        "time_period_max",
+        "time_period_min"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "bing_videos": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "device",
+        "language",
+        "location",
+        "market_code",
+        "page",
+        "q",
+        "safe_search",
+        "time_period",
+        "time_period_max",
+        "time_period_min"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "cache_clear": {
+      "errors": [
+        "io",
+        "validation"
+      ],
+      "params": [
+        "func_name"
+      ],
+      "provider": "Project Utility",
+      "required": []
+    },
+    "cache_stats": {
+      "errors": [
+        "io",
+        "validation"
+      ],
+      "params": [],
+      "provider": "Project Utility",
+      "required": []
+    },
+    "crawl_funnel_path": {
+      "errors": [
+        "401",
+        "408",
+        "429"
+      ],
+      "params": [
+        "max_steps",
+        "start_url"
+      ],
+      "provider": "Firecrawl",
+      "required": [
+        "start_url"
+      ]
+    },
+    "dataforseo_ai_chatgpt_responses": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "force_web_search",
+        "max_output_tokens",
+        "message_chain",
+        "model_name",
+        "system_message",
+        "tag",
+        "temperature",
+        "top_p",
+        "user_prompt",
+        "web_search",
+        "web_search_city",
+        "web_search_country_iso_code"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "user_prompt"
+      ]
+    },
+    "dataforseo_ai_chatgpt_scraper": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_ai_claude_responses": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "force_web_search",
+        "max_output_tokens",
+        "message_chain",
+        "model_name",
+        "system_message",
+        "tag",
+        "temperature",
+        "top_p",
+        "use_reasoning",
+        "user_prompt",
+        "web_search",
+        "web_search_city",
+        "web_search_country_iso_code"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "user_prompt"
+      ]
+    },
+    "dataforseo_ai_gemini_responses": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "max_output_tokens",
+        "message_chain",
+        "model_name",
+        "system_message",
+        "tag",
+        "temperature",
+        "top_p",
+        "use_reasoning",
+        "user_prompt",
+        "web_search"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "user_prompt"
+      ]
+    },
+    "dataforseo_ai_keyword_volume": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_ai_llm_mentions": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "language_name",
+        "limit",
+        "location_name",
+        "offset",
+        "platform",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_ai_llm_mentions_aggregated": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "language_name",
+        "location_name",
+        "platform",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_ai_llm_mentions_cross_aggregated": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "language_name",
+        "location_name",
+        "platform",
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_ai_llm_mentions_top_domains": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "language_name",
+        "limit",
+        "location_name",
+        "offset",
+        "platform",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_ai_llm_mentions_top_pages": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "language_name",
+        "limit",
+        "location_name",
+        "offset",
+        "platform",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_ai_perplexity_responses": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "max_output_tokens",
+        "message_chain",
+        "model_name",
+        "system_message",
+        "tag",
+        "temperature",
+        "top_p",
+        "user_prompt",
+        "web_search_country_iso_code"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "user_prompt"
+      ]
+    },
+    "dataforseo_app_apple_info": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_id",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "pingback_url",
+        "postback_data",
+        "postback_url",
+        "priority",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_id"
+      ]
+    },
+    "dataforseo_app_apple_searches": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "pingback_url",
+        "postback_data",
+        "postback_url",
+        "priority",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_app_google_info": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_id",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "pingback_url",
+        "postback_data",
+        "postback_url",
+        "priority",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_id"
+      ]
+    },
+    "dataforseo_app_google_searches": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "pingback_url",
+        "postback_data",
+        "postback_url",
+        "priority",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_biz_google_my_business_info": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_biz_google_qna": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_biz_google_reviews": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "cid",
+        "depth",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "pingback_url",
+        "place_id",
+        "postback_url",
+        "priority",
+        "sort_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_biz_listings_search": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "categories",
+        "description",
+        "filters",
+        "is_claimed",
+        "limit",
+        "location_coordinate",
+        "location_name",
+        "offset",
+        "offset_token",
+        "order_by",
+        "tag",
+        "title"
+      ],
+      "provider": "DataForSEO",
+      "required": []
+    },
+    "dataforseo_biz_social_facebook": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_biz_social_pinterest": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_biz_social_reddit": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_biz_tripadvisor_search": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "keyword",
+        "location_code",
+        "location_name",
+        "pingback_url",
+        "postback_url",
+        "priority",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_biz_trustpilot_search": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keyword"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_bl_anchors": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "backlinks_filters",
+        "backlinks_status_type",
+        "exclude_internal_backlinks",
+        "filters",
+        "include_indirect_links",
+        "include_subdomains",
+        "internal_list_limit",
+        "limit",
+        "mode",
+        "offset",
+        "order_by",
+        "rank_scale",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_bulk_backlinks": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_bl_bulk_new_lost_backlinks": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "tag",
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_bl_bulk_new_lost_referring_domains": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "tag",
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_bl_bulk_pages_summary": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_bl_bulk_ranks": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_bl_bulk_referring_domains": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_bl_bulk_spam_score": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_bl_competitors": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "exclude_internal_backlinks",
+        "exclude_large_domains",
+        "filters",
+        "limit",
+        "main_domain",
+        "offset",
+        "order_by",
+        "rank_scale",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_domain_intersection": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "exclude_targets",
+        "filters",
+        "limit",
+        "offset",
+        "order_by",
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_bl_domain_pages": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "backlinks_filters",
+        "backlinks_status_type",
+        "exclude_internal_backlinks",
+        "filters",
+        "include_subdomains",
+        "internal_list_limit",
+        "limit",
+        "offset",
+        "order_by",
+        "rank_scale",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_domain_pages_summary": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "backlinks_filters",
+        "backlinks_status_type",
+        "exclude_internal_backlinks",
+        "filters",
+        "include_indirect_links",
+        "include_subdomains",
+        "internal_list_limit",
+        "limit",
+        "offset",
+        "order_by",
+        "rank_scale",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_history": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "rank_scale",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_list": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "backlinks_status_type",
+        "custom_mode",
+        "exclude_internal_backlinks",
+        "field",
+        "filters",
+        "include_indirect_links",
+        "include_subdomains",
+        "limit",
+        "mode",
+        "offset",
+        "order_by",
+        "rank_scale",
+        "search_after_token",
+        "tag",
+        "target",
+        "value"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_page_intersection": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "exclude_targets",
+        "filters",
+        "limit",
+        "offset",
+        "order_by",
+        "pages"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "pages"
+      ]
+    },
+    "dataforseo_bl_referring_domains": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "backlinks_filters",
+        "backlinks_status_type",
+        "exclude_internal_backlinks",
+        "filters",
+        "include_indirect_links",
+        "include_subdomains",
+        "internal_list_limit",
+        "limit",
+        "offset",
+        "order_by",
+        "rank_scale",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_referring_networks": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "backlinks_filters",
+        "backlinks_status_type",
+        "exclude_internal_backlinks",
+        "filters",
+        "include_indirect_links",
+        "include_subdomains",
+        "internal_list_limit",
+        "limit",
+        "network_address_type",
+        "offset",
+        "order_by",
+        "rank_scale",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_summary": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "backlinks_filters",
+        "backlinks_status_type",
+        "exclude_internal_backlinks",
+        "include_indirect_links",
+        "include_subdomains",
+        "internal_list_limit",
+        "rank_scale",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_timeseries_new_lost_summary": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "group_range",
+        "include_subdomains",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_bl_timeseries_summary": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "group_range",
+        "include_subdomains",
+        "rank_scale",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_content_phrase_trends": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_group",
+        "date_to",
+        "filters",
+        "initial_dataset_filters",
+        "internal_list_limit",
+        "keyword",
+        "keyword_fields",
+        "page_type",
+        "rank_scale",
+        "search_mode",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "date_from",
+        "keyword"
+      ]
+    },
+    "dataforseo_content_rating_distribution": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "initial_dataset_filters",
+        "internal_list_limit",
+        "keyword",
+        "keyword_fields",
+        "page_type",
+        "positive_connotation_threshold",
+        "rank_scale",
+        "search_mode",
+        "sentiments_connotation_threshold",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_content_search": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "keyword",
+        "keyword_fields",
+        "limit",
+        "offset",
+        "offset_token",
+        "order_by",
+        "page_type",
+        "rank_scale",
+        "search_mode",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_content_sentiment": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "initial_dataset_filters",
+        "internal_list_limit",
+        "keyword",
+        "keyword_fields",
+        "page_type",
+        "positive_connotation_threshold",
+        "rank_scale",
+        "sentiments_connotation_threshold",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_content_summary": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "initial_dataset_filters",
+        "internal_list_limit",
+        "keyword",
+        "keyword_fields",
+        "page_type",
+        "positive_connotation_threshold",
+        "rank_scale",
+        "sentiments_connotation_threshold",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_domain_domains_by_technology": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "categories",
+        "filters",
+        "groups",
+        "keywords",
+        "limit",
+        "mode",
+        "offset",
+        "offset_token",
+        "order_by",
+        "technologies",
+        "technology_paths"
+      ],
+      "provider": "DataForSEO",
+      "required": []
+    },
+    "dataforseo_domain_technologies": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_domain_technologies_summary": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "categories",
+        "filters",
+        "groups",
+        "internal_list_limit",
+        "keywords",
+        "mode",
+        "tag",
+        "technologies",
+        "technology_paths"
+      ],
+      "provider": "DataForSEO",
+      "required": []
+    },
+    "dataforseo_domain_technology_stats": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "tag",
+        "technology"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "technology"
+      ]
+    },
+    "dataforseo_domain_whois": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "limit",
+        "offset",
+        "order_by",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_keywords_bing_audience_estimation": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "age",
+        "bid",
+        "daily_budget",
+        "gender",
+        "industry",
+        "job_function",
+        "location_code",
+        "location_name"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "location_name"
+      ]
+    },
+    "dataforseo_keywords_bing_keyword_performance": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "device",
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "match",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_keywords_bing_keywords_for_keywords": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "device",
+        "keywords",
+        "keywords_negative",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "search_partners",
+        "sort_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_keywords_bing_keywords_for_site": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "device",
+        "keywords_negative",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "search_partners",
+        "sort_by",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_keywords_bing_search_volume_history": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "device",
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "period",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_bing_search_volume": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "device",
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "search_partners",
+        "sort_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_clickstream_bulk_volume": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keywords",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_clickstream_global_volume": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keywords"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_clickstream_search_volume": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag",
+        "use_clickstream"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_dataforseo_trends_demography": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "keywords",
+        "location_code",
+        "location_name",
+        "tag",
+        "time_range",
+        "type"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_dataforseo_trends_explore": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "keywords",
+        "location_code",
+        "location_name",
+        "tag",
+        "time_range",
+        "type"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_dataforseo_trends_merged_data": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "keywords",
+        "location_code",
+        "location_name",
+        "tag",
+        "time_range",
+        "type"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_dataforseo_trends_subregion_interests": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "keywords",
+        "location_code",
+        "location_name",
+        "tag",
+        "time_range",
+        "type"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_google_ads_ad_traffic": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "bid",
+        "date_from",
+        "date_interval",
+        "date_to",
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "match",
+        "search_partners",
+        "sort_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "bid",
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_google_ads_keywords_for_keywords": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "include_adult_keywords",
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "search_partners",
+        "sort_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_google_ads_keywords_for_site": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "include_adult_keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "search_partners",
+        "sort_by",
+        "tag",
+        "target",
+        "target_type"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_kw_google_ads_search_volume": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "include_adult_keywords",
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "search_partners",
+        "sort_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_kw_google_trends_explore": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "category",
+        "category_code",
+        "date_from",
+        "date_to",
+        "item_types",
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag",
+        "time_range",
+        "trends_type"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_labs_amazon_bulk_search_volume": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_labs_amazon_product_competitors": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "asin",
+        "filters",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "asin"
+      ]
+    },
+    "dataforseo_labs_amazon_product_keyword_intersections": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "asins",
+        "filters",
+        "intersection_mode",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "asins"
+      ]
+    },
+    "dataforseo_labs_amazon_product_rank_overview": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "asins",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "asins"
+      ]
+    },
+    "dataforseo_labs_amazon_ranked_keywords": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "asin",
+        "filters",
+        "ignore_synonyms",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "asin"
+      ]
+    },
+    "dataforseo_labs_amazon_related_keywords": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "ignore_synonyms",
+        "include_seed_keyword",
+        "keyword",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_labs_apple_app_competitors": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_id",
+        "filters",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_id"
+      ]
+    },
+    "dataforseo_labs_apple_app_intersection": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_ids",
+        "filters",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_ids"
+      ]
+    },
+    "dataforseo_labs_apple_bulk_app_metrics": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_ids",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_ids"
+      ]
+    },
+    "dataforseo_labs_apple_keywords_for_app": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_id",
+        "filters",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_id"
+      ]
+    },
+    "dataforseo_labs_bulk_keyword_difficulty": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_labs_bulk_traffic_estimation": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "ignore_synonyms",
+        "item_types",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag",
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_labs_categories_for_domain": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "historical_serp_mode",
+        "include_clickstream_data",
+        "include_subcategories",
+        "item_types",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_competitors_domain": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_domain_intersection": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "include_clickstream_data",
+        "include_serp_info",
+        "intersections",
+        "item_types",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag",
+        "target1",
+        "target2",
+        "target_1",
+        "target_2"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target1",
+        "target2"
+      ]
+    },
+    "dataforseo_labs_domain_metrics_by_categories": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "category_codes",
+        "filters",
+        "first_date",
+        "language_name",
+        "limit",
+        "location_name",
+        "offset",
+        "order_by",
+        "second_date",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_domain_rank_overview": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "ignore_synonyms",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_domain_whois_overview": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "limit",
+        "offset",
+        "order_by",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_google_app_competitors": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_id",
+        "filters",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_id"
+      ]
+    },
+    "dataforseo_labs_google_app_intersection": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_ids",
+        "filters",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_ids"
+      ]
+    },
+    "dataforseo_labs_google_bulk_app_metrics": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_ids",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_ids"
+      ]
+    },
+    "dataforseo_labs_google_categories_for_keywords": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keywords",
+        "language_code",
+        "language_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_labs_google_keywords_for_app": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "app_id",
+        "filters",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "app_id"
+      ]
+    },
+    "dataforseo_labs_google_keywords_for_categories": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "category_codes",
+        "filters",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "offset_token",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "category_codes"
+      ]
+    },
+    "dataforseo_labs_historical_bulk_traffic_estimation": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "ignore_synonyms",
+        "item_types",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag",
+        "targets"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "targets"
+      ]
+    },
+    "dataforseo_labs_historical_keyword_data": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_labs_historical_rank_overview": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "correlate",
+        "date_from",
+        "date_to",
+        "ignore_synonyms",
+        "include_clickstream_data",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_historical_serps": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_from",
+        "date_to",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_labs_keyword_ideas": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "closely_variants",
+        "filters",
+        "ignore_synonyms",
+        "include_clickstream_data",
+        "include_seed_keyword",
+        "include_serp_info",
+        "keywords",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "offset_token",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_labs_keyword_overview": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "include_clickstream_data",
+        "include_serp_info",
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_labs_keyword_suggestions": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "exact_match",
+        "filters",
+        "ignore_synonyms",
+        "include_clickstream_data",
+        "include_seed_keyword",
+        "include_serp_info",
+        "keyword",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "offset_token",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_labs_keywords_for_site": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "include_clickstream_data",
+        "include_serp_info",
+        "include_subdomains",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "offset_token",
+        "order_by",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_page_intersection": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "language_name",
+        "limit",
+        "location_name",
+        "offset",
+        "order_by",
+        "pages"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "pages"
+      ]
+    },
+    "dataforseo_labs_ranked_keywords": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "historical_serp_mode",
+        "ignore_synonyms",
+        "include_clickstream_data",
+        "item_types",
+        "language_code",
+        "language_name",
+        "limit",
+        "load_rank_absolute",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_related_keywords": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "filters",
+        "ignore_synonyms",
+        "include_clickstream_data",
+        "include_seed_keyword",
+        "include_serp_info",
+        "keyword",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "replace_with_core_keyword",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_labs_relevant_pages": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "historical_serp_mode",
+        "ignore_synonyms",
+        "include_clickstream_data",
+        "item_types",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_search_intent": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keywords",
+        "language_code",
+        "language_name",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_labs_serp_competitors": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "include_subdomains",
+        "item_types",
+        "keywords",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keywords"
+      ]
+    },
+    "dataforseo_labs_subdomains": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "historical_serp_mode",
+        "ignore_synonyms",
+        "include_clickstream_data",
+        "item_types",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "order_by",
+        "tag",
+        "target"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_labs_top_searches": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "category",
+        "filters",
+        "ignore_synonyms",
+        "include_clickstream_data",
+        "include_serp_info",
+        "language_code",
+        "language_name",
+        "limit",
+        "location_code",
+        "location_name",
+        "offset",
+        "offset_token",
+        "order_by",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": []
+    },
+    "dataforseo_merchant_amazon_products": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "keyword",
+        "language_name",
+        "location_name",
+        "sort_by"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_merchant_amazon_sellers": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "asin",
+        "language_name",
+        "location_name"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "asin"
+      ]
+    },
+    "dataforseo_merchant_google_products": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "max_crawl_pages",
+        "pingback_url",
+        "postback_data",
+        "postback_url",
+        "price_max",
+        "price_min",
+        "priority",
+        "se_domain",
+        "search_param",
+        "sort_by",
+        "tag",
+        "url"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_merchant_google_sellers": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "additional_specifications",
+        "data_docid",
+        "depth",
+        "get_shops_on_google",
+        "gid",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "pingback_url",
+        "postback_data",
+        "postback_url",
+        "priority",
+        "product_id",
+        "pvf",
+        "se_domain",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "product_id"
+      ]
+    },
+    "dataforseo_onpage_content_parsing": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "accept_language",
+        "browser_preset",
+        "browser_screen_height",
+        "browser_screen_scale_factor",
+        "browser_screen_width",
+        "custom_user_agent",
+        "disable_cookie_popup",
+        "enable_browser_rendering",
+        "enable_javascript",
+        "enable_xhr",
+        "ip_pool_for_scan",
+        "markdown_view",
+        "store_raw_html",
+        "switch_pool",
+        "url"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "url"
+      ]
+    },
+    "dataforseo_onpage_duplicate_tags": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "accumulator",
+        "limit",
+        "offset",
+        "tag",
+        "task_id",
+        "type"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "task_id"
+      ]
+    },
+    "dataforseo_onpage_lighthouse": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "audits",
+        "categories",
+        "for_mobile",
+        "language_code",
+        "language_name",
+        "tag",
+        "url",
+        "version"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "url"
+      ]
+    },
+    "dataforseo_onpage_links": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "limit",
+        "offset",
+        "order_by",
+        "page_from",
+        "page_to",
+        "search_after_token",
+        "tag",
+        "task_id"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "task_id"
+      ]
+    },
+    "dataforseo_onpage_non_indexable": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "limit",
+        "offset",
+        "task_id"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "task_id"
+      ]
+    },
+    "dataforseo_onpage_pages": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "limit",
+        "offset",
+        "order_by",
+        "search_after_token",
+        "tag",
+        "task_id"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "task_id"
+      ]
+    },
+    "dataforseo_onpage_resources": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "filters",
+        "limit",
+        "offset",
+        "order_by",
+        "relevant_pages_filters",
+        "search_after_token",
+        "tag",
+        "task_id",
+        "url"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "task_id"
+      ]
+    },
+    "dataforseo_onpage_summary": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "task_id"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "task_id"
+      ]
+    },
+    "dataforseo_onpage_task_post": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "accept_language",
+        "allow_subdomains",
+        "allowed_subdomains",
+        "browser_preset",
+        "browser_screen_height",
+        "browser_screen_scale_factor",
+        "browser_screen_width",
+        "calculate_keyword_density",
+        "check_spell",
+        "check_spell_exceptions",
+        "check_spell_language",
+        "checks_threshold",
+        "crawl_delay",
+        "crawl_sitemap_only",
+        "custom_js",
+        "custom_robots_txt",
+        "custom_sitemap",
+        "custom_user_agent",
+        "disable_cookie_popup",
+        "disable_page_checks",
+        "disable_sitewide_checks",
+        "disallowed_subdomains",
+        "enable_browser_rendering",
+        "enable_content_parsing",
+        "enable_javascript",
+        "enable_www_redirect_check",
+        "enable_xhr",
+        "force_sitewide_checks",
+        "load_resources",
+        "max_crawl_depth",
+        "max_crawl_pages",
+        "pingback_url",
+        "priority_urls",
+        "respect_sitemap",
+        "return_despite_timeout",
+        "robots_txt_merge_mode",
+        "start_url",
+        "store_raw_html",
+        "support_cookies",
+        "switch_pool",
+        "tag",
+        "target",
+        "validate_micromarkup"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "target"
+      ]
+    },
+    "dataforseo_serp_ai_summary": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "fetch_content",
+        "include_links",
+        "prompt",
+        "support_extra",
+        "task_id"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "task_id"
+      ]
+    },
+    "dataforseo_serp_bing_organic": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "browser_screen_height",
+        "browser_screen_resolution_ratio",
+        "browser_screen_width",
+        "calculate_rectangles",
+        "depth",
+        "device",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "match_type",
+        "match_value",
+        "max_crawl_pages",
+        "os",
+        "search_param",
+        "stop_crawl_on_match",
+        "tag",
+        "target",
+        "url"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_ai_mode": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "browser_screen_height",
+        "browser_screen_resolution_ratio",
+        "browser_screen_width",
+        "calculate_rectangles",
+        "device",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "os",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_autocomplete": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "client",
+        "cursor_pointer",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_dataset_info": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "dataset_id",
+        "device",
+        "language_code",
+        "language_name",
+        "location_name",
+        "os",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "dataset_id"
+      ]
+    },
+    "dataforseo_serp_google_dataset_search": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "device",
+        "file_formats",
+        "is_free",
+        "keyword",
+        "language_code",
+        "language_name",
+        "last_updated",
+        "location_name",
+        "os",
+        "tag",
+        "topics",
+        "usage_rights"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_events": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "date_range",
+        "depth",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "max_crawl_pages",
+        "os",
+        "se_domain",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_finance_explore": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "device",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "news_type",
+        "os",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": []
+    },
+    "dataforseo_serp_google_finance_markets": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "device",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "market_type",
+        "os",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": []
+    },
+    "dataforseo_serp_google_finance_quote": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "device",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "os",
+        "tag",
+        "window"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_finance_ticker_search": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "category",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_images": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "max_crawl_pages",
+        "os",
+        "se_domain",
+        "search_param",
+        "tag",
+        "url"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_jobs": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "employment_type",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "location_radius",
+        "pingback_url",
+        "postback_data",
+        "postback_url",
+        "priority",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_local_finder": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "device",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "min_rating",
+        "os",
+        "priority",
+        "tag",
+        "time_filter"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_maps": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "device",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "max_crawl_pages",
+        "os",
+        "se_domain",
+        "search_places",
+        "search_this_area",
+        "tag",
+        "url"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_news": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "browser_screen_height",
+        "browser_screen_resolution_ratio",
+        "browser_screen_width",
+        "calculate_rectangles",
+        "depth",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "max_crawl_pages",
+        "os",
+        "se_domain",
+        "search_param",
+        "url"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_organic": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "browser_screen_height",
+        "browser_screen_resolution_ratio",
+        "browser_screen_width",
+        "calculate_rectangles",
+        "depth",
+        "device",
+        "find_targets_in",
+        "group_organic_results",
+        "ignore_targets_in",
+        "keyword",
+        "language_code",
+        "language_name",
+        "load_async_ai_overview",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "match_type",
+        "match_value",
+        "max_crawl_pages",
+        "os_type",
+        "people_also_ask_click_depth",
+        "remove_from_url",
+        "se_domain",
+        "search_param",
+        "stop_crawl_on_match",
+        "tag",
+        "target",
+        "target_search_mode",
+        "url"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_google_search_by_image": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "browser_screen_height",
+        "browser_screen_resolution_ratio",
+        "browser_screen_width",
+        "calculate_rectangles",
+        "image_url",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_coordinate",
+        "location_name",
+        "max_crawl_pages",
+        "pingback_url",
+        "postback_data",
+        "postback_url",
+        "priority",
+        "se_domain",
+        "search_param",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "image_url"
+      ]
+    },
+    "dataforseo_serp_screenshot": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "browser_preset",
+        "browser_screen_height",
+        "browser_screen_scale_factor",
+        "browser_screen_width",
+        "page",
+        "task_id"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "task_id"
+      ]
+    },
+    "dataforseo_serp_yahoo_organic": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "device",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "max_crawl_pages",
+        "os",
+        "tag",
+        "url"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_youtube_organic": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "block_depth",
+        "device",
+        "keyword",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "os",
+        "search_param",
+        "tag"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "keyword"
+      ]
+    },
+    "dataforseo_serp_youtube_video_comments": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "depth",
+        "device",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "os",
+        "tag",
+        "video_id"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "video_id"
+      ]
+    },
+    "dataforseo_serp_youtube_video_info": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "device",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "os",
+        "tag",
+        "video_id"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "video_id"
+      ]
+    },
+    "dataforseo_serp_youtube_video_subtitles": {
+      "errors": [
+        "401",
+        "402",
+        "429",
+        "500"
+      ],
+      "params": [
+        "device",
+        "language_code",
+        "language_name",
+        "location_code",
+        "location_name",
+        "os",
+        "subtitles_language",
+        "subtitles_translate_language",
+        "tag",
+        "video_id"
+      ],
+      "provider": "DataForSEO",
+      "required": [
+        "video_id"
+      ]
+    },
+    "discover_niche_media": {
+      "errors": [
+        "RuntimeError: all N sub-provider calls failed",
+        "degraded=true in response"
+      ],
+      "params": [
+        "audience",
+        "channel_types",
+        "max_results",
+        "topic"
+      ],
+      "provider": "NicheMedia (composite: Exa + SearchAPI + Firecrawl)",
+      "required": [
+        "topic"
+      ]
+    },
+    "discover_web_funnels": {
+      "errors": [
+        "empty",
+        "http",
+        "timeout"
+      ],
+      "params": [
+        "domain"
+      ],
+      "provider": "crt.sh",
+      "required": [
+        "domain"
+      ]
+    },
+    "duckduckgo_light": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "locale",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "duckduckgo_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "locale",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "ebay_product": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "ebay_domain",
+        "product_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_id"
+      ]
+    },
+    "ebay_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "ebay_domain",
+        "page",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "exa_answer": {
+      "errors": [
+        "401",
+        "429"
+      ],
+      "params": [
+        "model",
+        "query",
+        "text"
+      ],
+      "provider": "Exa",
+      "required": [
+        "query"
+      ]
+    },
+    "exa_get_contents": {
+      "errors": [
+        "401",
+        "429"
+      ],
+      "params": [
+        "highlights",
+        "summary",
+        "text",
+        "urls"
+      ],
+      "provider": "Exa",
+      "required": [
+        "urls"
+      ]
+    },
+    "exa_keyword_search": {
+      "errors": [
+        "401",
+        "429"
+      ],
+      "params": [
+        "category",
+        "end_published_date",
+        "exclude_domains",
+        "exclude_text",
+        "include_domains",
+        "include_text",
+        "keywords",
+        "num_results",
+        "product_name",
+        "search_query",
+        "start_published_date",
+        "type",
+        "url",
+        "user_location"
+      ],
+      "provider": "Exa",
+      "required": [
+        "keywords",
+        "product_name",
+        "url"
+      ]
+    },
+    "exa_research": {
+      "errors": [
+        "401",
+        "429"
+      ],
+      "params": [
+        "instructions",
+        "output_schema"
+      ],
+      "provider": "Exa",
+      "required": [
+        "instructions"
+      ]
+    },
+    "exa_similar_search": {
+      "errors": [
+        "401",
+        "429"
+      ],
+      "params": [
+        "url"
+      ],
+      "provider": "Exa",
+      "required": [
+        "url"
+      ]
+    },
+    "extract_domain_from_url": {
+      "errors": [
+        "io",
+        "validation"
+      ],
+      "params": [
+        "url"
+      ],
+      "provider": "Project Utility",
+      "required": [
+        "url"
+      ]
+    },
+    "facebook_business_page": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "page_id"
+      ]
+    },
+    "facebook_business_page_reviews": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "page_id"
+      ]
+    },
+    "find_subdomains": {
+      "errors": [
+        "timeout"
+      ],
+      "params": [
+        "domain"
+      ],
+      "provider": "crt.sh",
+      "required": [
+        "domain"
+      ]
+    },
+    "firecrawl_map_domain": {
+      "errors": [
+        "401",
+        "408",
+        "429"
+      ],
+      "params": [
+        "limit",
+        "url"
+      ],
+      "provider": "Firecrawl",
+      "required": [
+        "url"
+      ]
+    },
+    "firecrawl_scrape_mobile_app": {
+      "errors": [
+        "401",
+        "408",
+        "429"
+      ],
+      "params": [
+        "app_page_url"
+      ],
+      "provider": "Firecrawl",
+      "required": [
+        "app_page_url"
+      ]
+    },
+    "firecrawl_scrape_page_html": {
+      "errors": [
+        "401",
+        "408",
+        "429"
+      ],
+      "params": [
+        "url"
+      ],
+      "provider": "Firecrawl",
+      "required": [
+        "url"
+      ]
+    },
+    "firecrawl_scrape_page_markdown": {
+      "errors": [
+        "401",
+        "408",
+        "429"
+      ],
+      "params": [
+        "block_ads",
+        "country",
+        "exclude_tags",
+        "include_tags",
+        "languages",
+        "max_age",
+        "mobile",
+        "only_main_content",
+        "timeout",
+        "url",
+        "wait_for"
+      ],
+      "provider": "Firecrawl",
+      "required": [
+        "url"
+      ]
+    },
+    "firecrawl_scrape_page_seo": {
+      "errors": [
+        "401",
+        "408",
+        "429"
+      ],
+      "params": [
+        "url"
+      ],
+      "provider": "Firecrawl",
+      "required": [
+        "url"
+      ]
+    },
+    "firecrawl_scrape_website": {
+      "errors": [
+        "401",
+        "408",
+        "429"
+      ],
+      "params": [
+        "url"
+      ],
+      "provider": "Firecrawl",
+      "required": [
+        "url"
+      ]
+    },
+    "firecrawl_search": {
+      "errors": [
+        "401",
+        "408",
+        "429"
+      ],
+      "params": [
+        "categories",
+        "country",
+        "exclude_domains",
+        "include_domains",
+        "limit",
+        "query",
+        "sources",
+        "tbs"
+      ],
+      "provider": "Firecrawl",
+      "required": [
+        "query"
+      ]
+    },
+    "foreplay_ad_details": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "ad_id"
+      ],
+      "provider": "Foreplay",
+      "required": [
+        "ad_id"
+      ]
+    },
+    "foreplay_brand_analytics": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "brand_id",
+        "end_date",
+        "start_date"
+      ],
+      "provider": "Foreplay",
+      "required": [
+        "brand_id"
+      ]
+    },
+    "foreplay_discovery_ads": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "display_formats",
+        "end_date",
+        "limit",
+        "live",
+        "niches",
+        "order",
+        "publisher_platforms",
+        "query",
+        "start_date"
+      ],
+      "provider": "Foreplay",
+      "required": [
+        "query"
+      ]
+    },
+    "foreplay_discovery_brands": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "limit",
+        "query"
+      ],
+      "provider": "Foreplay",
+      "required": [
+        "query"
+      ]
+    },
+    "foreplay_get_ads_by_brand_ids": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "brand_ids",
+        "end_date",
+        "limit",
+        "order",
+        "start_date"
+      ],
+      "provider": "Foreplay",
+      "required": [
+        "brand_ids"
+      ]
+    },
+    "foreplay_get_ads_by_page_id": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "limit",
+        "order",
+        "page_id"
+      ],
+      "provider": "Foreplay",
+      "required": [
+        "page_id"
+      ]
+    },
+    "foreplay_get_board_brands": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "board_id",
+        "limit",
+        "offset"
+      ],
+      "provider": "Foreplay",
+      "required": [
+        "board_id"
+      ]
+    },
+    "foreplay_get_boards": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "limit",
+        "offset"
+      ],
+      "provider": "Foreplay",
+      "required": []
+    },
+    "foreplay_get_brands_by_domain": {
+      "errors": [
+        "400",
+        "401",
+        "429",
+        "excluded_domain"
+      ],
+      "params": [
+        "domain",
+        "limit"
+      ],
+      "provider": "Foreplay",
+      "required": [
+        "domain"
+      ]
+    },
+    "foreplay_spyder_ads": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "limit",
+        "live",
+        "offset",
+        "order"
+      ],
+      "provider": "Foreplay",
+      "required": []
+    },
+    "foreplay_spyder_brands": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "limit",
+        "offset"
+      ],
+      "provider": "Foreplay",
+      "required": []
+    },
+    "foreplay_swipefile_ads": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "limit",
+        "live",
+        "offset",
+        "order"
+      ],
+      "provider": "Foreplay",
+      "required": []
+    },
+    "gemini_analyze_website": {
+      "errors": [
+        "401",
+        "429",
+        "500"
+      ],
+      "params": [
+        "website_data_text"
+      ],
+      "provider": "Google Gemini",
+      "required": [
+        "website_data_text"
+      ]
+    },
+    "gemini_detailed_report": {
+      "errors": [
+        "401",
+        "429",
+        "500",
+        "pdf_error"
+      ],
+      "params": [
+        "domain",
+        "pdf_filename"
+      ],
+      "provider": "Google Gemini",
+      "required": [
+        "domain",
+        "pdf_filename"
+      ]
+    },
+    "gemini_extract_competitors": {
+      "errors": [
+        "401",
+        "429",
+        "500"
+      ],
+      "params": [
+        "search_results_text",
+        "target_product_name",
+        "target_website_url"
+      ],
+      "provider": "Google Gemini",
+      "required": [
+        "search_results_text",
+        "target_product_name",
+        "target_website_url"
+      ]
+    },
+    "gemini_keyword_report": {
+      "errors": [
+        "401",
+        "429",
+        "500"
+      ],
+      "params": [
+        "keywords"
+      ],
+      "provider": "Google Gemini",
+      "required": [
+        "keywords"
+      ]
+    },
+    "gemini_reviews_report": {
+      "errors": [
+        "401",
+        "429",
+        "500"
+      ],
+      "params": [
+        "reviews_data_text"
+      ],
+      "provider": "Google Gemini",
+      "required": [
+        "reviews_data_text"
+      ]
+    },
+    "google_about_this_domain": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_ads_advertiser_info": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "advertiser_info_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "advertiser_info_token"
+      ]
+    },
+    "google_ads_transparency_advertiser_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "num_domains",
+        "query",
+        "region"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "query"
+      ]
+    },
+    "google_ai_mode": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_ai_overview": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "page_token"
+      ]
+    },
+    "google_autocomplete": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_books": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "num",
+        "q",
+        "tbm"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_events": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_finance": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "hl",
+        "q",
+        "window"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_flights": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "adults",
+        "arrival_id",
+        "currency",
+        "departure_id",
+        "flight_type",
+        "gl",
+        "hl",
+        "outbound_date",
+        "return_date",
+        "stops",
+        "travel_class"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "arrival_id",
+        "departure_id",
+        "outbound_date"
+      ]
+    },
+    "google_flights_calendar": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "arrival_id",
+        "currency",
+        "departure_id",
+        "flight_type",
+        "gl",
+        "hl",
+        "outbound_date",
+        "return_date"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "arrival_id",
+        "departure_id"
+      ]
+    },
+    "google_flights_location_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_forums": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_hotels": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "adults",
+        "check_in_date",
+        "check_out_date",
+        "currency",
+        "gl",
+        "hl",
+        "q",
+        "sort_by"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_hotels_autocomplete": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_hotels_property": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "check_in_date",
+        "check_out_date",
+        "currency",
+        "gl",
+        "hl",
+        "property_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "check_in_date",
+        "check_out_date",
+        "property_token"
+      ]
+    },
+    "google_images": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_images_light": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_jobs": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_lens": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country",
+        "hl",
+        "url"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "url"
+      ]
+    },
+    "google_light": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_local": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_maps": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "ll",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_maps_directions": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "destination",
+        "gl",
+        "hl",
+        "origin",
+        "travel_mode"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "destination",
+        "origin"
+      ]
+    },
+    "google_maps_photos": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "category_id",
+        "data_id",
+        "next_page_token",
+        "place_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": []
+    },
+    "google_maps_reviews": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "data_id",
+        "gl",
+        "hl",
+        "next_page_token",
+        "num",
+        "place_id",
+        "sort_by",
+        "topic_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": []
+    },
+    "google_news": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_news_light": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_news_portal": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "topic_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "topic_token"
+      ]
+    },
+    "google_patents": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "countries",
+        "language",
+        "num",
+        "q",
+        "scholar"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_patents_details": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "patent_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "patent_id"
+      ]
+    },
+    "google_place": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "kgmid"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "kgmid"
+      ]
+    },
+    "google_play_product": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "product_id",
+        "store"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_id"
+      ]
+    },
+    "google_play_product_reviews": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "next_page_token",
+        "num",
+        "product_id",
+        "store"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_id"
+      ]
+    },
+    "google_play_store": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q",
+        "store"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_product": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "product_id",
+        "product_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": []
+    },
+    "google_product_offers": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "product_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_token"
+      ]
+    },
+    "google_product_page": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "product_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_token"
+      ]
+    },
+    "google_product_reviews": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "next_page_token",
+        "product_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_token"
+      ]
+    },
+    "google_rank_tracking": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "device",
+        "gl",
+        "hl",
+        "location",
+        "num",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_scholar": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "as_yhi",
+        "as_ylo",
+        "hl",
+        "num",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_scholar_author": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "author_id",
+        "hl"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "author_id"
+      ]
+    },
+    "google_scholar_cite": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "data_cid",
+        "hl"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "data_cid"
+      ]
+    },
+    "google_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "cr",
+        "device",
+        "filter",
+        "gl",
+        "hl",
+        "location",
+        "lr",
+        "nfpr",
+        "num",
+        "page",
+        "q",
+        "safe",
+        "time_period",
+        "time_period_max",
+        "time_period_min",
+        "uule"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_shopping": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "num",
+        "q",
+        "tbs"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_shopping_autocomplete": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "cp",
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_shopping_filters": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "all_filters_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "all_filters_token"
+      ]
+    },
+    "google_shorts": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_travel_explore": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "currency",
+        "departure_id",
+        "gl",
+        "hl"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "departure_id"
+      ]
+    },
+    "google_trends": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "cat",
+        "data_type",
+        "geo",
+        "q",
+        "time"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_trends_autocomplete": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_videos": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "google_videos_light": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "instagram_profile": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "username"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "username"
+      ]
+    },
+    "keywords_everywhere_countries": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [],
+      "provider": "Keywords Everywhere",
+      "required": []
+    },
+    "keywords_everywhere_credits": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [],
+      "provider": "Keywords Everywhere",
+      "required": []
+    },
+    "keywords_everywhere_currencies": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [],
+      "provider": "Keywords Everywhere",
+      "required": []
+    },
+    "keywords_everywhere_domain_backlinks": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "domain",
+        "num"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "domain"
+      ]
+    },
+    "keywords_everywhere_domain_keywords": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "country",
+        "domain",
+        "num"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "domain"
+      ]
+    },
+    "keywords_everywhere_domain_traffic_metrics": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "country",
+        "domains"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "domains"
+      ]
+    },
+    "keywords_everywhere_keyword_data": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "country",
+        "currency",
+        "data_source",
+        "keywords"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "keywords"
+      ]
+    },
+    "keywords_everywhere_page_backlinks": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "num",
+        "page"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "page"
+      ]
+    },
+    "keywords_everywhere_pasf_keywords": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "keyword",
+        "num"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "keyword"
+      ]
+    },
+    "keywords_everywhere_related_keywords": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "keyword",
+        "num"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "keyword"
+      ]
+    },
+    "keywords_everywhere_unique_domain_backlinks": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "domain",
+        "num"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "domain"
+      ]
+    },
+    "keywords_everywhere_unique_page_backlinks": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "num",
+        "page"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "page"
+      ]
+    },
+    "keywords_everywhere_url_keywords": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "country",
+        "num",
+        "url"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "url"
+      ]
+    },
+    "keywords_everywhere_url_traffic_metrics": {
+      "errors": [
+        "insufficient_credits",
+        "invalid_api_key",
+        "invalid_request",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "country",
+        "urls"
+      ],
+      "provider": "Keywords Everywhere",
+      "required": [
+        "urls"
+      ]
+    },
+    "linkedin_ad_library": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country",
+        "query"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "query"
+      ]
+    },
+    "llm_query_anthropic": {
+      "errors": [
+        "401",
+        "429",
+        "502"
+      ],
+      "params": [
+        "max_tokens",
+        "query",
+        "system_prompt",
+        "temperature"
+      ],
+      "provider": "OpenRouter",
+      "required": [
+        "query"
+      ]
+    },
+    "llm_query_gemini": {
+      "errors": [
+        "401",
+        "429",
+        "502"
+      ],
+      "params": [
+        "max_tokens",
+        "query",
+        "system_prompt",
+        "temperature"
+      ],
+      "provider": "OpenRouter",
+      "required": [
+        "query"
+      ]
+    },
+    "llm_query_grok": {
+      "errors": [
+        "401",
+        "429",
+        "502"
+      ],
+      "params": [
+        "max_tokens",
+        "query",
+        "system_prompt",
+        "temperature"
+      ],
+      "provider": "OpenRouter",
+      "required": [
+        "query"
+      ]
+    },
+    "llm_query_openai": {
+      "errors": [
+        "401",
+        "429",
+        "502"
+      ],
+      "params": [
+        "max_tokens",
+        "query",
+        "system_prompt",
+        "temperature"
+      ],
+      "provider": "OpenRouter",
+      "required": [
+        "query"
+      ]
+    },
+    "llm_query_perplexity": {
+      "errors": [
+        "401",
+        "429",
+        "502"
+      ],
+      "params": [
+        "max_tokens",
+        "query",
+        "system_prompt",
+        "temperature"
+      ],
+      "provider": "OpenRouter",
+      "required": [
+        "query"
+      ]
+    },
+    "majestic_delete_downloads": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "download_job_ids"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "download_job_ids"
+      ]
+    },
+    "majestic_download_back_links": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "counts_only",
+        "datasource",
+        "date_from",
+        "date_to",
+        "exclude_deleted",
+        "exclude_nofollow",
+        "item",
+        "max_citation_flow",
+        "max_trust_flow",
+        "min_backlinks",
+        "min_citation_flow",
+        "min_trust_flow",
+        "skip_if_analysis_cost_greater_than",
+        "unique_backlinks_only",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_download_ref_domain_back_links": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "datasource",
+        "item",
+        "max_source_urls_per_ref_domain",
+        "mode",
+        "skip_if_analysis_cost_greater_than"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_fetch_download": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "max_rows",
+        "url"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "url"
+      ]
+    },
+    "majestic_get_anchor_text": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "count",
+        "datasource",
+        "filter_anchor_text",
+        "filter_anchor_text_mode",
+        "filter_ref_domain",
+        "from_offset",
+        "item",
+        "mode",
+        "text_mode",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_get_back_link_data": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "count",
+        "datasource",
+        "enable_sorting_filtering",
+        "filter_topic",
+        "filtering_depth",
+        "filters",
+        "from_offset",
+        "item",
+        "max_source_urls_per_ref_domain",
+        "mode",
+        "ref_domain",
+        "show_domain_info",
+        "sort_by",
+        "sort_dir",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_get_back_links_history": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "datasource",
+        "items",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "items"
+      ]
+    },
+    "majestic_get_downloads_list": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "download_job_id"
+      ],
+      "provider": "Majestic",
+      "required": []
+    },
+    "majestic_get_hosted_domains": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "datasource",
+        "domain",
+        "max_domains"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "domain"
+      ]
+    },
+    "majestic_get_index_item_info": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "add_all_topics",
+        "datasource",
+        "desired_topics",
+        "enable_resource_unit_failover",
+        "items"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "items"
+      ]
+    },
+    "majestic_get_keyword_info": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "keywords"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "keywords"
+      ]
+    },
+    "majestic_get_link_profile": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "datasource",
+        "datatypes",
+        "items",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "items"
+      ]
+    },
+    "majestic_get_new_lost_back_link_calendar": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "datasource",
+        "item",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_get_new_lost_back_links": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "count",
+        "datasource",
+        "date_from",
+        "date_to",
+        "item",
+        "mode",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_get_prefix_query_estimate": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "exact_mode",
+        "item"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_get_ref_domain_info": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "datasource",
+        "items"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "items"
+      ]
+    },
+    "majestic_get_ref_domains": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "analysis_depth",
+        "count",
+        "datasource",
+        "items",
+        "min_matches_required",
+        "order_by",
+        "order_dir",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "items"
+      ]
+    },
+    "majestic_get_related_sites": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "item"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_get_subscription_info": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [],
+      "provider": "Majestic",
+      "required": []
+    },
+    "majestic_get_top_pages": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "count",
+        "datasource",
+        "item",
+        "start_doc",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_get_topics": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "count",
+        "datasource",
+        "from_offset",
+        "item",
+        "sort_by",
+        "sort_order",
+        "use_prefix_scan"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "item"
+      ]
+    },
+    "majestic_search_by_keyword": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "count",
+        "from_offset",
+        "query",
+        "scope"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "query"
+      ]
+    },
+    "majestic_submit_urls_to_crawl": {
+      "errors": [
+        "insufficient_units",
+        "invalid_api_key",
+        "invalid_item",
+        "prefix_scan_not_possible",
+        "rate_limit"
+      ],
+      "params": [
+        "datasource",
+        "items"
+      ],
+      "provider": "Majestic",
+      "required": [
+        "items"
+      ]
+    },
+    "meta_ad_library": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "ad_reached_countries",
+        "ad_type",
+        "country",
+        "media_type",
+        "query"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "query"
+      ]
+    },
+    "meta_ad_library_ad_details": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "ad_archive_id",
+        "ad_details_token",
+        "country",
+        "page_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "ad_archive_id"
+      ]
+    },
+    "meta_ad_library_page_info": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "page_id"
+      ]
+    },
+    "meta_ad_library_page_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country",
+        "query"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "query"
+      ]
+    },
+    "moz_anchor_text": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "limit",
+        "scope",
+        "target"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_brand_authority": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "query",
+        "scope"
+      ],
+      "provider": "Moz",
+      "required": [
+        "query"
+      ]
+    },
+    "moz_keyword_difficulty": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "device",
+        "engine",
+        "keyword",
+        "locale"
+      ],
+      "provider": "Moz",
+      "required": [
+        "keyword"
+      ]
+    },
+    "moz_keyword_metrics": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "device",
+        "engine",
+        "keyword",
+        "locale"
+      ],
+      "provider": "Moz",
+      "required": [
+        "keyword"
+      ]
+    },
+    "moz_keyword_opportunity": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "device",
+        "engine",
+        "keyword",
+        "locale"
+      ],
+      "provider": "Moz",
+      "required": [
+        "keyword"
+      ]
+    },
+    "moz_keyword_priority": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "device",
+        "engine",
+        "keyword",
+        "locale"
+      ],
+      "provider": "Moz",
+      "required": [
+        "keyword"
+      ]
+    },
+    "moz_keyword_suggestions": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "keyword",
+        "limit",
+        "locale"
+      ],
+      "provider": "Moz",
+      "required": [
+        "keyword"
+      ]
+    },
+    "moz_keyword_volume": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "device",
+        "engine",
+        "keyword",
+        "locale"
+      ],
+      "provider": "Moz",
+      "required": [
+        "keyword"
+      ]
+    },
+    "moz_linking_domains": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "limit",
+        "scope",
+        "target"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_links": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "limit",
+        "scope",
+        "target"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_quota": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "path"
+      ],
+      "provider": "Moz",
+      "required": []
+    },
+    "moz_ranking_keywords": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "limit",
+        "locale",
+        "scope",
+        "target"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_ranking_keywords_count": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "locale",
+        "scope",
+        "target"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_search_intent": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "device",
+        "engine",
+        "keyword",
+        "locale"
+      ],
+      "provider": "Moz",
+      "required": [
+        "keyword"
+      ]
+    },
+    "moz_site_metrics": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "query",
+        "scope"
+      ],
+      "provider": "Moz",
+      "required": [
+        "query"
+      ]
+    },
+    "moz_site_metrics_multiple": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "queries",
+        "scope"
+      ],
+      "provider": "Moz",
+      "required": [
+        "queries"
+      ]
+    },
+    "moz_top_pages": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "limit",
+        "scope",
+        "target"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_v2_anchor_text": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "limit",
+        "next_token",
+        "scope",
+        "target"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_v2_final_redirect": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "page"
+      ],
+      "provider": "Moz",
+      "required": [
+        "page"
+      ]
+    },
+    "moz_v2_global_top_pages": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "limit",
+        "next_token"
+      ],
+      "provider": "Moz",
+      "required": []
+    },
+    "moz_v2_global_top_root_domains": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "limit",
+        "next_token"
+      ],
+      "provider": "Moz",
+      "required": []
+    },
+    "moz_v2_index_metadata": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [],
+      "provider": "Moz",
+      "required": []
+    },
+    "moz_v2_link_intersect": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "limit",
+        "min_matching_targets",
+        "negative_targets",
+        "next_token",
+        "positive_targets",
+        "scope",
+        "sort",
+        "source_scope"
+      ],
+      "provider": "Moz",
+      "required": [
+        "positive_targets"
+      ]
+    },
+    "moz_v2_link_status": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "source_scope",
+        "sources",
+        "target",
+        "target_scope"
+      ],
+      "provider": "Moz",
+      "required": [
+        "sources",
+        "target"
+      ]
+    },
+    "moz_v2_linking_root_domains": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "begin_date",
+        "end_date",
+        "filter",
+        "limit",
+        "next_token",
+        "sort",
+        "target",
+        "target_scope"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_v2_links": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "anchor_text",
+        "filter",
+        "limit",
+        "next_token",
+        "sort",
+        "source_root_domain",
+        "source_scope",
+        "subdomains_limited_to_one",
+        "target",
+        "target_scope"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_v2_top_pages": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "daily_history_deltas",
+        "daily_history_values",
+        "filter",
+        "limit",
+        "monthly_history_deltas",
+        "monthly_history_values",
+        "next_token",
+        "scope",
+        "sort",
+        "target"
+      ],
+      "provider": "Moz",
+      "required": [
+        "target"
+      ]
+    },
+    "moz_v2_url_metrics": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "daily_history_deltas",
+        "daily_history_values",
+        "distributions",
+        "monthly_history_deltas",
+        "monthly_history_values",
+        "targets"
+      ],
+      "provider": "Moz",
+      "required": [
+        "targets"
+      ]
+    },
+    "moz_v2_usage_data": {
+      "errors": [
+        "invalid_api_key",
+        "invalid_request",
+        "quota_exceeded",
+        "rate_limit",
+        "transient_upstream"
+      ],
+      "params": [
+        "end",
+        "start"
+      ],
+      "provider": "Moz",
+      "required": []
+    },
+    "naver_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "perplexity_chat": {
+      "errors": [
+        "401",
+        "429"
+      ],
+      "params": [
+        "last_updated_after_filter",
+        "last_updated_before_filter",
+        "messages",
+        "model",
+        "return_related_questions",
+        "search_after_date_filter",
+        "search_before_date_filter",
+        "search_context_size",
+        "search_domain_filter",
+        "search_language_filter",
+        "search_mode",
+        "search_recency_filter",
+        "user_location"
+      ],
+      "provider": "Perplexity",
+      "required": [
+        "messages"
+      ]
+    },
+    "perplexity_responses": {
+      "errors": [
+        "401",
+        "429"
+      ],
+      "params": [
+        "instructions",
+        "language_preference",
+        "max_output_tokens",
+        "max_steps",
+        "model",
+        "preset",
+        "query",
+        "response_format"
+      ],
+      "provider": "Perplexity",
+      "required": [
+        "query"
+      ]
+    },
+    "perplexity_search": {
+      "errors": [
+        "401",
+        "429"
+      ],
+      "params": [
+        "keywords",
+        "product_name",
+        "search_query",
+        "url"
+      ],
+      "provider": "Perplexity",
+      "required": [
+        "keywords",
+        "product_name",
+        "url"
+      ]
+    },
+    "perplexity_search_by_query": {
+      "errors": [
+        "401",
+        "429"
+      ],
+      "params": [
+        "ignore_domain",
+        "search_query"
+      ],
+      "provider": "Perplexity",
+      "required": [
+        "search_query"
+      ]
+    },
+    "reddit_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "resolve_app_store_ids": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "alternate_queries",
+        "brand_name",
+        "company_name",
+        "domain",
+        "gl"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "brand_name"
+      ]
+    },
+    "save_report_to_file": {
+      "errors": [
+        "io",
+        "path_rejected",
+        "validation"
+      ],
+      "params": [
+        "data",
+        "filename"
+      ],
+      "provider": "Project Utility",
+      "required": [
+        "data",
+        "filename"
+      ]
+    },
+    "scrape_review_platforms": {
+      "errors": [
+        "401",
+        "408",
+        "429"
+      ],
+      "params": [
+        "brand_name",
+        "domain"
+      ],
+      "provider": "Firecrawl",
+      "required": [
+        "brand_name"
+      ]
+    },
+    "seo_growth_audit": {
+      "errors": [
+        "parse_error"
+      ],
+      "params": [
+        "all_discovered_urls",
+        "business_goal",
+        "competitor_sitemaps",
+        "gsc_queries",
+        "hero_image_metadata",
+        "html_content",
+        "internal_link_targets",
+        "page_status_codes",
+        "page_url",
+        "redirect_chains",
+        "redirect_map",
+        "response_headers",
+        "rss_feed_xml",
+        "seo_data",
+        "sitemap_urls",
+        "sitemap_xml",
+        "target_query",
+        "trust_pages_status",
+        "website_info_json"
+      ],
+      "provider": "SEO Growth",
+      "required": [
+        "html_content",
+        "page_url"
+      ]
+    },
+    "seo_growth_check_page": {
+      "errors": [
+        "parse_error"
+      ],
+      "params": [
+        "html_content",
+        "page_url",
+        "seo_data"
+      ],
+      "provider": "SEO Growth",
+      "required": [
+        "html_content",
+        "page_url"
+      ]
+    },
+    "seo_growth_check_technical": {
+      "errors": [
+        "parse_error"
+      ],
+      "params": [
+        "all_discovered_urls",
+        "page_status_codes",
+        "redirect_chains",
+        "redirect_map",
+        "response_headers",
+        "rss_feed_xml",
+        "sitemap_urls",
+        "sitemap_xml",
+        "trust_pages_status"
+      ],
+      "provider": "SEO Growth",
+      "required": []
+    },
+    "serpapi_amazon": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "amazon_domain",
+        "delivery_zip",
+        "device",
+        "language",
+        "page",
+        "q",
+        "shipping_location",
+        "sort"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_amazon_product": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "amazon_domain",
+        "asin"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "asin"
+      ]
+    },
+    "serpapi_amazon_reviews": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "amazon_domain",
+        "asin",
+        "page"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "asin"
+      ]
+    },
+    "serpapi_apple_app_store": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "country",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_apple_product": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "country",
+        "product_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "product_id"
+      ]
+    },
+    "serpapi_apple_reviews": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "country",
+        "product_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "product_id"
+      ]
+    },
+    "serpapi_baidu": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "ct",
+        "pn",
+        "q",
+        "rn"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_bing": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "cc",
+        "count",
+        "location",
+        "mkt",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_bing_images": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "count",
+        "mkt",
+        "q",
+        "safeSearch"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_bing_news": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "count",
+        "freshness",
+        "mkt",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_bing_videos": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "count",
+        "mkt",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_duckduckgo": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "kl",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_ebay": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "delivery_zip",
+        "ebay_domain",
+        "location_id",
+        "page",
+        "preferred_location",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_ebay_product": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "ebay_domain",
+        "item_id",
+        "lang",
+        "locale",
+        "shipping_country"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "item_id"
+      ]
+    },
+    "serpapi_facebook_profile": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "profile_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "profile_id"
+      ]
+    },
+    "serpapi_google": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "cr",
+        "device",
+        "filter",
+        "gl",
+        "google_domain",
+        "hl",
+        "location",
+        "lr",
+        "nfpr",
+        "no_cache",
+        "num",
+        "q",
+        "safe",
+        "start",
+        "tbs",
+        "uule"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_ai_overview": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "page_token",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_autocomplete": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_events": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_finance": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_flights": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "arrival_id",
+        "currency",
+        "departure_id",
+        "gl",
+        "hl",
+        "outbound_date",
+        "return_date",
+        "type"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "arrival_id",
+        "departure_id",
+        "outbound_date"
+      ]
+    },
+    "serpapi_google_forums": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_hotels": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "adults",
+        "check_in_date",
+        "check_out_date",
+        "currency",
+        "gl",
+        "hl",
+        "q",
+        "sort_by"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "check_in_date",
+        "check_out_date",
+        "q"
+      ]
+    },
+    "serpapi_google_images": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "ijn",
+        "location",
+        "q",
+        "safe"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_jobs": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "chips",
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_lens": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "url"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "url"
+      ]
+    },
+    "serpapi_google_light": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "num",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_local": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_maps": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "ll",
+        "q",
+        "type"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_maps_directions": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "end_addr",
+        "end_coords",
+        "gl",
+        "hl",
+        "start_addr",
+        "start_coords",
+        "travel_mode"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "end_addr",
+        "start_addr"
+      ]
+    },
+    "serpapi_google_maps_reviews": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "data_id",
+        "hl",
+        "next_page_token",
+        "sort_by"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "data_id"
+      ]
+    },
+    "serpapi_google_news": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_patents": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "country",
+        "patent_number",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_patents_details": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "hl",
+        "patent_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "patent_id"
+      ]
+    },
+    "serpapi_google_play": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q",
+        "store"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_related_questions": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "next_page_token",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_scholar": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "as_yhi",
+        "as_ylo",
+        "hl",
+        "num",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_shopping": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "num",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_trends": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "cat",
+        "data_type",
+        "date",
+        "geo",
+        "gprop",
+        "hl",
+        "q",
+        "region",
+        "tz"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_google_videos": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "location",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_home_depot": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "country",
+        "delivery_zip",
+        "page",
+        "q",
+        "sort",
+        "store_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_naver": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "q",
+        "start",
+        "where"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_tripadvisor": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "lat",
+        "location_id",
+        "lon",
+        "q",
+        "tripadvisor_domain"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_tripadvisor_place": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "data_id",
+        "tripadvisor_domain"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "data_id"
+      ]
+    },
+    "serpapi_walmart": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "device",
+        "max_price",
+        "min_price",
+        "page",
+        "q",
+        "sort",
+        "store_id",
+        "walmart_domain"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_walmart_product": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "product_id",
+        "store_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "product_id"
+      ]
+    },
+    "serpapi_walmart_reviews": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "page",
+        "product_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "product_id"
+      ]
+    },
+    "serpapi_yahoo": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "device",
+        "pz",
+        "q",
+        "vc",
+        "vl",
+        "vm",
+        "yahoo_domain"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_yandex": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "lr",
+        "q"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_yelp": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "find_desc",
+        "find_loc"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "find_desc"
+      ]
+    },
+    "serpapi_yelp_place": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "place_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "place_id"
+      ]
+    },
+    "serpapi_yelp_reviews": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "place_id",
+        "start"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "place_id"
+      ]
+    },
+    "serpapi_youtube": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q",
+        "sp"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "q"
+      ]
+    },
+    "serpapi_youtube_transcript": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "lang",
+        "video_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "video_id"
+      ]
+    },
+    "serpapi_youtube_video": {
+      "errors": [
+        "400",
+        "401",
+        "429"
+      ],
+      "params": [
+        "video_id"
+      ],
+      "provider": "SerpAPI",
+      "required": [
+        "video_id"
+      ]
+    },
+    "shein_product": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "product_id",
+        "shein_domain"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_id"
+      ]
+    },
+    "shein_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page",
+        "q",
+        "shein_domain"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "spyfu_competing_ppc_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "competitor",
+        "country_code",
+        "domain",
+        "page_size"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "competitor",
+        "domain"
+      ]
+    },
+    "spyfu_competing_seo_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "competitor",
+        "country_code",
+        "domain",
+        "page_size"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "competitor",
+        "domain"
+      ]
+    },
+    "spyfu_find_also_buys_ads_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "page_size",
+        "query",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_find_also_ranks_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "page_size",
+        "query",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_find_matching_domains": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "page_size",
+        "query"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_find_question_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "page_size",
+        "query",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_find_related_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "page_size",
+        "query",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_find_transaction_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "page_size",
+        "query",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_get_ad_history": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "domain",
+        "page_size",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_all_domain_stats": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domain"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_bulk_domain_stats": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domains"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domains"
+      ]
+    },
+    "spyfu_get_combined_competitors": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domain"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_domain_stats": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domain",
+        "past_n_months"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_historic_rankings": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domain",
+        "end_date",
+        "page_size",
+        "query_type",
+        "start_date"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_live_seo_stats": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domain"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_most_valuable_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "domain",
+        "page_size",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_new_ppc_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "domain",
+        "page_size",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_new_top_pages": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domain",
+        "page_size"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_paid_search": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "domain",
+        "page_size",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_ppc_competitors": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domain"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_ppc_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "domain",
+        "page_size",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_seo_competitors": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domain"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_get_term_ad_history": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "page_size",
+        "query"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_get_term_ad_history_with_stats": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "page_size",
+        "query"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_get_top_pages": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "domain",
+        "page_size"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "domain"
+      ]
+    },
+    "spyfu_keyword_expansions": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "adult_filter",
+        "country_code",
+        "keyword_search_type",
+        "page_size",
+        "query",
+        "starting_row"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_organic_outranking_keywords": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "competitor",
+        "country_code",
+        "domain",
+        "page_size"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "competitor",
+        "domain"
+      ]
+    },
+    "spyfu_serp_analysis": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "query"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "query"
+      ]
+    },
+    "spyfu_where_they_outrank_you": {
+      "errors": [
+        "401",
+        "404",
+        "429"
+      ],
+      "params": [
+        "competitor",
+        "country_code",
+        "domain",
+        "page_size"
+      ],
+      "provider": "SpyFu",
+      "required": [
+        "competitor",
+        "domain"
+      ]
+    },
+    "tiktok_ads_library": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country",
+        "query",
+        "time_period"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "query"
+      ]
+    },
+    "tiktok_ads_library_advertiser_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "country_code",
+        "query"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "query"
+      ]
+    },
+    "tiktok_profile": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "username"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "username"
+      ]
+    },
+    "tripadvisor_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "category",
+        "lat",
+        "location",
+        "lon",
+        "num",
+        "page",
+        "q",
+        "tripadvisor_domain"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "walmart_product": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "product_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_id"
+      ]
+    },
+    "walmart_reviews": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page",
+        "product_id",
+        "sort_by"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "product_id"
+      ]
+    },
+    "walmart_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "page",
+        "q",
+        "sort_by",
+        "store_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "yandex_reverse_image": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "url"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "url"
+      ]
+    },
+    "yandex_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "lang",
+        "location",
+        "page",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "youtube_channel": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "channel_id",
+        "gl",
+        "hl"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "channel_id"
+      ]
+    },
+    "youtube_channel_videos": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "channel_id",
+        "gl",
+        "hl",
+        "next_page_token"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "channel_id"
+      ]
+    },
+    "youtube_comments": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "hl",
+        "next_page_token",
+        "video_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "video_id"
+      ]
+    },
+    "youtube_search": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "q"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "q"
+      ]
+    },
+    "youtube_transcripts": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "lang",
+        "video_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "video_id"
+      ]
+    },
+    "youtube_video": {
+      "errors": [
+        "401",
+        "422",
+        "429"
+      ],
+      "params": [
+        "gl",
+        "hl",
+        "video_id"
+      ],
+      "provider": "SearchAPI.io",
+      "required": [
+        "video_id"
+      ]
+    }
+  }
+}
