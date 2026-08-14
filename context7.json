@@ -1,0 +1,22 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Prowl MCP Documentation",
+  "description": "One MCP endpoint giving any AI agent 448 market-intelligence tools: SEO, backlinks, paid ads, SERP, app stores, reviews, scraping, LLM mentions.",
+  "folders": ["docs"],
+  "excludeFolders": [".github"],
+  "excludeFiles": [".prowl-sync-state.json"],
+  "rules": [
+    "The Prowl MCP endpoint is https://prowl.chat/mcp — streamable HTTP transport, not stdio",
+    "Authenticate with the header Authorization: Bearer prowl_<key>; OAuth 2.1 access tokens start prowl_oat_",
+    "MCP tool arguments are FLAT — Prowl tools take no nested argument object",
+    "prowl_call_tool takes tool_name and params; the parameter is params, never arguments",
+    "prowl_analyze produces a report and NO artifact; PDF, PPTX, video, infographic and audio need a separate prowl_generate_artifact call on the same session_id",
+    "prowl_generate_artifact and prowl_export_report require a prior prowl_analyze on the SAME session_id",
+    "execution_mode is basic, deep or max; it is a provider-cost ceiling, not a price, and a run is billed what it spent",
+    "Pass a stable session_id across consecutive calls to keep the report cache and conversation history scoped to one conversation",
+    "One run resolves one country+language; the report's first line states the market and whether it was stated, inferred or assumed",
+    "JSON-RPC -32001 is unauthenticated, -32002 rate limited, -32003 authenticated-but-not-allowed (usually an empty wallet), -32603 internal",
+    "Rate limit is 120 requests per minute per API key; honour Retry-After on 429",
+    "Tool prices are runtime configuration and are deliberately not published in this repository"
+  ]
+}
