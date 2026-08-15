@@ -1,6 +1,6 @@
 # MCP tools reference
 
-Connecting an agent to `https://prowl.chat/mcp` registers **22** tools (20 logical plus 2 legacy aliases kept for clients that already call them). These are the tools your agent sees. They are not the same thing as the **448** underlying API tools, which are reached *through* `prowl_call_tool` and are documented under [`../tools/`](../tools/README.md).
+Connecting an agent to `https://prowl.chat/mcp` registers **23** tools (21 logical plus 2 legacy aliases kept for clients that already call them). These are the tools your agent sees. They are not the same thing as the **448** underlying API tools, which are reached *through* `prowl_call_tool` and are documented under [`../tools/`](../tools/README.md).
 
 | Tool | What it does |
 |---|---|
@@ -12,6 +12,7 @@ Connecting an agent to `https://prowl.chat/mcp` registers **22** tools (20 logic
 | `prowl_get_session` | A finished session's report and metadata. |
 | `prowl_get_stats` | Usage and spend for this account. |
 | `prowl_get_tool_info` | Legacy alias of `prowl_tool_info`. |
+| `prowl_get_wallet` | Your balance and which execution modes this key can actually run — free, and the only way to learn either over MCP. `deep` and `max` need a subscription or an admin grant; without one a run does not fail, it resolves to `basic` and is billed as basic. Ask before the spend rather than inferring it from a thinner report. |
 | `prowl_list_playbooks` | The persona-tuned report shapes available to `prowl_analyze`. |
 | `prowl_list_sessions` | Sessions on this account. |
 | `prowl_list_tools` | The underlying API tools, paged. |

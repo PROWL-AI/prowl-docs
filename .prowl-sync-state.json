@@ -8,6 +8,7 @@
     "prowl_get_session",
     "prowl_get_stats",
     "prowl_get_tool_info",
+    "prowl_get_wallet",
     "prowl_list_playbooks",
     "prowl_list_sessions",
     "prowl_list_tools",

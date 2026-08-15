@@ -25,7 +25,7 @@ Cursor, Claude Code, Codex, and a generic client — is in
 [client setup](mcp/client-setup.md).
 
 Verify the connection by asking your agent to list the tools. You should see
-**22** of them.
+**23** of them.
 
 ## 3. Make a call
 

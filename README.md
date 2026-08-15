@@ -11,7 +11,7 @@ Your agent already reasons. It just has no market data.
 ```
 Endpoint   https://prowl.chat/mcp
 Auth       Authorization: Bearer prowl_<your_key>
-Tools      22 registered (20 logical + legacy aliases)
+Tools      23 registered (21 logical + legacy aliases)
 Underneath 448 API tools reachable through prowl_call_tool
 ```
 
@@ -21,7 +21,7 @@ Underneath 448 API tools reachable through prowl_call_tool
 |---|---|
 | [Getting started](docs/getting-started.md) | Key → connect → first call, in that order |
 | [Client setup](docs/mcp/client-setup.md) | Cursor, Claude Code, Codex, and a generic MCP client |
-| [MCP tools reference](docs/mcp/tools-reference.md) | The 22 tools your agent sees |
+| [MCP tools reference](docs/mcp/tools-reference.md) | The 23 tools your agent sees |
 | [Tool catalog](docs/tools/README.md) | All 448 underlying tools, one page each |
 
 ## Then

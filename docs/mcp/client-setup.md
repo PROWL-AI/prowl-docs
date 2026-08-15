@@ -66,7 +66,7 @@ A key is a wallet. A leaked one spends your balance until you revoke it.
 
 ## Verifying it works
 
-Ask your agent to list Prowl's tools. You should see **22**. Then
+Ask your agent to list Prowl's tools. You should see **23**. Then
 the cheapest real call there is:
 
 ```json
