@@ -1,0 +1,1586 @@
+{
+  "components": {
+    "schemas": {
+      "ApiKeyCreatedResponse": {
+        "description": "The one response that carries the raw key \u2014 it is never retrievable again.",
+        "properties": {
+          "allowed_categories": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Allowed Categories"
+          },
+          "daily_spend_limit_usd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Daily Spend Limit Usd"
+          },
+          "denied_categories": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Denied Categories"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "ip_allowlist": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ip Allowlist"
+          },
+          "key": {
+            "description": "The secret. Shown exactly once; store it now.",
+            "title": "Key",
+            "type": "string"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "prefix": {
+            "title": "Prefix",
+            "type": "string"
+          },
+          "total_spend_limit_usd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Total Spend Limit Usd"
+          }
+        },
+        "required": [
+          "id",
+          "key",
+          "prefix",
+          "name"
+        ],
+        "title": "ApiKeyCreatedResponse",
+        "type": "object"
+      },
+      "ApiKeyListResponse": {
+        "properties": {
+          "keys": {
+            "items": {
+              "$ref": "#/components/schemas/ApiKeySummary"
+            },
+            "title": "Keys",
+            "type": "array"
+          }
+        },
+        "required": [
+          "keys"
+        ],
+        "title": "ApiKeyListResponse",
+        "type": "object"
+      },
+      "ApiKeySummary": {
+        "description": "A key as it can be shown back. Never carries the secret or its hash.",
+        "properties": {
+          "allowed_categories": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Allowed Categories",
+            "type": "array"
+          },
+          "created_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Created At"
+          },
+          "daily_spend_limit_usd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Daily Spend Limit Usd"
+          },
+          "denied_categories": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Denied Categories",
+            "type": "array"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "ip_allowlist": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Ip Allowlist",
+            "type": "array"
+          },
+          "is_active": {
+            "title": "Is Active",
+            "type": "boolean"
+          },
+          "last_used_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Used At"
+          },
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name"
+          },
+          "prefix": {
+            "description": "First characters of the key, enough to tell keys apart.",
+            "title": "Prefix",
+            "type": "string"
+          },
+          "total_spend_limit_usd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Total Spend Limit Usd"
+          }
+        },
+        "required": [
+          "id",
+          "prefix",
+          "is_active"
+        ],
+        "title": "ApiKeySummary",
+        "type": "object"
+      },
+      "CatalogResponse": {
+        "description": "Every registered tool with the fields needed to choose one.",
+        "properties": {
+          "categories": {
+            "description": "Every category present, sorted.",
+            "items": {
+              "type": "string"
+            },
+            "title": "Categories",
+            "type": "array"
+          },
+          "count": {
+            "title": "Count",
+            "type": "integer"
+          },
+          "tools": {
+            "items": {
+              "$ref": "#/components/schemas/CatalogRow"
+            },
+            "title": "Tools",
+            "type": "array"
+          }
+        },
+        "required": [
+          "tools",
+          "count",
+          "categories"
+        ],
+        "title": "CatalogResponse",
+        "type": "object"
+      },
+      "CatalogRow": {
+        "description": "One tool as the catalog renders it: what it does, who runs it, what it costs.",
+        "properties": {
+          "category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Category"
+          },
+          "cost_source": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Cost Source"
+          },
+          "description": {
+            "default": "",
+            "title": "Description",
+            "type": "string"
+          },
+          "estimated_billed_usd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Estimated Billed Usd"
+          },
+          "provider": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Provider"
+          },
+          "provider_docs": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "The third party's own documentation, where they publish one.",
+            "title": "Provider Docs"
+          },
+          "reference_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "This tool's page in the public documentation. Resolves for a signed-out reader.",
+            "title": "Reference Url"
+          },
+          "tags": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Tags",
+            "type": "array"
+          },
+          "tool_name": {
+            "title": "Tool Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "tool_name"
+        ],
+        "title": "CatalogRow",
+        "type": "object"
+      },
+      "CreateMCPKeyRequest": {
+        "description": "POST /api/mcp/keys body.",
+        "properties": {
+          "allowed_categories": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Allowed Categories",
+            "type": "array"
+          },
+          "daily_spend_limit_usd": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Daily Spend Limit Usd"
+          },
+          "denied_categories": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Denied Categories",
+            "type": "array"
+          },
+          "ip_allowlist": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Ip Allowlist",
+            "type": "array"
+          },
+          "name": {
+            "default": "",
+            "maxLength": 120,
+            "title": "Name",
+            "type": "string"
+          },
+          "total_spend_limit_usd": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Total Spend Limit Usd"
+          }
+        },
+        "title": "CreateMCPKeyRequest",
+        "type": "object"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "title": "Detail",
+            "type": "array"
+          }
+        },
+        "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "InvocationsResponse": {
+        "description": "Recent metered calls, newest first.",
+        "properties": {
+          "count": {
+            "description": "Number of rows in this response, not the lifetime total.",
+            "title": "Count",
+            "type": "integer"
+          },
+          "invocations": {
+            "items": {
+              "$ref": "#/components/schemas/ToolInvocation"
+            },
+            "title": "Invocations",
+            "type": "array"
+          }
+        },
+        "required": [
+          "invocations",
+          "count"
+        ],
+        "title": "InvocationsResponse",
+        "type": "object"
+      },
+      "PricingResponse": {
+        "description": "The public price list. Takes no credential, and publishes no margin.",
+        "properties": {
+          "count": {
+            "description": "Rows returned, after the `limit` was applied.",
+            "title": "Count",
+            "type": "integer"
+          },
+          "price_note": {
+            "description": "What the price figure means to a caller.",
+            "title": "Price Note",
+            "type": "string"
+          },
+          "tools": {
+            "items": {
+              "$ref": "#/components/schemas/PricingRow"
+            },
+            "title": "Tools",
+            "type": "array"
+          },
+          "total_tools": {
+            "description": "Rows available before the limit.",
+            "title": "Total Tools",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "tools",
+          "count",
+          "total_tools",
+          "price_note"
+        ],
+        "title": "PricingResponse",
+        "type": "object"
+      },
+      "PricingRow": {
+        "description": "What one tool costs the caller. Never what it costs us.",
+        "properties": {
+          "category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Category"
+          },
+          "cost_source": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "How the figure was derived \u2014 a published rate card, or a measurement.",
+            "title": "Cost Source"
+          },
+          "estimated_billed_usd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "What a representative call debits from your wallet. Computed at runtime; the actual debit follows the live provider cost.",
+            "title": "Estimated Billed Usd"
+          },
+          "provider": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Provider"
+          },
+          "tool_name": {
+            "title": "Tool Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "tool_name"
+        ],
+        "title": "PricingRow",
+        "type": "object"
+      },
+      "RevokedResponse": {
+        "description": "Revocation is immediate: the next call with this key fails authentication.",
+        "properties": {
+          "success": {
+            "title": "Success",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "success"
+        ],
+        "title": "RevokedResponse",
+        "type": "object"
+      },
+      "ToolHealth": {
+        "description": "Aggregate outcome for one tool. No per-user data, by construction.",
+        "properties": {
+          "last_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "ISO-8601 time of that call.",
+            "title": "Last At"
+          },
+          "last_status": {
+            "description": "Outcome of the most recent call: `ok` or `error`.",
+            "title": "Last Status",
+            "type": "string"
+          },
+          "success": {
+            "description": "How many of them succeeded.",
+            "title": "Success",
+            "type": "integer"
+          },
+          "success_rate": {
+            "description": "Percentage, 0-100.",
+            "title": "Success Rate",
+            "type": "number"
+          },
+          "total": {
+            "description": "Calls inside the window, across all users.",
+            "title": "Total",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "total",
+          "success",
+          "success_rate",
+          "last_status"
+        ],
+        "title": "ToolHealth",
+        "type": "object"
+      },
+      "ToolHealthResponse": {
+        "description": "Platform health per tool. A tool absent from `tools` had no calls in the window.",
+        "properties": {
+          "tools": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/ToolHealth"
+            },
+            "description": "Keyed by tool name. Absent means idle, which the UI reads as healthy.",
+            "title": "Tools",
+            "type": "object"
+          },
+          "window_minutes": {
+            "title": "Window Minutes",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "window_minutes",
+          "tools"
+        ],
+        "title": "ToolHealthResponse",
+        "type": "object"
+      },
+      "ToolInvocation": {
+        "description": "One metered tool call belonging to the authenticated caller.\n\n`provider_cost_usd` and `markup_usd` are named here on purpose: this is the\ncaller's own transaction, and a wallet they cannot reconcile is a wallet they\ncannot trust. DOC-12 governs the *unauthenticated* surfaces, where neither the\nfigures nor a formula for them appear.",
+        "properties": {
+          "api_key_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Which API key made the call.",
+            "title": "Api Key Id"
+          },
+          "billed_usd": {
+            "description": "What this call actually debited from the wallet.",
+            "title": "Billed Usd",
+            "type": "number"
+          },
+          "created_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "ISO-8601 timestamp of the call.",
+            "title": "Created At"
+          },
+          "latency_ms": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Round-trip time in milliseconds.",
+            "title": "Latency Ms"
+          },
+          "markup_usd": {
+            "description": "The difference between the two figures above.",
+            "title": "Markup Usd",
+            "type": "number"
+          },
+          "provider_cost_usd": {
+            "description": "What the upstream provider charged for this call.",
+            "title": "Provider Cost Usd",
+            "type": "number"
+          },
+          "success": {
+            "description": "Whether the provider returned a usable result.",
+            "title": "Success",
+            "type": "boolean"
+          },
+          "tool_name": {
+            "description": "Registry name of the tool that was called.",
+            "title": "Tool Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "tool_name",
+          "provider_cost_usd",
+          "billed_usd",
+          "markup_usd",
+          "success"
+        ],
+        "title": "ToolInvocation",
+        "type": "object"
+      },
+      "UsageByTool": {
+        "description": "Spend rolled up per tool over the requested window.",
+        "properties": {
+          "billed_usd": {
+            "title": "Billed Usd",
+            "type": "number"
+          },
+          "calls": {
+            "title": "Calls",
+            "type": "integer"
+          },
+          "tool_name": {
+            "title": "Tool Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "tool_name",
+          "calls",
+          "billed_usd"
+        ],
+        "title": "UsageByTool",
+        "type": "object"
+      },
+      "UsageSummaryResponse": {
+        "description": "Spend over a window, with the current balances alongside it.\n\nInherits `WalletBalances` because the handler spreads the wallet into its reply\n(`persistence/wallet.py:2405`) \u2014 modelling it any other way would make the\nenforced filter drop the four balance fields the dashboard reads.",
+        "properties": {
+          "by_tool": {
+            "description": "Top 20 tools by spend, highest first.",
+            "items": {
+              "$ref": "#/components/schemas/UsageByTool"
+            },
+            "title": "By Tool",
+            "type": "array"
+          },
+          "days": {
+            "description": "Length of the window this summary covers, in days.",
+            "title": "Days",
+            "type": "integer"
+          },
+          "extra_balance_usd": {
+            "description": "Top-up credit. Never expires, spent after the subscription pool.",
+            "title": "Extra Balance Usd",
+            "type": "number"
+          },
+          "invocation_count": {
+            "description": "Metered calls inside the window.",
+            "title": "Invocation Count",
+            "type": "integer"
+          },
+          "subscription_balance_usd": {
+            "description": "Plan credit for the current period. Burns at period end, spent first.",
+            "title": "Subscription Balance Usd",
+            "type": "number"
+          },
+          "total_available_usd": {
+            "description": "What the next call can draw on: the two pools added together.",
+            "title": "Total Available Usd",
+            "type": "number"
+          },
+          "total_billed_usd": {
+            "description": "Total debited from the wallet inside the window.",
+            "title": "Total Billed Usd",
+            "type": "number"
+          },
+          "total_provider_usd": {
+            "description": "Total upstream provider cost inside the window.",
+            "title": "Total Provider Usd",
+            "type": "number"
+          },
+          "updated_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "ISO-8601 timestamp of the last balance change, or null if never moved.",
+            "title": "Updated At"
+          }
+        },
+        "required": [
+          "subscription_balance_usd",
+          "extra_balance_usd",
+          "total_available_usd",
+          "days",
+          "invocation_count",
+          "total_billed_usd",
+          "total_provider_usd",
+          "by_tool"
+        ],
+        "title": "UsageSummaryResponse",
+        "type": "object"
+      },
+      "ValidationError": {
+        "properties": {
+          "ctx": {
+            "title": "Context",
+            "type": "object"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError",
+        "type": "object"
+      },
+      "WalletBalances": {
+        "description": "The two pools a caller spends from, rounded to whole cents at this boundary.\n\nSub-cent precision is deliberate *inside* the store (SSH-305) and deliberately\nabsent here \u2014 `web/server.py::_rounded_wallet_fields` rounds on the way out so a\ndisplay value never carries a float tail.",
+        "properties": {
+          "extra_balance_usd": {
+            "description": "Top-up credit. Never expires, spent after the subscription pool.",
+            "title": "Extra Balance Usd",
+            "type": "number"
+          },
+          "subscription_balance_usd": {
+            "description": "Plan credit for the current period. Burns at period end, spent first.",
+            "title": "Subscription Balance Usd",
+            "type": "number"
+          },
+          "total_available_usd": {
+            "description": "What the next call can draw on: the two pools added together.",
+            "title": "Total Available Usd",
+            "type": "number"
+          },
+          "updated_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "ISO-8601 timestamp of the last balance change, or null if never moved.",
+            "title": "Updated At"
+          }
+        },
+        "required": [
+          "subscription_balance_usd",
+          "extra_balance_usd",
+          "total_available_usd"
+        ],
+        "title": "WalletBalances",
+        "type": "object"
+      }
+    },
+    "securitySchemes": {
+      "bearerAuth": {
+        "description": "A `prowl_...` API key from MCP Home, or a JWT from sign-in. Sent as `Authorization: Bearer <token>`.",
+        "scheme": "bearer",
+        "type": "http"
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Prowl documentation",
+    "url": "https://prowl.chat/docs/"
+  },
+  "info": {
+    "contact": {
+      "email": "support@prowl.chat",
+      "name": "Prowl",
+      "url": "https://prowl.chat/contact/"
+    },
+    "description": "The REST surface an agent uses to watch what it is spending.\n\nProwl's product surface is the MCP endpoint at `https://prowl.chat/mcp`, where an agent\ngains 448 market-intelligence tools and every call is metered against a prepaid USD\nwallet. This API is the other half of that arrangement: read the balance, read what each\ncall cost, and manage the keys that authorise them.\n\nAuthentication is a bearer token \u2014 either a JWT from sign-in or a `prowl_...` API key\ngenerated in MCP Home. Two operations need no credential at all, because a price list\nthat demands a key cannot be compared before you buy: `GET /api/v1/tools/pricing` and\n`GET /api/v1/tools/catalog`.\n",
+    "license": {
+      "name": "Proprietary",
+      "url": "https://prowl.chat/terms/"
+    },
+    "summary": "Wallet, usage, tool catalog and API keys for agents using Prowl.",
+    "title": "Prowl REST API v1",
+    "version": "1.0.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/api/v1/keys": {
+      "get": {
+        "description": "Every key on the account with its scope, limits and last use. Secrets are never returned \u2014 only the prefix, which is enough to tell two keys apart.",
+        "operationId": "getKeys",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "prowl_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Prowl Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiKeyListResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "description": "Missing, malformed or expired credential."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "List API keys"
+      },
+      "post": {
+        "description": "Mints a `prowl_...` key, optionally scoped to categories, spend limits and an IP allowlist. **The secret is returned once and is never retrievable again** \u2014 store it when you receive it.",
+        "operationId": "createKeys",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "prowl_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Prowl Session"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMCPKeyRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiKeyCreatedResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "description": "Missing, malformed or expired credential."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "Create an API key"
+      }
+    },
+    "/api/v1/keys/{key_id}": {
+      "delete": {
+        "description": "Takes effect immediately: the next call presenting this key fails authentication. Revoking the key behind an OAuth connector kills that connector too, without touching the OAuth grant.",
+        "operationId": "revokeKeys",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "key_id",
+            "required": true,
+            "schema": {
+              "title": "Key Id",
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "prowl_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Prowl Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RevokedResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "description": "Missing, malformed or expired credential."
+          },
+          "404": {
+            "description": "No such key on this account, or already revoked."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "Revoke an API key"
+      }
+    },
+    "/api/v1/tools/catalog": {
+      "get": {
+        "description": "Every registered tool with what it does, who runs it, what it costs and where its documentation lives. No credential required. This is the endpoint to read when choosing which tool answers a question.",
+        "operationId": "getToolsCatalog",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CatalogResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Browse the full tool catalog"
+      }
+    },
+    "/api/v1/tools/health": {
+      "get": {
+        "description": "Success rate and latest outcome per tool over a recent window, aggregated across all callers \u2014 no per-user data. A tool missing from the reply had no calls in the window, which reads as idle rather than broken.",
+        "operationId": "getToolsHealth",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "window_minutes",
+            "required": false,
+            "schema": {
+              "default": 60,
+              "title": "Window Minutes",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "prowl_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Prowl Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToolHealthResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "description": "Missing, malformed or expired credential."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "Read per-tool health"
+      }
+    },
+    "/api/v1/tools/pricing": {
+      "get": {
+        "description": "What each tool costs to call, with no credential required \u2014 a price you cannot read before signing up is a price you cannot compare. Returns what a call debits from your wallet, and nothing about how that figure is arrived at.",
+        "operationId": "getToolsPricing",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 100,
+              "title": "Limit",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PricingResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Read the public price list"
+      }
+    },
+    "/api/v1/usage/summary": {
+      "get": {
+        "description": "Spend rolled up over the last `days` days \u2014 totals, the twenty tools that cost the most, and the current balances alongside them so a budget decision needs one request rather than two.",
+        "operationId": "getUsageSummary",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "days",
+            "required": false,
+            "schema": {
+              "default": 30,
+              "title": "Days",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "prowl_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Prowl Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UsageSummaryResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "description": "Missing, malformed or expired credential."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "Summarise spend over a window"
+      }
+    },
+    "/api/v1/usage/tools": {
+      "get": {
+        "description": "Identical to `GET /api/v1/wallet/invocations`; kept because usage and wallet are two words for the same question and clients reach for both.",
+        "operationId": "getUsageTools",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 10,
+              "title": "Limit",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "prowl_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Prowl Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InvocationsResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "description": "Missing, malformed or expired credential."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "List recent metered calls (alias)"
+      }
+    },
+    "/api/v1/wallet": {
+      "get": {
+        "description": "Returns the two pools a call is paid from: plan credit, which burns at the end of the billing period and is spent first, and top-up credit, which never expires. Figures are rounded to whole cents at this boundary.",
+        "operationId": "getWallet",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "prowl_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Prowl Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WalletBalances"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "description": "Missing, malformed or expired credential."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "Read wallet balances"
+      }
+    },
+    "/api/v1/wallet/invocations": {
+      "get": {
+        "description": "Every tool call this account has been billed for, newest first, with what the provider charged and what the wallet was debited. Use it to reconcile a balance against the work that produced it.",
+        "operationId": "getWalletInvocations",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 10,
+              "title": "Limit",
+              "type": "integer"
+            }
+          },
+          {
+            "in": "header",
+            "name": "authorization",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          },
+          {
+            "in": "cookie",
+            "name": "prowl_session",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Prowl Session"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InvocationsResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "description": "Missing, malformed or expired credential."
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "summary": "List recent metered calls"
+      }
+    }
+  },
+  "servers": [
+    {
+      "description": "Production",
+      "url": "https://prowl.chat"
+    }
+  ]
+}
