@@ -877,7 +877,7 @@
       "name": "Prowl",
       "url": "https://prowl.chat/contact/"
     },
-    "description": "The REST surface an agent uses to watch what it is spending.\n\nProwl's product surface is the MCP endpoint at `https://prowl.chat/mcp`, where an agent\ngains 448 market-intelligence tools and every call is metered against a prepaid USD\nwallet. This API is the other half of that arrangement: read the balance, read what each\ncall cost, and manage the keys that authorise them.\n\nAuthentication is a bearer token \u2014 either a JWT from sign-in or a `prowl_...` API key\ngenerated in MCP Home. Two operations need no credential at all, because a price list\nthat demands a key cannot be compared before you buy: `GET /api/v1/tools/pricing` and\n`GET /api/v1/tools/catalog`.\n",
+    "description": "The REST surface an agent uses to watch what it is spending.\n\nProwl's product surface is the MCP endpoint at `https://prowl.chat/mcp`, where an agent\ngains 447 market-intelligence tools and every call is metered against a prepaid USD\nwallet. This API is the other half of that arrangement: read the balance, read what each\ncall cost, and manage the keys that authorise them.\n\nAuthentication is a bearer token \u2014 either a JWT from sign-in or a `prowl_...` API key\ngenerated in MCP Home. Two operations need no credential at all, because a price list\nthat demands a key cannot be compared before you buy: `GET /api/v1/tools/pricing` and\n`GET /api/v1/tools/catalog`.\n",
     "license": {
       "name": "Proprietary",
       "url": "https://prowl.chat/terms/"

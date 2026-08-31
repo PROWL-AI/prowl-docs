@@ -1,7 +1,7 @@
 {
   "$schema": "https://context7.com/schema/context7.json",
   "projectTitle": "Prowl MCP Documentation",
-  "description": "One MCP endpoint giving any AI agent 448 market-intelligence tools: SEO, backlinks, paid ads, SERP, app stores, reviews, scraping, LLM mentions.",
+  "description": "One MCP endpoint giving any AI agent 447 market-intelligence tools: SEO, backlinks, paid ads, SERP, app stores, reviews, scraping, LLM mentions.",
   "folders": ["docs"],
   "excludeFolders": [".github"],
   "excludeFiles": [".prowl-sync-state.json"],

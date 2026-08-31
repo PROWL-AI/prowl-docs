@@ -5,7 +5,7 @@ Wallet, usage, tool catalog and API keys for agents using Prowl.
 The REST surface an agent uses to watch what it is spending.
 
 Prowl's product surface is the MCP endpoint at `https://prowl.chat/mcp`, where an agent
-gains 448 market-intelligence tools and every call is metered against a prepaid USD
+gains 447 market-intelligence tools and every call is metered against a prepaid USD
 wallet. This API is the other half of that arrangement: read the balance, read what each
 call cost, and manage the keys that authorise them.
 

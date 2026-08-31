@@ -1,7 +1,7 @@
 # Prowl documentation
 
 **The market intelligence connector for AI agents.** One MCP endpoint gives any
-agent — Cursor, Claude Code, Codex, or your own stack — **448** market
+agent — Cursor, Claude Code, Codex, or your own stack — **447** market
 data tools across **17** providers: SEO, backlinks, paid ads, SERP,
 app stores, reviews, web scraping and LLM-mention tracking. Billed per call against
 one USD wallet.
@@ -12,7 +12,7 @@ Your agent already reasons. It just has no market data.
 Endpoint   https://prowl.chat/mcp
 Auth       Authorization: Bearer prowl_<your_key>
 Tools      23 registered (21 logical + legacy aliases)
-Underneath 448 API tools reachable through prowl_call_tool
+Underneath 447 API tools reachable through prowl_call_tool
 ```
 
 ## Start here
@@ -22,7 +22,7 @@ Underneath 448 API tools reachable through prowl_call_tool
 | [Getting started](docs/getting-started.md) | Key → connect → first call, in that order |
 | [Client setup](docs/mcp/client-setup.md) | Cursor, Claude Code, Codex, and a generic MCP client |
 | [MCP tools reference](docs/mcp/tools-reference.md) | The 23 tools your agent sees |
-| [Tool catalog](docs/tools/README.md) | All 448 underlying tools, one page each |
+| [Tool catalog](docs/tools/README.md) | All 447 underlying tools, one page each |
 
 ## Then
 

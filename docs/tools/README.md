@@ -1,4 +1,4 @@
-# Tool catalog — 448 tools
+# Tool catalog — 447 tools
 
 Every tool an agent can reach through the Prowl MCP endpoint at `https://prowl.chat/mcp`, across 17 providers. Each page carries the input schema, an example request, the response shape, the error table and the tools it chains with.
 
@@ -470,16 +470,6 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 | `firecrawl_search` | [firecrawl/firecrawl_search.md](firecrawl/firecrawl_search.md) |
 | `scrape_review_platforms` | [firecrawl/scrape_review_platforms.md](firecrawl/scrape_review_platforms.md) |
 
-### Exa (5)
-
-| Tool | Reference |
-|---|---|
-| `exa_answer` | [exa/exa_answer.md](exa/exa_answer.md) |
-| `exa_get_contents` | [exa/exa_get_contents.md](exa/exa_get_contents.md) |
-| `exa_keyword_search` | [exa/exa_keyword_search.md](exa/exa_keyword_search.md) |
-| `exa_research` | [exa/exa_research.md](exa/exa_research.md) |
-| `exa_similar_search` | [exa/exa_similar_search.md](exa/exa_similar_search.md) |
-
 ### Google Gemini (5)
 
 | Tool | Reference |
@@ -499,6 +489,15 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 | `llm_query_grok` | [openrouter/llm_query_grok.md](openrouter/llm_query_grok.md) |
 | `llm_query_openai` | [openrouter/llm_query_openai.md](openrouter/llm_query_openai.md) |
 | `llm_query_perplexity` | [openrouter/llm_query_perplexity.md](openrouter/llm_query_perplexity.md) |
+
+### Exa (4)
+
+| Tool | Reference |
+|---|---|
+| `exa_answer` | [exa/exa_answer.md](exa/exa_answer.md) |
+| `exa_get_contents` | [exa/exa_get_contents.md](exa/exa_get_contents.md) |
+| `exa_keyword_search` | [exa/exa_keyword_search.md](exa/exa_keyword_search.md) |
+| `exa_similar_search` | [exa/exa_similar_search.md](exa/exa_similar_search.md) |
 
 ### Perplexity (4)
 

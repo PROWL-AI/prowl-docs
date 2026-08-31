@@ -1,11 +1,11 @@
 ---
 name: prowl-docs
-description: Reference for the Prowl MCP endpoint — connecting an agent, authenticating, what each of the 23 MCP tools does, and the input schema, example request and error table for every one of the 448 underlying market-intelligence tools (SEO, backlinks, paid ads, SERP, app stores, reviews, scraping, LLM-mention tracking). Use when wiring Prowl into an agent, choosing a tool for a market-data question, or debugging a Prowl call.
+description: Reference for the Prowl MCP endpoint — connecting an agent, authenticating, what each of the 23 MCP tools does, and the input schema, example request and error table for every one of the 447 underlying market-intelligence tools (SEO, backlinks, paid ads, SERP, app stores, reviews, scraping, LLM-mention tracking). Use when wiring Prowl into an agent, choosing a tool for a market-data question, or debugging a Prowl call.
 ---
 
 # Prowl MCP — reference
 
-Prowl is one MCP endpoint that gives an agent **448** market data tools
+Prowl is one MCP endpoint that gives an agent **447** market data tools
 across **17** providers, billed per call against a USD wallet.
 
 ```
@@ -54,7 +54,7 @@ time out, use `prowl_start_session` and poll `prowl_session_status`.
 | | |
 |---|---|
 | [`docs/mcp/tools-reference.md`](docs/mcp/tools-reference.md) | the 23 MCP tools |
-| [`docs/tools/README.md`](docs/tools/README.md) | all 448 underlying tools, one page each |
+| [`docs/tools/README.md`](docs/tools/README.md) | all 447 underlying tools, one page each |
 | [`docs/mcp/client-setup.md`](docs/mcp/client-setup.md) | Cursor, Claude Code, Codex, generic |
 | [`docs/errors.md`](docs/errors.md) | every code and its action |
 | [`docs/billing.md`](docs/billing.md) | wallet, tiers, holds |

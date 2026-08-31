@@ -3,7 +3,7 @@ name: llm_query_grok
 provider: OpenRouter
 provider_slug: openrouter
 category: ai
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-08-31T16:42:35Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -46,7 +46,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 |-------|------|----------|---------|-------------|
 | `query` | string | yes |  | The question to ask the model. Phrase as a direct question (e.g. 'What do you know about Notion as a product?') so the model returns its trained knowledge. |
 | `system_prompt` | string | no |  | Optional system prompt override. Defaults to a factual knowledge-style instruction. Use to shape tone (e.g. 'Respond in 3 bullet points'). |
-| `max_tokens` | integer | no | `2000` | Max output tokens. |
+| `max_tokens` | integer | no | `4096` | Max output tokens. |
 | `temperature` | number | no | `0.2` | Sampling temperature (0.0-1.0). Lower = more factual. |
 
 ### JSON Schema
@@ -66,7 +66,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     "max_tokens": {
       "type": "integer",
       "description": "Max output tokens.",
-      "default": 2000
+      "default": 4096
     },
     "temperature": {
       "type": "number",

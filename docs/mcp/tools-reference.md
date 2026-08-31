@@ -1,6 +1,6 @@
 # MCP tools reference
 
-Connecting an agent to `https://prowl.chat/mcp` registers **23** tools (21 logical plus 2 legacy aliases kept for clients that already call them). These are the tools your agent sees. They are not the same thing as the **448** underlying API tools, which are reached *through* `prowl_call_tool` and are documented under [`../tools/`](../tools/README.md).
+Connecting an agent to `https://prowl.chat/mcp` registers **23** tools (21 logical plus 2 legacy aliases kept for clients that already call them). These are the tools your agent sees. They are not the same thing as the **447** underlying API tools, which are reached *through* `prowl_call_tool` and are documented under [`../tools/`](../tools/README.md).
 
 | Tool | What it does |
 |---|---|

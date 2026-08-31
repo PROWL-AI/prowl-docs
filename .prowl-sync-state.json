@@ -3962,20 +3962,6 @@
         "url"
       ]
     },
-    "exa_research": {
-      "errors": [
-        "401",
-        "429"
-      ],
-      "params": [
-        "instructions",
-        "output_schema"
-      ],
-      "provider": "Exa",
-      "required": [
-        "instructions"
-      ]
-    },
     "exa_similar_search": {
       "errors": [
         "401",
