@@ -1,4 +1,4 @@
-# Tool catalog — 447 tools
+# Tool catalog — 444 tools
 
 Every tool an agent can reach through the Prowl MCP endpoint at `https://prowl.chat/mcp`, across 17 providers. Each page carries the input schema, an example request, the response shape, the error table and the tools it chains with.
 
@@ -6,7 +6,7 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 
 ## By provider
 
-### DataForSEO (149)
+### DataForSEO (148)
 
 | Tool | Reference |
 |---|---|
@@ -141,7 +141,6 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 | `dataforseo_serp_google_autocomplete` | [dataforseo/dataforseo_serp_google_autocomplete.md](dataforseo/dataforseo_serp_google_autocomplete.md) |
 | `dataforseo_serp_google_dataset_info` | [dataforseo/dataforseo_serp_google_dataset_info.md](dataforseo/dataforseo_serp_google_dataset_info.md) |
 | `dataforseo_serp_google_dataset_search` | [dataforseo/dataforseo_serp_google_dataset_search.md](dataforseo/dataforseo_serp_google_dataset_search.md) |
-| `dataforseo_serp_google_events` | [dataforseo/dataforseo_serp_google_events.md](dataforseo/dataforseo_serp_google_events.md) |
 | `dataforseo_serp_google_finance_explore` | [dataforseo/dataforseo_serp_google_finance_explore.md](dataforseo/dataforseo_serp_google_finance_explore.md) |
 | `dataforseo_serp_google_finance_markets` | [dataforseo/dataforseo_serp_google_finance_markets.md](dataforseo/dataforseo_serp_google_finance_markets.md) |
 | `dataforseo_serp_google_finance_quote` | [dataforseo/dataforseo_serp_google_finance_quote.md](dataforseo/dataforseo_serp_google_finance_quote.md) |
@@ -160,7 +159,7 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 | `dataforseo_serp_youtube_video_info` | [dataforseo/dataforseo_serp_youtube_video_info.md](dataforseo/dataforseo_serp_youtube_video_info.md) |
 | `dataforseo_serp_youtube_video_subtitles` | [dataforseo/dataforseo_serp_youtube_video_subtitles.md](dataforseo/dataforseo_serp_youtube_video_subtitles.md) |
 
-### SearchAPI.io (99)
+### SearchAPI.io (98)
 
 | Tool | Reference |
 |---|---|
@@ -191,7 +190,6 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 | `google_ai_overview` | [searchapi/google_ai_overview.md](searchapi/google_ai_overview.md) |
 | `google_autocomplete` | [searchapi/google_autocomplete.md](searchapi/google_autocomplete.md) |
 | `google_books` | [searchapi/google_books.md](searchapi/google_books.md) |
-| `google_events` | [searchapi/google_events.md](searchapi/google_events.md) |
 | `google_finance` | [searchapi/google_finance.md](searchapi/google_finance.md) |
 | `google_flights` | [searchapi/google_flights.md](searchapi/google_flights.md) |
 | `google_flights_calendar` | [searchapi/google_flights_calendar.md](searchapi/google_flights_calendar.md) |
@@ -264,7 +262,7 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 | `youtube_transcripts` | [searchapi/youtube_transcripts.md](searchapi/youtube_transcripts.md) |
 | `youtube_video` | [searchapi/youtube_video.md](searchapi/youtube_video.md) |
 
-### SerpAPI (55)
+### SerpAPI (54)
 
 | Tool | Reference |
 |---|---|
@@ -286,7 +284,6 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 | `serpapi_google` | [serpapi/serpapi_google.md](serpapi/serpapi_google.md) |
 | `serpapi_google_ai_overview` | [serpapi/serpapi_google_ai_overview.md](serpapi/serpapi_google_ai_overview.md) |
 | `serpapi_google_autocomplete` | [serpapi/serpapi_google_autocomplete.md](serpapi/serpapi_google_autocomplete.md) |
-| `serpapi_google_events` | [serpapi/serpapi_google_events.md](serpapi/serpapi_google_events.md) |
 | `serpapi_google_finance` | [serpapi/serpapi_google_finance.md](serpapi/serpapi_google_finance.md) |
 | `serpapi_google_flights` | [serpapi/serpapi_google_flights.md](serpapi/serpapi_google_flights.md) |
 | `serpapi_google_forums` | [serpapi/serpapi_google_forums.md](serpapi/serpapi_google_forums.md) |

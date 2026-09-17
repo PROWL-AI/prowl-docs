@@ -3349,32 +3349,6 @@
         "keyword"
       ]
     },
-    "dataforseo_serp_google_events": {
-      "errors": [
-        "401",
-        "402",
-        "429",
-        "500"
-      ],
-      "params": [
-        "date_range",
-        "depth",
-        "keyword",
-        "language_code",
-        "language_name",
-        "location_code",
-        "location_coordinate",
-        "location_name",
-        "max_crawl_pages",
-        "os",
-        "se_domain",
-        "tag"
-      ],
-      "provider": "DataForSEO",
-      "required": [
-        "keyword"
-      ]
-    },
     "dataforseo_serp_google_finance_explore": {
       "errors": [
         "401",
@@ -4515,23 +4489,6 @@
         "num",
         "q",
         "tbm"
-      ],
-      "provider": "SearchAPI.io",
-      "required": [
-        "q"
-      ]
-    },
-    "google_events": {
-      "errors": [
-        "401",
-        "422",
-        "429"
-      ],
-      "params": [
-        "gl",
-        "hl",
-        "location",
-        "q"
       ],
       "provider": "SearchAPI.io",
       "required": [
@@ -7231,23 +7188,6 @@
       "params": [
         "gl",
         "hl",
-        "q"
-      ],
-      "provider": "SerpAPI",
-      "required": [
-        "q"
-      ]
-    },
-    "serpapi_google_events": {
-      "errors": [
-        "400",
-        "401",
-        "429"
-      ],
-      "params": [
-        "gl",
-        "hl",
-        "location",
         "q"
       ],
       "provider": "SerpAPI",
