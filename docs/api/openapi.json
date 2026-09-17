@@ -515,6 +515,18 @@
             ],
             "title": "Provider"
           },
+          "reference_billed_usd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Set instead of `estimated_billed_usd` when the provider meters from its response: the representative rate for that endpoint group, with the same markup applied. The debit follows the live response.",
+            "title": "Reference Billed Usd"
+          },
           "tool_name": {
             "title": "Tool Name",
             "type": "string"

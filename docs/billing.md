@@ -23,6 +23,19 @@ resets; topped-up credit is yours until spent.
 tool pages in this repository deliberately do not, because a number committed to a file
 is stale the next time the multiplier moves.
 
+You do not have to call a tool to learn its price. `prowl_tool_info`, `prowl_search_tools` and
+`prowl_list_tools(names=true)` all carry it, and so does the public price list:
+
+| Field | Means |
+|---|---|
+| `estimated_billed_usd` | what one call debits from your wallet |
+| `reference_billed_usd` | for a tool whose provider meters from its response, the representative rate for that endpoint group — the debit follows the live response |
+| `provider_cost_usd` | what the provider charges us, before our margin; informational |
+
+`estimated_billed_usd` is `null` exactly when `reference_billed_usd` is set: a flat estimate for a
+response-metered endpoint would be a guess dressed as a price. Every surface reads these from the
+same function, so the number in the catalog and the number you are charged cannot drift apart.
+
 **A report** — `prowl_analyze` — is the expensive one, because it is many tool calls
 plus the language model that plans them and writes the result.
 
