@@ -3,7 +3,7 @@ name: dataforseo_merchant_amazon_sellers
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-17T18:07:20Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -107,8 +107,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `dataforseo_merchant_amazon_products`
-- `amazon_offers`
 - `amazon_search`
+- `amazon_offers`
 
 _Full paths: [catalog index](../README.md)._
 

@@ -3,7 +3,7 @@ name: dataforseo_serp_screenshot
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-17T18:07:20Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -127,9 +127,9 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
-- `dataforseo_serp_ai_summary`
 - `dataforseo_serp_bing_organic`
 - `dataforseo_serp_google_ai_mode`
+- `dataforseo_serp_ai_summary`
 
 _Full paths: [catalog index](../README.md)._
 

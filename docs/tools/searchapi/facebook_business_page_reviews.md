@@ -3,7 +3,7 @@ name: facebook_business_page_reviews
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-09-17T14:43:05Z
+generated_at: 2026-09-17T18:07:20Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -131,8 +131,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `facebook_business_page`
-- `airbnb_property_reviews`
 - `apple_product_reviews`
+- `airbnb_property_reviews`
 
 _Full paths: [catalog index](../README.md)._
 

@@ -3,7 +3,7 @@ name: youtube_comments
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-09-17T14:43:05Z
+generated_at: 2026-09-17T18:07:20Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -154,9 +154,9 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
+- `youtube_search`
 - `youtube_channel`
 - `youtube_channel_videos`
-- `youtube_search`
 
 _Full paths: [catalog index](../README.md)._
 

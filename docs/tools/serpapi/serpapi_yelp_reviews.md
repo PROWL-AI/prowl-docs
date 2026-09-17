@@ -3,7 +3,7 @@ name: serpapi_yelp_reviews
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-17T18:07:20Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -137,9 +137,9 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
+- `serpapi_google_maps_reviews`
 - `serpapi_amazon_reviews`
 - `serpapi_apple_reviews`
-- `serpapi_google_maps_reviews`
 
 _Full paths: [catalog index](../README.md)._
 

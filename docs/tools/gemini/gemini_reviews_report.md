@@ -3,7 +3,7 @@ name: gemini_reviews_report
 provider: Google Gemini
 provider_slug: gemini
 category: ai
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-17T18:07:20Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -98,8 +98,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `scrape_review_platforms`
-- `airbnb_property_reviews`
 - `apple_product_reviews`
+- `airbnb_property_reviews`
 
 _Full paths: [catalog index](../README.md)._
 
