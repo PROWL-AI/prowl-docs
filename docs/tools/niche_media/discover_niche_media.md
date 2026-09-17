@@ -3,7 +3,7 @@ name: discover_niche_media
 provider: NicheMedia (composite: Exa + SearchAPI + Firecrawl)
 provider_slug: niche_media
 category: web
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-17T14:43:05Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -128,4 +128,4 @@ _Full paths: [catalog index](../README.md)._
 
 ## Provider docs
 
-https://docs.exa.ai / https://www.searchapi.io/docs / https://docs.firecrawl.dev
+https://exa.ai/docs / https://www.searchapi.io/docs/google / https://docs.firecrawl.dev

@@ -3,7 +3,7 @@ name: google_autocomplete
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-17T14:43:05Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -155,4 +155,4 @@ _Full paths: [catalog index](../README.md)._
 
 ## Provider docs
 
-https://www.searchapi.io/docs
+https://www.searchapi.io/docs/google
