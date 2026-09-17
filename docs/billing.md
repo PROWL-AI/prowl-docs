@@ -58,6 +58,13 @@ charge: at the end the run settles down to what it used and the rest is released
 never happens is the reverse — you are not billed more than the hold, in any failure
 mode.
 
+**A direct tool call works differently, and the difference matters.** Some providers price from
+their own response — you cannot know the cost until the answer arrives. Prowl holds the published
+`reference_billed_usd` for those, and settles to the real cost afterwards. That settlement can go
+**up**: if the call turns out to cost more than the reference, the difference is collected, up to
+**3×** the hold. Past that ceiling the rest is ours, not yours. For a tool with a flat price,
+which is most of them, the hold is the price and there is nothing to reconcile.
+
 If your balance cannot cover the hold for the tier that was picked, Prowl steps down —
 `max` → `deep` → `basic` — to the highest tier you can actually afford, and tells you it
 did. It does not refuse to run because the biggest tier does not fit.
