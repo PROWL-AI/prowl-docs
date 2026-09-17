@@ -33,6 +33,40 @@ transport code. Each tool's page lists its own table; the shapes recur:
 Every tool page in [the catalog](tools/README.md) carries the exact codes that tool can
 return, what each means, and the action for it.
 
+## Refusals from `prowl_call_tool`
+
+A call the proxy refuses before (or instead of) reaching a provider answers with a JSON body
+rather than prose, so you can branch on the class instead of matching a sentence:
+
+```json
+{
+  "success": false,
+  "error": "Invalid params for 'google_search': Additional properties are not allowed ('bogus' was unexpected). Call prowl_tool_info for the input schema.",
+  "error_class": "validation",
+  "retryable": false,
+  "tool_name": "google_search"
+}
+```
+
+`retryable` says whether repeating the SAME request can succeed — `false` means change something
+first. The classes are `validation, not_found, tool_deprecated, tool_retired, insufficient_funds, forbidden, rate_limit, timeout, provider_error, upstream_gone`.
+
+| Class | What happened | Do |
+|---|---|---|
+| `validation` | your `params` do not match the tool's `input_schema` (an unknown key, a missing required one, a wrong type), or they exceed the size limit | fix the call; `prowl_tool_info` returns the schema |
+| `not_found` | no registered tool by that name | `prowl_list_tools` / `prowl_search_tools` |
+| `tool_deprecated` | the tool still runs, but a replacement is named | migrate to `replacement`; the result is in the same response |
+| `tool_retired` | the tool is gone, and `replacement` names what took its place | call the replacement |
+| `insufficient_funds` | your wallet cannot cover the call | top up in MCP Home |
+| `forbidden` | the key's scope or spend cap blocks it, or the tool is not proxyable | use another key, raise the cap, or pick another tool |
+| `rate_limit` | throttled | back off and retry |
+| `timeout` | the provider did not answer in time | retry |
+| `provider_error` | the provider or Prowl failed | retry with backoff; quote `ref` if it persists |
+| `upstream_gone` | the provider removed the endpoint behind this tool | use an alternative from the tool's page |
+
+A `validation` refusal costs nothing: it happens before any hold is placed, and it does not count
+against the tool's circuit breaker.
+
 ## Seeing what happened
 
 `prowl_get_error_feed` returns recent failures on your account with their causes. It is
