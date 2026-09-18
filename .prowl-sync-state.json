@@ -4200,7 +4200,10 @@
         "429"
       ],
       "params": [
+        "include_empty",
         "limit",
+        "max_ads",
+        "min_ads",
         "query"
       ],
       "provider": "Foreplay",
@@ -4216,10 +4219,21 @@
       ],
       "params": [
         "brand_ids",
+        "cursor",
+        "display_formats",
         "end_date",
+        "languages",
         "limit",
+        "live",
+        "market_targets",
+        "niches",
         "order",
-        "start_date"
+        "publisher_platforms",
+        "running_duration_max_days",
+        "running_duration_min_days",
+        "start_date",
+        "video_duration_max",
+        "video_duration_min"
       ],
       "provider": "Foreplay",
       "required": [
@@ -4233,9 +4247,22 @@
         "429"
       ],
       "params": [
+        "cursor",
+        "display_formats",
+        "end_date",
+        "languages",
         "limit",
+        "live",
+        "market_targets",
+        "niches",
         "order",
-        "page_id"
+        "page_id",
+        "publisher_platforms",
+        "running_duration_max_days",
+        "running_duration_min_days",
+        "start_date",
+        "video_duration_max",
+        "video_duration_min"
       ],
       "provider": "Foreplay",
       "required": [

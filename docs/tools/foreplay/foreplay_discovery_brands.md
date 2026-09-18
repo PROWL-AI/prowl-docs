@@ -3,7 +3,7 @@ name: foreplay_discovery_brands
 provider: Foreplay
 provider_slug: foreplay
 category: ads
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-18T15:32:43Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,10 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `query` | string | yes |  | Brand name to search for (e.g. 'Airalo') |
-| `limit` | integer | no | `10` | Max results (1-10) |
+| `limit` | integer | no | `10` | Max results (1-100). The provider answers HTTP 422 above this. |
+| `min_ads` | integer | no |  | Only brands running at least this many ads. |
+| `max_ads` | integer | no |  | Only brands running at most this many ads. |
+| `include_empty` | boolean | no |  | Include brands with no ads at all. The API excludes them unless told otherwise. |
 
 ### JSON Schema
 
@@ -59,10 +62,24 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "limit": {
       "type": "integer",
-      "description": "Max results (1-10)",
+      "description": "Max results (1-100). The provider answers HTTP 422 above this.",
       "default": 10,
       "minimum": 1,
-      "maximum": 10
+      "maximum": 100
+    },
+    "min_ads": {
+      "type": "integer",
+      "description": "Only brands running at least this many ads.",
+      "minimum": 0
+    },
+    "max_ads": {
+      "type": "integer",
+      "description": "Only brands running at most this many ads.",
+      "minimum": 1
+    },
+    "include_empty": {
+      "type": "boolean",
+      "description": "Include brands with no ads at all. The API excludes them unless told otherwise."
     }
   },
   "required": [
