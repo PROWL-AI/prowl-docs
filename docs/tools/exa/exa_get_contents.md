@@ -3,7 +3,7 @@ name: exa_get_contents
 provider: Exa
 provider_slug: exa
 category: web
-generated_at: 2026-09-18T13:43:40Z
+generated_at: 2026-09-18T14:01:48Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -129,9 +129,9 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 ## Output
 
-Page contents for each URL with text, summary, and highlights
+Page contents for each URL with text, summary, and highlights. A page fetched with `subpages` carries them under `[].subpages`, shaped the same way; the key is absent when there are none.
 
-Key fields: `[].url`, `[].text`, `[].summary`, `[].highlights`
+Key fields: `[].url`, `[].text`, `[].summary`, `[].highlights`, `[].subpages`
 
 ## Errors
 
