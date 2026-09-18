@@ -4021,7 +4021,11 @@
         "429"
       ],
       "params": [
+        "include_subdomains",
         "limit",
+        "search",
+        "sitemap",
+        "timeout",
         "url"
       ],
       "provider": "Firecrawl",
