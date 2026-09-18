@@ -54,6 +54,12 @@ Details worth knowing before you debug something:
 - **A redirect URI must be registered.** An unknown client or an unregistered redirect
   gets a `400` and no redirect at all — Prowl will not bounce a browser to an address it
   does not know.
+- **Your client can hand a token back.** `POST https://prowl.chat/oauth/revoke` (RFC 7009), form-encoded
+  with `token` and an optional `token_type_hint`. Revoking a refresh token closes the whole
+  grant; revoking an access token closes that token and leaves the refresh alone, so shutting
+  one session does not cost you the others. An unknown or already-revoked token answers `200`
+  — the spec's rule, so the endpoint cannot be used to test whether a guessed token is real.
+  The endpoint is listed as `revocation_endpoint` in the discovery document above.
 
 ## Which one to use
 
