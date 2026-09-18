@@ -3,7 +3,7 @@ name: exa_similar_search
 provider: Exa
 provider_slug: exa
 category: web
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-18T13:43:40Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,6 +45,13 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `url` | string | yes |  | URL to find similar websites for (e.g. 'example.com') |
+| `num_results` | integer | no |  | Results to return (1-100). Default 10. |
+| `include_domains` | string[] | no |  | Only return results from these domains. |
+| `exclude_domains` | string[] | no |  | Additional domains to exclude (the researched domain is always excluded). |
+| `start_published_date` | string | no |  | Only documents published on or after this ISO 8601 date. |
+| `end_published_date` | string | no |  | Only documents published on or before this ISO 8601 date. |
+| `category` | enum(company, publication, news, personal site, financial report, people) | no |  | Restrict to a document class. |
+| `exclude_source_domain` | boolean | no |  | Ask Exa itself to drop results from the source domain. |
 
 ### JSON Schema
 
@@ -55,6 +62,50 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     "url": {
       "type": "string",
       "description": "URL to find similar websites for (e.g. 'example.com')"
+    },
+    "num_results": {
+      "type": "integer",
+      "description": "Results to return (1-100). Default 10.",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "include_domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Only return results from these domains."
+    },
+    "exclude_domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Additional domains to exclude (the researched domain is always excluded)."
+    },
+    "start_published_date": {
+      "type": "string",
+      "description": "Only documents published on or after this ISO 8601 date."
+    },
+    "end_published_date": {
+      "type": "string",
+      "description": "Only documents published on or before this ISO 8601 date."
+    },
+    "category": {
+      "type": "string",
+      "description": "Restrict to a document class.",
+      "enum": [
+        "company",
+        "publication",
+        "news",
+        "personal site",
+        "financial report",
+        "people"
+      ]
+    },
+    "exclude_source_domain": {
+      "type": "boolean",
+      "description": "Ask Exa itself to drop results from the source domain."
     }
   },
   "required": [

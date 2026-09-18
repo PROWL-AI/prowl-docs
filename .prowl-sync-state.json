@@ -3899,6 +3899,11 @@
       ],
       "params": [
         "highlights",
+        "livecrawl",
+        "livecrawl_timeout",
+        "max_age_hours",
+        "subpage_target",
+        "subpages",
         "summary",
         "text",
         "urls"
@@ -3942,6 +3947,13 @@
         "429"
       ],
       "params": [
+        "category",
+        "end_published_date",
+        "exclude_domains",
+        "exclude_source_domain",
+        "include_domains",
+        "num_results",
+        "start_published_date",
         "url"
       ],
       "provider": "Exa",

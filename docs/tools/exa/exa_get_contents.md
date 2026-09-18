@@ -3,7 +3,7 @@ name: exa_get_contents
 provider: Exa
 provider_slug: exa
 category: web
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-18T13:43:40Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -48,6 +48,11 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `text` | boolean | no | `True` | Include full text content |
 | `summary` | boolean | no | `False` | Include AI-generated summary |
 | `highlights` | boolean | no | `False` | Include key highlights |
+| `livecrawl` | enum(always, fallback, never, auto, preferred) | no |  | Freshness policy. Exa serves its cached copy unless this says otherwise: 'always' crawls now, 'preferred' tries and falls back, 'fallback' crawls only when nothing is cached, 'never' uses the cache alone, 'auto' lets Exa decide. Use 'always' for pricing or changelog pages where a stale snapshot is wrong. |
+| `livecrawl_timeout` | integer | no |  | Milliseconds to wait for a live crawl before falling back. |
+| `max_age_hours` | integer | no |  | Reject a cached copy older than this many hours. |
+| `subpages` | integer | no |  | Also fetch up to N subpages of each URL. |
+| `subpage_target` | string | no |  | Restrict those subpages to a path, e.g. 'pricing'. |
 
 ### JSON Schema
 
@@ -76,6 +81,36 @@ Connect an agent to `https://prowl.chat/mcp`, then:
       "type": "boolean",
       "description": "Include key highlights",
       "default": false
+    },
+    "livecrawl": {
+      "type": "string",
+      "description": "Freshness policy. Exa serves its cached copy unless this says otherwise: 'always' crawls now, 'preferred' tries and falls back, 'fallback' crawls only when nothing is cached, 'never' uses the cache alone, 'auto' lets Exa decide. Use 'always' for pricing or changelog pages where a stale snapshot is wrong.",
+      "enum": [
+        "always",
+        "fallback",
+        "never",
+        "auto",
+        "preferred"
+      ]
+    },
+    "livecrawl_timeout": {
+      "type": "integer",
+      "description": "Milliseconds to wait for a live crawl before falling back.",
+      "minimum": 1
+    },
+    "max_age_hours": {
+      "type": "integer",
+      "description": "Reject a cached copy older than this many hours.",
+      "minimum": 1
+    },
+    "subpages": {
+      "type": "integer",
+      "description": "Also fetch up to N subpages of each URL.",
+      "minimum": 1
+    },
+    "subpage_target": {
+      "type": "string",
+      "description": "Restrict those subpages to a path, e.g. 'pricing'."
     }
   },
   "required": [
