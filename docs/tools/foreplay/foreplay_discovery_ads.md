@@ -3,7 +3,7 @@ name: foreplay_discovery_ads
 provider: Foreplay
 provider_slug: foreplay
 category: ads
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-18T15:14:52Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -53,6 +53,13 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `publisher_platforms` | string[] | no |  | Filter by publisher platforms |
 | `niches` | string[] | no |  | Filter by business niches |
 | `order` | enum(newest, oldest, longest_running, most_relevant) | no | `newest` | Sort order |
+| `market_targets` | string[] | no |  | Filter by who the ad sells to — the cheapest way to keep B2C creatives out of a B2B search. |
+| `languages` | string[] | no |  | Filter by ad language, as two-letter codes (e.g. ['en', 'de']). |
+| `video_duration_min` | integer | no |  | Only videos at least this many seconds long. |
+| `video_duration_max` | integer | no |  | Only videos at most this many seconds long. |
+| `running_duration_min_days` | integer | no |  | Only ads that have been running at least this many days — an ad alive for months is a proven one. |
+| `running_duration_max_days` | integer | no |  | Only ads running no longer than this many days. |
+| `cursor` | string | no |  | Page token from a previous response's `metadata.cursor`. Without it only the first page is reachable. |
 
 ### JSON Schema
 
@@ -155,6 +162,48 @@ Connect an agent to `https://prowl.chat/mcp`, then:
         "most_relevant"
       ],
       "default": "newest"
+    },
+    "market_targets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "b2b",
+          "b2c"
+        ]
+      },
+      "description": "Filter by who the ad sells to \u2014 the cheapest way to keep B2C creatives out of a B2B search."
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Filter by ad language, as two-letter codes (e.g. ['en', 'de'])."
+    },
+    "video_duration_min": {
+      "type": "integer",
+      "description": "Only videos at least this many seconds long.",
+      "minimum": 0
+    },
+    "video_duration_max": {
+      "type": "integer",
+      "description": "Only videos at most this many seconds long.",
+      "minimum": 1
+    },
+    "running_duration_min_days": {
+      "type": "integer",
+      "description": "Only ads that have been running at least this many days \u2014 an ad alive for months is a proven one.",
+      "minimum": 0
+    },
+    "running_duration_max_days": {
+      "type": "integer",
+      "description": "Only ads running no longer than this many days.",
+      "minimum": 1
+    },
+    "cursor": {
+      "type": "string",
+      "description": "Page token from a previous response's `metadata.cursor`. Without it only the first page is reachable."
     }
   },
   "required": [

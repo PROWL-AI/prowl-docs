@@ -4171,15 +4171,22 @@
         "429"
       ],
       "params": [
+        "cursor",
         "display_formats",
         "end_date",
+        "languages",
         "limit",
         "live",
+        "market_targets",
         "niches",
         "order",
         "publisher_platforms",
         "query",
-        "start_date"
+        "running_duration_max_days",
+        "running_duration_min_days",
+        "start_date",
+        "video_duration_max",
+        "video_duration_min"
       ],
       "provider": "Foreplay",
       "required": [
