@@ -3016,7 +3016,8 @@
       ],
       "provider": "DataForSEO",
       "required": [
-        "task_id"
+        "task_id",
+        "type"
       ]
     },
     "dataforseo_onpage_lighthouse": {

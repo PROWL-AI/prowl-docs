@@ -3,7 +3,7 @@ name: dataforseo_domain_domains_by_technology
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-23T16:51:05Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -47,7 +47,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `keywords` | any[] | no |  | target keywords in the domain’s title, description or meta keywords |
 | `mode` | string | no |  | search mode |
 | `offset_token` | string | no |  | token for subsequent requests |
-| `technology_paths` | any[] | no |  | target technology paths |
+| `technology_paths` | object[] | no |  | target technology paths — objects {path, name}, up to 10, e.g. [{"path": "content.cms", "name": "wordpress"}]. A bare string is rejected by DataForSEO with 40501 (T359). |
 | `technologies` | string[] | no |  | Technology names (e.g. 'WordPress', 'React') |
 | `limit` | integer | no |  | Max number of results |
 | `offset` | integer | no |  | Offset for pagination |
@@ -82,7 +82,25 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "technology_paths": {
       "type": "array",
-      "description": "target technology paths"
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "$group_id.$category_id, e.g. 'content.cms'"
+          },
+          "name": {
+            "type": "string",
+            "description": "technology name, e.g. 'wordpress'"
+          }
+        },
+        "required": [
+          "path",
+          "name"
+        ]
+      },
+      "description": "target technology paths \u2014 objects {path, name}, up to 10, e.g. [{\"path\": \"content.cms\", \"name\": \"wordpress\"}]. A bare string is rejected by DataForSEO with 40501 (T359)."
     },
     "technologies": {
       "type": "array",

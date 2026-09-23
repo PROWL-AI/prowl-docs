@@ -3,7 +3,7 @@ name: dataforseo_onpage_duplicate_tags
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-23T16:51:05Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -33,7 +33,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
   "tool": "prowl_call_tool",
   "tool_name": "dataforseo_onpage_duplicate_tags",
   "params": {
-    "task_id": "01234567-89ab-cdef-0123-456789abcdef"
+    "task_id": "01234567-89ab-cdef-0123-456789abcdef",
+    "type": "duplicate_title"
   }
 }
 ```
@@ -46,7 +47,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 |-------|------|----------|---------|-------------|
 | `accumulator` | string | no |  | tag value |
 | `tag` | string | no |  | user-defined task identifier |
-| `type` | string | no |  | type of element |
+| `type` | enum(duplicate_title, duplicate_description) | yes |  | which duplicate to list |
 | `task_id` | string | yes |  |  |
 | `limit` | integer | no |  | Max number of results |
 | `offset` | integer | no |  | Offset for pagination |
@@ -67,7 +68,11 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "type": {
       "type": "string",
-      "description": "type of element"
+      "description": "which duplicate to list",
+      "enum": [
+        "duplicate_title",
+        "duplicate_description"
+      ]
     },
     "task_id": {
       "type": "string"
@@ -84,7 +89,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     }
   },
   "required": [
-    "task_id"
+    "task_id",
+    "type"
   ]
 }
 ```
@@ -93,7 +99,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 ```json
 {
-  "task_id": "01234567-89ab-cdef-0123-456789abcdef"
+  "task_id": "01234567-89ab-cdef-0123-456789abcdef",
+  "type": "duplicate_title"
 }
 ```
 

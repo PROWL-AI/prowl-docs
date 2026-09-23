@@ -3,7 +3,7 @@ name: dataforseo_serp_google_finance_markets
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-23T16:51:05Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `device` | enum(desktop) | no |  | device type |
 | `language_code` | string | no |  | search engine language code |
 | `location_code` | integer | no |  | search engine location code |
-| `market_type` | string | no |  | type of google finance market |
+| `market_type` | enum(most-active, indexes, indexes/americas, indexes/europe-middle-east-africa, indexes/asia-pacific, gainers, losers, climate-leaders, cryptocurrencies, currencies) | no |  | type of google finance market (hyphenated, e.g. 'most-active'; default most-active) |
 | `os` | enum(windows) | no |  | device operating system |
 | `tag` | string | no |  | user-defined task identifier |
 | `location_name` | string | no |  | Full location name (e.g. 'United States', 'London,England,United Kingdom') |
@@ -74,7 +74,19 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "market_type": {
       "type": "string",
-      "description": "type of google finance market"
+      "description": "type of google finance market (hyphenated, e.g. 'most-active'; default most-active)",
+      "enum": [
+        "most-active",
+        "indexes",
+        "indexes/americas",
+        "indexes/europe-middle-east-africa",
+        "indexes/asia-pacific",
+        "gainers",
+        "losers",
+        "climate-leaders",
+        "cryptocurrencies",
+        "currencies"
+      ]
     },
     "os": {
       "type": "string",

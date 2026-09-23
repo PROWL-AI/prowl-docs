@@ -3,7 +3,7 @@ name: dataforseo_ai_llm_mentions_cross_aggregated
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-23T16:51:05Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -60,6 +60,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
       "items": {
         "type": "string"
       },
+      "minItems": 2,
+      "maxItems": 10,
       "description": "List of 2-10 domains or keywords to compare"
     },
     "platform": {

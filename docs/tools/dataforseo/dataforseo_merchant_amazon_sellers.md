@@ -3,7 +3,7 @@ name: dataforseo_merchant_amazon_sellers
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-23T16:51:05Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -46,7 +46,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 |-------|------|----------|---------|-------------|
 | `asin` | string | yes |  | Amazon ASIN |
 | `location_name` | string | no |  | Full location name (e.g. 'United States', 'London,England,United Kingdom') |
-| `language_name` | string | no |  | Full language name (e.g. 'English', 'German') |
+| `language_name` | string | no |  | Amazon language name, country-qualified (e.g. 'English (United States)', 'German (Germany)'); the plain 'English' is rejected. Omit to use the run's market. |
 
 ### JSON Schema
 
@@ -64,7 +64,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "language_name": {
       "type": "string",
-      "description": "Full language name (e.g. 'English', 'German')"
+      "description": "Amazon language name, country-qualified (e.g. 'English (United States)', 'German (Germany)'); the plain 'English' is rejected. Omit to use the run's market."
     }
   },
   "required": [
