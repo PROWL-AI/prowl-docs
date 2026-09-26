@@ -1,4 +1,204 @@
 {
+  "mcp_params": {
+    "prowl_analyze": {
+      "params": [
+        "execution_mode",
+        "orchestration",
+        "playbook_id",
+        "query",
+        "session_id"
+      ],
+      "required": [
+        "query"
+      ]
+    },
+    "prowl_call_tool": {
+      "params": [
+        "params",
+        "session_id",
+        "tool_name"
+      ],
+      "required": [
+        "tool_name"
+      ]
+    },
+    "prowl_export_report": {
+      "params": [
+        "filepath",
+        "format",
+        "session_id"
+      ],
+      "required": []
+    },
+    "prowl_generate_artifact": {
+      "params": [
+        "artifact_type",
+        "session_id",
+        "theme"
+      ],
+      "required": [
+        "artifact_type"
+      ]
+    },
+    "prowl_get_error_feed": {
+      "params": [
+        "error_class",
+        "hours",
+        "limit",
+        "offset",
+        "severity",
+        "source",
+        "tool_name"
+      ],
+      "required": []
+    },
+    "prowl_get_session": {
+      "params": [
+        "include_messages",
+        "session_id"
+      ],
+      "required": [
+        "session_id"
+      ]
+    },
+    "prowl_get_stats": {
+      "params": [
+        "session_id"
+      ],
+      "required": []
+    },
+    "prowl_get_tool_info": {
+      "params": [
+        "tool_name"
+      ],
+      "required": [
+        "tool_name"
+      ]
+    },
+    "prowl_get_wallet": {
+      "params": [
+        "include_invocations"
+      ],
+      "required": []
+    },
+    "prowl_list_playbooks": {
+      "params": [],
+      "required": []
+    },
+    "prowl_list_sessions": {
+      "params": [
+        "limit",
+        "offset"
+      ],
+      "required": []
+    },
+    "prowl_list_tools": {
+      "params": [
+        "category",
+        "limit",
+        "names",
+        "offset"
+      ],
+      "required": []
+    },
+    "prowl_reset_session": {
+      "params": [
+        "session_id"
+      ],
+      "required": []
+    },
+    "prowl_schedule_cancel": {
+      "params": [
+        "job_id"
+      ],
+      "required": [
+        "job_id"
+      ]
+    },
+    "prowl_schedule_create": {
+      "params": [
+        "cadence",
+        "execution_mode",
+        "playbook_id",
+        "query",
+        "run_at_hour",
+        "trigger_type"
+      ],
+      "required": [
+        "query"
+      ]
+    },
+    "prowl_schedule_list": {
+      "params": [
+        "limit",
+        "offset"
+      ],
+      "required": []
+    },
+    "prowl_schedule_pause": {
+      "params": [
+        "job_id"
+      ],
+      "required": [
+        "job_id"
+      ]
+    },
+    "prowl_schedule_resume": {
+      "params": [
+        "job_id"
+      ],
+      "required": [
+        "job_id"
+      ]
+    },
+    "prowl_search_tools": {
+      "params": [
+        "category",
+        "limit",
+        "offset",
+        "provider",
+        "query"
+      ],
+      "required": []
+    },
+    "prowl_session_status": {
+      "params": [
+        "session_id"
+      ],
+      "required": [
+        "session_id"
+      ]
+    },
+    "prowl_start_session": {
+      "params": [
+        "execution_mode",
+        "orchestration",
+        "query",
+        "title"
+      ],
+      "required": [
+        "query"
+      ]
+    },
+    "prowl_test_tool": {
+      "params": [
+        "params",
+        "session_id",
+        "tool_name"
+      ],
+      "required": [
+        "tool_name"
+      ]
+    },
+    "prowl_tool_info": {
+      "params": [
+        "tool_name"
+      ],
+      "required": [
+        "tool_name"
+      ]
+    }
+  },
   "mcp_tools": [
     "prowl_analyze",
     "prowl_call_tool",
@@ -6980,8 +7180,7 @@
       ],
       "params": [
         "amazon_domain",
-        "asin",
-        "page"
+        "asin"
       ],
       "provider": "SerpAPI",
       "required": [
@@ -7733,7 +7932,6 @@
         "429"
       ],
       "params": [
-        "page",
         "product_id"
       ],
       "provider": "SerpAPI",

@@ -3,7 +3,7 @@ name: serpapi_amazon_reviews
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-26T12:20:01Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -46,7 +46,6 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 |-------|------|----------|---------|-------------|
 | `asin` | string | yes |  | Amazon ASIN product identifier |
 | `amazon_domain` | string | no |  | Amazon domain |
-| `page` | integer | no |  | Page number for pagination |
 
 ### JSON Schema
 
@@ -61,11 +60,6 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     "amazon_domain": {
       "type": "string",
       "description": "Amazon domain"
-    },
-    "page": {
-      "type": "integer",
-      "description": "Page number for pagination",
-      "minimum": 1
     }
   },
   "required": [
