@@ -3,7 +3,7 @@ name: dataforseo_merchant_amazon_products
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-23T16:51:05Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Search Amazon products — get product listings, prices, ratings, and ASIN data.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `amazon`, `dataforseo` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `SKIP` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `SKIP` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -118,8 +118,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `dataforseo_merchant_amazon_sellers`
-- `amazon_search`
 - `amazon_offers`
+- `amazon_search`
 
 _Full paths: [catalog index](../README.md)._
 

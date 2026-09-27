@@ -3,7 +3,7 @@ name: llm_query_perplexity
 provider: OpenRouter
 provider_slug: openrouter
 category: ai
-generated_at: 2026-08-31T16:42:35Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Ask Perplexity sonar (web-grounded) about a brand, keyword, product, or concept.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `ai`, `openrouter` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

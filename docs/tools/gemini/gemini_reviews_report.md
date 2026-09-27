@@ -3,7 +3,7 @@ name: gemini_reviews_report
 provider: Google Gemini
 provider_slug: gemini
 category: ai
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Analyze customer reviews using Gemini AI to extract Voice of Customer insights.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `ai`, `google-gemini`, `reviews` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-13T17:14:24.497438 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -98,8 +98,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `scrape_review_platforms`
-- `apple_product_reviews`
 - `airbnb_property_reviews`
+- `apple_product_reviews`
 
 _Full paths: [catalog index](../README.md)._
 

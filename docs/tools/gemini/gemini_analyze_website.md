@@ -3,7 +3,7 @@ name: gemini_analyze_website
 provider: Google Gemini
 provider_slug: gemini
 category: ai
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Analyze scraped website content using Google Gemini AI to extract structured pro
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `ai`, `google-gemini` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-13T17:14:24.497438 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

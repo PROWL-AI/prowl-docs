@@ -3,7 +3,7 @@ name: dataforseo_serp_google_finance_quote
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get Google Finance quote data — stock price, market cap, P/E, and financial me
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `dataforseo`, `finance`, `google`, `serp` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -207,8 +207,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
-- `dataforseo_serp_google_finance_explore`
 - `google_finance`
+- `dataforseo_serp_google_finance_explore`
 
 _Full paths: [catalog index](../README.md)._
 

@@ -3,7 +3,7 @@ name: dataforseo_serp_google_maps
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get Google Maps SERP results — top 100 local business listings for a keyword a
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `dataforseo`, `google`, `maps`, `serp` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -232,8 +232,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `serpapi_google_maps`
-- `dataforseo_serp_google_ai_mode`
 - `serpapi_google_maps_directions`
+- `dataforseo_serp_google_ai_mode`
 
 _Full paths: [catalog index](../README.md)._
 

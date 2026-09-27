@@ -3,7 +3,7 @@ name: youtube_channel
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ YouTube Channel — channel details, subscriber count, and recent videos.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `searchapi`, `youtube` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `FAIL` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -153,9 +153,9 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
+- `youtube_channel_videos`
 - `youtube_comments`
 - `youtube_search`
-- `youtube_channel_videos`
 
 _Full paths: [catalog index](../README.md)._
 

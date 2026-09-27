@@ -3,7 +3,7 @@ name: foreplay_discovery_ads
 provider: Foreplay
 provider_slug: foreplay
 category: ads
-generated_at: 2026-09-18T15:14:52Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Search and discover ads across platforms (Facebook, Instagram, TikTok, YouTube, 
 | Blocking | `False` |
 | Chain role | `discovery` |
 | Tags | `ads`, `foreplay` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-13T17:14:24.497438 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

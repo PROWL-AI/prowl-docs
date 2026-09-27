@@ -3,7 +3,7 @@ name: dataforseo_onpage_duplicate_tags
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-23T16:51:05Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Find pages with duplicate title or description tags from a crawl.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `dataforseo`, `onpage` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `SKIP` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `SKIP` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

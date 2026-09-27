@@ -3,7 +3,7 @@ name: spyfu_find_transaction_keywords
 provider: SpyFu
 provider_slug: spyfu
 category: seo
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Find purchase-intent (transactional) keywords related to a query.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `keywords`, `seo`, `spyfu` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

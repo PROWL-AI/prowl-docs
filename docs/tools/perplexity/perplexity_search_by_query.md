@@ -3,7 +3,7 @@ name: perplexity_search_by_query
 provider: Perplexity
 provider_slug: perplexity
 category: web
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Search for products and services using a single specific query via Perplexity.
 | Blocking | `False` |
 | Chain role | `discovery` |
 | Tags | `perplexity`, `search`, `web` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

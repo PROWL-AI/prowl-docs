@@ -3,7 +3,7 @@ name: find_subdomains
 provider: crt.sh
 provider_slug: crt_sh
 category: utility
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Discover recently active subdomains for a domain using certificate transparency 
 | Blocking | `False` |
 | Chain role | `discovery` |
 | Tags | `crt.sh`, `domain`, `utility` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-13T17:14:24.497438 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -92,8 +92,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
-- `dataforseo_labs_subdomains`
 - `discover_web_funnels`
+- `dataforseo_labs_subdomains`
 
 _Full paths: [catalog index](../README.md)._
 

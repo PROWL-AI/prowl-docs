@@ -3,7 +3,7 @@ name: moz_v2_global_top_pages
 provider: Moz
 provider_slug: moz
 category: seo
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ The most-linked-to pages on the entire web by Moz's index — a reference distri
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `moz`, `onpage`, `seo` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -98,8 +98,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `spyfu_get_new_top_pages`
-- `spyfu_get_top_pages`
 - `keywords_everywhere_page_backlinks`
+- `spyfu_get_top_pages`
 
 _Full paths: [catalog index](../README.md)._
 

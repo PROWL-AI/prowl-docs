@@ -3,7 +3,7 @@ name: serpapi_google_related_questions
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Google 'People Also Ask' questions via SerpAPI — useful for content ideation.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `google`, `serp`, `serpapi`, `serpapi_serp` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `FAIL` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -122,8 +122,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `serpapi_google`
-- `serpapi_google_autocomplete`
 - `serpapi_google_ai_overview`
+- `serpapi_google_autocomplete`
 
 _Full paths: [catalog index](../README.md)._
 

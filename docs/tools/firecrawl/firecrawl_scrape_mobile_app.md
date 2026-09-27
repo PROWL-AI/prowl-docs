@@ -3,7 +3,7 @@ name: firecrawl_scrape_mobile_app
 provider: Firecrawl
 provider_slug: firecrawl
 category: web
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Scrape an App Store or Google Play page (and Sensor Tower if available) to extra
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `firecrawl`, `scrape`, `web` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

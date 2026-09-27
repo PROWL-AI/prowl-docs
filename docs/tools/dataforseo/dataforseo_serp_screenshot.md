@@ -3,7 +3,7 @@ name: dataforseo_serp_screenshot
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Capture a screenshot of SERP results — requires a task_id from a prior SERP ta
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `dataforseo`, `serp` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-13T17:14:24.497438 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -127,9 +127,9 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
+- `dataforseo_serp_ai_summary`
 - `dataforseo_serp_bing_organic`
 - `dataforseo_serp_google_ai_mode`
-- `dataforseo_serp_ai_summary`
 
 _Full paths: [catalog index](../README.md)._
 

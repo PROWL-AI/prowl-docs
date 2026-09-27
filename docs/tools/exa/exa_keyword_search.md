@@ -3,7 +3,7 @@ name: exa_keyword_search
 provider: Exa
 provider_slug: exa
 category: web
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Search for competitor products and similar services using Exa AI-powered search.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `exa`, `keywords`, `search`, `web` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

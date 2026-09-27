@@ -3,7 +3,7 @@ name: facebook_business_page_reviews
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Facebook Business Page Reviews — page reviews and ratings.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `facebook`, `onpage`, `reviews`, `searchapi` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `SKIP` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `SKIP` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -131,8 +131,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `facebook_business_page`
-- `apple_product_reviews`
 - `airbnb_property_reviews`
+- `apple_product_reviews`
 
 _Full paths: [catalog index](../README.md)._
 

@@ -3,7 +3,7 @@ name: discover_web_funnels
 provider: crt.sh
 provider_slug: crt_sh
 category: utility
-generated_at: 2026-08-14T20:43:11Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Comprehensive web funnel discovery for a domain.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `crt.sh`, `utility` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `FAIL` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

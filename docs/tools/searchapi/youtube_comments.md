@@ -3,7 +3,7 @@ name: youtube_comments
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-09-17T18:07:20Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ YouTube Comments — video comments.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `searchapi`, `youtube` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-13T17:14:24.497438 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
@@ -154,9 +154,9 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
-- `youtube_search`
 - `youtube_channel`
 - `youtube_channel_videos`
+- `youtube_search`
 
 _Full paths: [catalog index](../README.md)._
 

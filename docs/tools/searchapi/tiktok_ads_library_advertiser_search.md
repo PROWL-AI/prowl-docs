@@ -3,7 +3,7 @@ name: tiktok_ads_library_advertiser_search
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-09-17T14:43:05Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ TikTok Ads Library Advertiser Search — find TikTok advertisers by name.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `ads`, `search`, `searchapi`, `tiktok` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-10T22:44:23.526138 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

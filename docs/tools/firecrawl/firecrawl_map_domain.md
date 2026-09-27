@@ -3,7 +3,7 @@ name: firecrawl_map_domain
 provider: Firecrawl
 provider_slug: firecrawl
 category: web
-generated_at: 2026-09-18T14:59:05Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Map a domain's sitemap to discover all pages with their titles and descriptions.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `domain`, `firecrawl`, `maps`, `web` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `PASS` — 2026-08-13T17:14:24.497438 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 

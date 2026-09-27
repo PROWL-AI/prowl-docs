@@ -3,7 +3,7 @@ name: serpapi_walmart_reviews
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-09-26T12:20:01Z
+generated_at: 2026-09-27T04:39:47Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Walmart product reviews via SerpAPI.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `reviews`, `serp`, `serpapi`, `serpapi_serp` |
-| Last schema check | `PASS` — 2026-08-10T20:44:23Z |
-| Last live API check | `FAIL` — 2026-08-13T17:14:24.497438 |
+| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
+| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
 
 ## Call it
 
