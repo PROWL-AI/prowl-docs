@@ -65,6 +65,21 @@ their own response — you cannot know the cost until the answer arrives. Prowl 
 **3×** the hold. Past that ceiling the rest is ours, not yours. For a tool with a flat price,
 which is most of them, the hold is the price and there is nothing to reconcile.
 
+### Setting your own limit
+
+You can skip the tier and name the most a report may cost you instead: pass `max_cost_usd`
+to `prowl_analyze`, `prowl_start_session` or `prowl_schedule_create`, or pick a limit from the
+**Limit** control beside the chat input. The run is held at exactly that amount, plans and
+researches inside it, and settles to what it actually spent. The limit decides the depth —
+the more room it gives, the wider the plan and the more claims are cross-checked — so
+`execution_mode` is ignored when a limit is set. Three presets — **Budget**, **Full** and
+**Deep research** — are the three tiers at their own price.
+
+The allowed range for your account, and the preset prices, come from `prowl_get_wallet`
+(`report_limits`). A limit outside that range is refused before anything is held. A limit
+that needs a plan you do not have is lowered to the highest your account allows, and you
+are told.
+
 If your balance cannot cover the hold for the tier that was picked, Prowl steps down —
 `max` → `deep` → `basic` — to the highest tier you can actually afford, and tells you it
 did. It does not refuse to run because the biggest tier does not fit.

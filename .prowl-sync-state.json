@@ -3,6 +3,7 @@
     "prowl_analyze": {
       "params": [
         "execution_mode",
+        "max_cost_usd",
         "orchestration",
         "playbook_id",
         "query",
@@ -119,6 +120,7 @@
       "params": [
         "cadence",
         "execution_mode",
+        "max_cost_usd",
         "playbook_id",
         "query",
         "run_at_hour",
@@ -172,6 +174,7 @@
     "prowl_start_session": {
       "params": [
         "execution_mode",
+        "max_cost_usd",
         "orchestration",
         "query",
         "title"
