@@ -27,7 +27,7 @@ survived.
 
 | Tier | Provider-cost ceiling | Modules in one report |
 |---|---|---|
-| `basic` | $2.5 | up to 8 |
+| `basic` | $5 | up to 8 |
 | `deep` | $8 | up to 12 |
 | `max` | $18 | up to 16 |
 

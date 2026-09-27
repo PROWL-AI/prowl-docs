@@ -46,7 +46,7 @@ providers:
 
 | Tier | Provider-cost ceiling | What it is for |
 |---|---|---|
-| `basic` | $2.5 | a fast read on one question |
+| `basic` | $5 | a fast read on one question |
 | `deep` | $8 | a full competitive pass, evidence verified |
 | `max` | $18 | the widest sweep, most modules, most cross-checks |
 
