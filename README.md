@@ -1,12 +1,14 @@
 # Prowl documentation
 
-**The market intelligence connector for AI agents.** One MCP endpoint gives any
-agent — Cursor, Claude Code, Codex, or your own stack — **444** market
-data tools across **17** providers: SEO, backlinks, paid ads, SERP,
-app stores, reviews, web scraping and LLM-mention tracking. Billed per call against
-one USD wallet.
+**Real-world market data for your agents.** One MCP endpoint gives any agent —
+Claude Code, Cursor, Codex, or your own stack — **444** market data
+tools across **17** providers: search, SEO, backlinks, paid ads, app
+stores, reviews, social, trends, finance, web scraping and LLM-mention tracking.
+Billed per call against one USD wallet. The same tools power Prowl Agent, the
+built-in agent at prowl.chat.
 
-Your agent already reasons. It just has no market data.
+One call answers one number. When one call is not enough, `prowl_analyze` plans many
+calls, checks its claims and writes a report.
 
 ```
 Endpoint   https://prowl.chat/mcp

@@ -3,7 +3,7 @@ name: extract_domain_from_url
 provider: Project Utility
 provider_slug: project_utility
 category: utility
-generated_at: 2026-09-27T04:39:47Z
+generated_at: 2026-09-29T14:57:25Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Extract a clean domain name from a URL.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `domain`, `project-utility`, `utility` |
-| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
-| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
+| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
+| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
 
 ## Call it
 

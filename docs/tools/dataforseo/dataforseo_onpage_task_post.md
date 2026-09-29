@@ -3,7 +3,7 @@ name: dataforseo_onpage_task_post
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-27T04:39:47Z
+generated_at: 2026-09-29T14:57:25Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Start an OnPage website crawl — checks 60+ on-page SEO parameters.
 | Blocking | `False` |
 | Chain role | `discovery` |
 | Tags | `dataforseo`, `onpage` |
-| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
-| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
+| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
+| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
 
 ## Call it
 

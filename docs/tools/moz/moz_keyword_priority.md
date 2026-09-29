@@ -3,7 +3,7 @@ name: moz_keyword_priority
 provider: Moz
 provider_slug: moz
 category: seo
-generated_at: 2026-09-27T04:39:47Z
+generated_at: 2026-09-29T14:57:25Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Moz Priority score (1-100) for a keyword — volume, difficulty, and organic CTR
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `keywords`, `moz`, `seo` |
-| Last schema check | `PASS` — 2026-09-27T04:29:01Z |
-| Last live API check | `PASS` — 2026-09-27T04:29:01.191674 |
+| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
+| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
 
 ## Call it
 

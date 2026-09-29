@@ -4,7 +4,7 @@ Connecting an agent to `https://prowl.chat/mcp` registers **23** tools (21 logic
 
 | Tool | What it does |
 |---|---|
-| `prowl_analyze` | Run a full research pass and compose a report. Accepts an optional `playbook_id` to force a fixed report shape. |
+| `prowl_analyze` | Run a market research report when one tool call is not enough: it plans the calls, cross-checks numeric claims and composes a report. Accepts an optional `playbook_id` to force a fixed report shape. |
 | `prowl_call_tool` | Invoke one underlying API tool directly, metered against your wallet. |
 | `prowl_export_report` | Export a cached report. `html` returns the REPORT, rendered — the same components and the same section anchors you see in the app, in one self-contained file with the stylesheet inlined and nothing fetched, so it opens offline. `chat_html` returns the conversation transcript instead. `markdown` returns the report's source. |
 | `prowl_generate_artifact` | Produce an artifact from a cached report. |

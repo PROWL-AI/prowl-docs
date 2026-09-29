@@ -1,6 +1,6 @@
 ---
 name: prowl-docs
-description: Reference for the Prowl MCP endpoint — connecting an agent, authenticating, what each of the 23 MCP tools does, and the input schema, example request and error table for every one of the 444 underlying market-intelligence tools (SEO, backlinks, paid ads, SERP, app stores, reviews, scraping, LLM-mention tracking). Use when wiring Prowl into an agent, choosing a tool for a market-data question, or debugging a Prowl call.
+description: Reference for the Prowl MCP endpoint — connecting an agent, authenticating, what each of the 23 MCP tools does, and the input schema, example request and error table for every one of the 444 underlying market data tools (search, SEO, backlinks, paid ads, app stores, reviews, social, trends, finance, scraping, LLM-mention tracking). Use when wiring Prowl into an agent, choosing a tool for a market-data question, or debugging a Prowl call.
 ---
 
 # Prowl MCP — reference
