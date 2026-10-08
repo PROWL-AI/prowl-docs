@@ -3,7 +3,7 @@ name: seo_growth_audit
 provider: SEO Growth
 provider_slug: seo_growth
 category: seo
-generated_at: 2026-09-29T14:57:25Z
+generated_at: 2026-10-08T02:26:09Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Run a 120-point SEO Growth + AI Retrieval + Pattern Detection audit across 20 se
 | Blocking | `True` |
 | Chain role | `dependent` |
 | Tags | `seo`, `seo-growth` |
-| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
-| Last live API check | `SKIP` — 2026-09-28T16:42:40.127963 |
+| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
+| Last live API check | `SKIP` — 2026-10-05T17:01:43.410344 |
 
 ## Call it
 

@@ -3,7 +3,7 @@ name: discover_niche_media
 provider: NicheMedia (composite: Exa + SearchAPI + Firecrawl)
 provider_slug: niche_media
 category: web
-generated_at: 2026-09-29T14:57:25Z
+generated_at: 2026-10-08T02:26:09Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Discover the niche media landscape for a topic/audience: newsletters, podcasts, 
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `nichemedia-(composite:-exa-+-searchapi-+-firecrawl)`, `web` |
-| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
-| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
+| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
+| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
 
 ## Call it
 

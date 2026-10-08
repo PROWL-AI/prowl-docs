@@ -3,7 +3,7 @@ name: foreplay_get_ads_by_brand_ids
 provider: Foreplay
 provider_slug: foreplay
 category: ads
-generated_at: 2026-09-29T14:57:25Z
+generated_at: 2026-10-08T02:26:09Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get ad creatives for one or more brand IDs from Foreplay.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `ads`, `foreplay` |
-| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
-| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
+| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
+| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
 
 ## Call it
 

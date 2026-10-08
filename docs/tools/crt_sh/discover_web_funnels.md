@@ -3,7 +3,7 @@ name: discover_web_funnels
 provider: crt.sh
 provider_slug: crt_sh
 category: utility
-generated_at: 2026-09-29T14:57:25Z
+generated_at: 2026-10-08T02:26:09Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Comprehensive web funnel discovery for a domain.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `crt.sh`, `utility` |
-| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
-| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
+| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
+| Last live API check | `FAIL` — 2026-10-05T17:01:43.410344 |
 
 ## Call it
 
@@ -94,8 +94,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
-- `find_subdomains`
 - `dataforseo_labs_subdomains`
+- `find_subdomains`
 
 _Full paths: [catalog index](../README.md)._
 

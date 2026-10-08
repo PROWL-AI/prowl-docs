@@ -3,7 +3,7 @@ name: dataforseo_kw_dataforseo_trends_demography
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-29T14:57:25Z
+generated_at: 2026-10-08T02:26:09Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get demographic breakdown of search queries — age and gender distribution of s
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `dataforseo`, `trends` |
-| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
-| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
+| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
+| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
 
 ## Call it
 

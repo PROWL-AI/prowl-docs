@@ -3,7 +3,7 @@ name: dataforseo_serp_google_search_by_image
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-29T14:57:25Z
+generated_at: 2026-10-08T02:26:09Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Create a Google reverse image search task (async) via Google Lens — find pages
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `dataforseo`, `google`, `search`, `serp` |
-| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
-| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
+| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
+| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
 
 ## Call it
 

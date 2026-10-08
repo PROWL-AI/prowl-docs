@@ -3,7 +3,7 @@ name: llm_query_grok
 provider: OpenRouter
 provider_slug: openrouter
 category: ai
-generated_at: 2026-09-29T14:57:25Z
+generated_at: 2026-10-08T02:26:09Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Ask xAI Grok directly what it knows about a brand, keyword, product, or concept.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `ai`, `openrouter` |
-| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
-| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
+| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
+| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
 
 ## Call it
 

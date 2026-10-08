@@ -3,7 +3,7 @@ name: dataforseo_biz_social_facebook
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-09-29T14:57:25Z
+generated_at: 2026-10-08T02:26:09Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get Facebook social media metrics — likes, shares, comments for up to 1000 URL
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `dataforseo`, `facebook` |
-| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
-| Last live API check | `SKIP` — 2026-09-28T16:42:40.127963 |
+| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
+| Last live API check | `SKIP` — 2026-10-05T17:01:43.410344 |
 
 ## Call it
 

@@ -3,7 +3,7 @@ name: keywords_everywhere_domain_keywords
 provider: Keywords Everywhere
 provider_slug: keywords_everywhere
 category: seo
-generated_at: 2026-09-29T14:57:25Z
+generated_at: 2026-10-08T02:26:09Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Keywords a domain ranks for, with estimated monthly traffic per keyword and the 
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `domain`, `keywords`, `keywords-everywhere`, `seo` |
-| Last schema check | `PASS` — 2026-09-28T16:42:40Z |
-| Last live API check | `PASS` — 2026-09-28T16:42:40.127963 |
+| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
+| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
 
 ## Call it
 
