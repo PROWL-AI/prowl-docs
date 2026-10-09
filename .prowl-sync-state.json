@@ -15,6 +15,7 @@
     },
     "prowl_call_tool": {
       "params": [
+        "idempotency_key",
         "params",
         "session_id",
         "tool_name"
@@ -185,6 +186,7 @@
     },
     "prowl_test_tool": {
       "params": [
+        "idempotency_key",
         "params",
         "session_id",
         "tool_name"
