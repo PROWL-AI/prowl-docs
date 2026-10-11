@@ -121,6 +121,12 @@
             "title": "Allowed Categories",
             "type": "array"
           },
+          "billing_mode": {
+            "default": "standard",
+            "description": "How the key is priced. Every key you create is `standard`.",
+            "title": "Billing Mode",
+            "type": "string"
+          },
           "created_at": {
             "anyOf": [
               {
