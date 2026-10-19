@@ -3,7 +3,7 @@ name: apple_product_reviews
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Apple Product Reviews — app reviews from the App Store.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `reviews`, `searchapi` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 

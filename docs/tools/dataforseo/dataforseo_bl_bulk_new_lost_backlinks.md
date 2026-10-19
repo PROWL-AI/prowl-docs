@@ -3,7 +3,7 @@ name: dataforseo_bl_bulk_new_lost_backlinks
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get new and lost backlink counts for up to 1000 domains — track link velocity.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `backlinks`, `dataforseo` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 

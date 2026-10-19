@@ -3,7 +3,7 @@ name: llm_query_gemini
 provider: OpenRouter
 provider_slug: openrouter
 category: ai
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Ask Google Gemini directly what it knows about a brand, keyword, product, or con
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `ai`, `openrouter` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `FAIL` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 

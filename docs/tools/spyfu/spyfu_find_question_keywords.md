@@ -3,7 +3,7 @@ name: spyfu_find_question_keywords
 provider: SpyFu
 provider_slug: spyfu
 category: seo
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Find question-form keywords related to a query (e.g.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `keywords`, `seo`, `spyfu` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 

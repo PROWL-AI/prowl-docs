@@ -3,7 +3,7 @@ name: spyfu_find_also_buys_ads_keywords
 provider: SpyFu
 provider_slug: spyfu
 category: seo
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Find keywords that advertisers bidding on the given query also bid on.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `ads`, `keywords`, `seo`, `spyfu` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 

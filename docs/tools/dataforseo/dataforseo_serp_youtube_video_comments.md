@@ -3,7 +3,7 @@ name: dataforseo_serp_youtube_video_comments
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get top 20 YouTube video comments with author info and metrics.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `dataforseo`, `serp`, `video`, `youtube` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 

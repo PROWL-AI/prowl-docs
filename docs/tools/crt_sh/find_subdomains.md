@@ -3,7 +3,7 @@ name: find_subdomains
 provider: crt.sh
 provider_slug: crt_sh
 category: utility
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Discover recently active subdomains for a domain using certificate transparency 
 | Blocking | `False` |
 | Chain role | `discovery` |
 | Tags | `crt.sh`, `domain`, `utility` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `FAIL` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `FAIL` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 

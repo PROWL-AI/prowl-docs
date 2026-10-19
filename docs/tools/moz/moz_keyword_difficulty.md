@@ -3,7 +3,7 @@ name: moz_keyword_difficulty
 provider: Moz
 provider_slug: moz
 category: seo
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Moz Keyword Difficulty (1-100) — how hard ranking page one is, derived from th
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `keywords`, `moz`, `seo` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 

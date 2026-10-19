@@ -3,7 +3,7 @@ name: meta_ad_library
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Meta Ad Library — search Facebook/Instagram ads by keyword or advertiser.
 | Blocking | `False` |
 | Chain role | `discovery` |
 | Tags | `ads`, `searchapi` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `PASS` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 

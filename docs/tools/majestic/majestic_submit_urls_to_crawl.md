@@ -3,7 +3,7 @@ name: majestic_submit_urls_to_crawl
 provider: Majestic
 provider_slug: majestic
 category: seo
-generated_at: 2026-10-08T02:26:09Z
+generated_at: 2026-10-19T19:29:22Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Submit up to 100 URLs/domains to Majestic's crawler (best-effort, no completion 
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `majestic`, `seo` |
-| Last schema check | `PASS` — 2026-10-05T17:01:43Z |
-| Last live API check | `SKIP` — 2026-10-05T17:01:43.410344 |
+| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
+| Last live API check | `SKIP` — 2026-10-19T15:28:00.019632 |
 
 ## Call it
 
