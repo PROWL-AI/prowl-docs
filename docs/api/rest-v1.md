@@ -9,8 +9,9 @@ gains 444 market data tools and every call is metered against a prepaid USD
 wallet. This API is the other half of that arrangement: read the balance, read what each
 call cost, and manage the keys that authorise them.
 
-Authentication is a bearer token — either a JWT from sign-in or a `prowl_...` API key
-generated in MCP Home. Two operations need no credential at all, because a price list
+Authentication is a bearer token: the JWT from signing in to prowl.chat. A `prowl_...` API
+key does not open these routes; an agent that holds one reads the same wallet through the
+MCP tool `prowl_get_wallet`. Two operations need no credential at all, because a price list
 that demands a key cannot be compared before you buy: `GET /api/v1/tools/pricing` and
 `GET /api/v1/tools/catalog`.
 
