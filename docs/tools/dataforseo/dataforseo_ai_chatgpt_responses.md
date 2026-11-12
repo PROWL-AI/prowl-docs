@@ -3,7 +3,7 @@ name: dataforseo_ai_chatgpt_responses
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T02:16:56Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -52,7 +52,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `web_search_city` | string | no |  | city name of the location |
 | `web_search_country_iso_code` | string | no |  | ISO country code of the location |
 | `user_prompt` | string | yes |  | Prompt for ChatGPT (max 500 chars) |
-| `model_name` | string | no |  | ChatGPT model name (e.g. gpt-4.1). See /v3/ai_optimization/chat_gpt/llm_responses/models for available models. |
+| `model_name` | string | no |  | ChatGPT model name (e.g. gpt-5.5). See /v3/ai_optimization/chat_gpt/llm_responses/models for available models. |
 | `max_output_tokens` | integer | no |  | Max tokens in response (16-4096, default 2048) |
 | `temperature` | number | no |  | Randomness 0-2 (default 0.94) |
 | `web_search` | boolean | no |  | Enable web search for current information |
@@ -97,7 +97,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "model_name": {
       "type": "string",
-      "description": "ChatGPT model name (e.g. gpt-4.1). See /v3/ai_optimization/chat_gpt/llm_responses/models for available models."
+      "description": "ChatGPT model name (e.g. gpt-5.5). See /v3/ai_optimization/chat_gpt/llm_responses/models for available models."
     },
     "max_output_tokens": {
       "type": "integer",
