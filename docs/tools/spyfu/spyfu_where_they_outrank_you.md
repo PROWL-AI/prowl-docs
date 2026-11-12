@@ -3,7 +3,7 @@ name: spyfu_where_they_outrank_you
 provider: SpyFu
 provider_slug: spyfu
 category: seo
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get keywords where a specific competitor outranks your domain organically.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `seo`, `spyfu` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 

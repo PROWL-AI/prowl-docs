@@ -3,7 +3,7 @@ name: seo_growth_check_technical
 provider: SEO Growth
 provider_slug: seo_growth
 category: seo
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Site-wide technical SEO + pattern detection check: trust pages, sitemap, mass 40
 | Blocking | `True` |
 | Chain role | `standalone` |
 | Tags | `seo`, `seo-growth` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `SKIP` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `SKIP` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 

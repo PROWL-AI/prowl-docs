@@ -3,7 +3,7 @@ name: firecrawl_scrape_mobile_app
 provider: Firecrawl
 provider_slug: firecrawl
 category: web
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Scrape an App Store or Google Play page (and Sensor Tower if available) to extra
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `firecrawl`, `scrape`, `web` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 
@@ -94,8 +94,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `firecrawl_scrape_page_seo`
-- `scrape_review_platforms`
 - `firecrawl_scrape_website`
+- `scrape_review_platforms`
 
 _Full paths: [catalog index](../README.md)._
 

@@ -3,7 +3,7 @@ name: moz_v2_linking_root_domains
 provider: Moz
 provider_slug: moz
 category: seo
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Legacy Links API referring domains with LINK VELOCITY: filter to domains gained 
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `domain`, `moz`, `seo` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 

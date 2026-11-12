@@ -3,7 +3,7 @@ name: majestic_download_back_links
 provider: Majestic
 provider_slug: majestic
 category: seo
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ START AN ASYNC EXPORT JOB for the full backlink set of a domain/URL (beyond the 
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `ads`, `majestic`, `seo` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `SKIP` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `SKIP` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 

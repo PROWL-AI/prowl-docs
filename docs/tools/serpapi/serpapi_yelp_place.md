@@ -3,7 +3,7 @@ name: serpapi_yelp_place
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Yelp business details via SerpAPI.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `places`, `serp`, `serpapi`, `serpapi_serp` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 
@@ -133,8 +133,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 ## Alternatives
 
 - `serpapi_tripadvisor_place`
-- `serpapi_amazon_product`
 - `serpapi_amazon`
+- `serpapi_amazon_product`
 
 _Full paths: [catalog index](../README.md)._
 

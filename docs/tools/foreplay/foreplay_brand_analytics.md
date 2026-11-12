@@ -3,7 +3,7 @@ name: foreplay_brand_analytics
 provider: Foreplay
 provider_slug: foreplay
 category: ads
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get analytics data for a specific brand or page over a date range.
 | Blocking | `False` |
 | Chain role | `dependent` |
 | Tags | `ads`, `foreplay` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 

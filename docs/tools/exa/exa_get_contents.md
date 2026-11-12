@@ -3,7 +3,7 @@ name: exa_get_contents
 provider: Exa
 provider_slug: exa
 category: web
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Retrieve page contents for a list of URLs via Exa.
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `exa`, `web` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 
@@ -149,8 +149,8 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
-- `firecrawl_scrape_page_markdown`
 - `firecrawl_scrape_website`
+- `firecrawl_scrape_page_markdown`
 
 _Full paths: [catalog index](../README.md)._
 

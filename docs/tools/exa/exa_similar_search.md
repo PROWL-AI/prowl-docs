@@ -3,7 +3,7 @@ name: exa_similar_search
 provider: Exa
 provider_slug: exa
 category: web
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Find websites similar to a given URL using Exa's similarity search.
 | Blocking | `False` |
 | Chain role | `discovery` |
 | Tags | `exa`, `search`, `web` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 

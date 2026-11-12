@@ -3,7 +3,7 @@ name: majestic_get_new_lost_back_link_calendar
 provider: Majestic
 provider_slug: majestic
 category: seo
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Daily counts of new and lost backlinks for an item — the valid date range for 
 | Blocking | `False` |
 | Chain role | `discovery` |
 | Tags | `majestic`, `seo` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 

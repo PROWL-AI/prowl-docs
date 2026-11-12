@@ -3,7 +3,7 @@ name: meta_ad_library_page_search
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Meta Ad Library Page Search — find advertiser pages on Facebook/Instagram by n
 | Blocking | `False` |
 | Chain role | `discovery` |
 | Tags | `ads`, `onpage`, `search`, `searchapi` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 

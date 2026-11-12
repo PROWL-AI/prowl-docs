@@ -3,7 +3,7 @@ name: keywords_everywhere_keyword_data
 provider: Keywords Everywhere
 provider_slug: keywords_everywhere
 category: seo
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Keywords Everywhere flagship: batch search volume, CPC, competition and a 12-mon
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `keywords`, `keywords-everywhere`, `seo` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 

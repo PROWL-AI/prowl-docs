@@ -3,7 +3,7 @@ name: dataforseo_kw_google_ads_keywords_for_keywords
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-10-19T19:29:22Z
+generated_at: 2026-11-12T03:00:29Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -21,8 +21,8 @@ Get keyword suggestions from Google Ads based on seed keywords — expand keywor
 | Blocking | `False` |
 | Chain role | `standalone` |
 | Tags | `ads`, `dataforseo`, `google`, `keywords` |
-| Last schema check | `PASS` — 2026-10-19T15:28:00Z |
-| Last live API check | `PASS` — 2026-10-19T15:28:00.019632 |
+| Last schema check | `PASS` — 2026-11-12T02:56:36Z |
+| Last live API check | `PASS` — 2026-11-12T02:56:36.486392 |
 
 ## Call it
 
