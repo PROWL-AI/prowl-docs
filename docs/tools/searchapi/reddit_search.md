@@ -3,7 +3,7 @@ name: reddit_search
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-13T02:31:46Z
+generated_at: 2026-11-13T11:34:55Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -149,7 +149,11 @@ _Actions below that name a provider credential are ours to fix, not yours — se
 
 ## Alternatives
 
-_None listed._
+- `airbnb_search`
+- `amazon_search`
+- `baidu_search`
+
+_Full paths: [catalog index](../README.md)._
 
 ## Provider docs
 

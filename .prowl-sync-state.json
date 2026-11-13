@@ -971,36 +971,6 @@
         "targets"
       ]
     },
-    "dataforseo_biz_social_pinterest": {
-      "errors": [
-        "401",
-        "402",
-        "429",
-        "500"
-      ],
-      "params": [
-        "targets"
-      ],
-      "provider": "DataForSEO",
-      "required": [
-        "targets"
-      ]
-    },
-    "dataforseo_biz_social_reddit": {
-      "errors": [
-        "401",
-        "402",
-        "429",
-        "500"
-      ],
-      "params": [
-        "targets"
-      ],
-      "provider": "DataForSEO",
-      "required": [
-        "targets"
-      ]
-    },
     "dataforseo_biz_tripadvisor_search": {
       "errors": [
         "401",

@@ -1,4 +1,4 @@
-# Tool catalog — 444 tools
+# Tool catalog — 442 tools
 
 Every tool an agent can reach through the Prowl MCP endpoint at `https://prowl.chat/mcp`, across 17 providers. Each page carries the input schema, an example request, the response shape, the error table and the tools it chains with.
 
@@ -6,7 +6,7 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 
 ## By provider
 
-### DataForSEO (148)
+### DataForSEO (146)
 
 | Tool | Reference |
 |---|---|
@@ -30,8 +30,6 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 | `dataforseo_biz_google_reviews` | [dataforseo/dataforseo_biz_google_reviews.md](dataforseo/dataforseo_biz_google_reviews.md) |
 | `dataforseo_biz_listings_search` | [dataforseo/dataforseo_biz_listings_search.md](dataforseo/dataforseo_biz_listings_search.md) |
 | `dataforseo_biz_social_facebook` | [dataforseo/dataforseo_biz_social_facebook.md](dataforseo/dataforseo_biz_social_facebook.md) |
-| `dataforseo_biz_social_pinterest` | [dataforseo/dataforseo_biz_social_pinterest.md](dataforseo/dataforseo_biz_social_pinterest.md) |
-| `dataforseo_biz_social_reddit` | [dataforseo/dataforseo_biz_social_reddit.md](dataforseo/dataforseo_biz_social_reddit.md) |
 | `dataforseo_biz_tripadvisor_search` | [dataforseo/dataforseo_biz_tripadvisor_search.md](dataforseo/dataforseo_biz_tripadvisor_search.md) |
 | `dataforseo_biz_trustpilot_search` | [dataforseo/dataforseo_biz_trustpilot_search.md](dataforseo/dataforseo_biz_trustpilot_search.md) |
 | `dataforseo_bl_anchors` | [dataforseo/dataforseo_bl_anchors.md](dataforseo/dataforseo_bl_anchors.md) |

@@ -895,7 +895,7 @@
       "name": "Prowl",
       "url": "https://prowl.chat/contact/"
     },
-    "description": "The REST surface an agent uses to watch what it is spending.\n\nProwl's product surface is the MCP endpoint at `https://prowl.chat/mcp`, where an agent\ngains 444 market data tools and every call is metered against a prepaid USD\nwallet. This API is the other half of that arrangement: read the balance, read what each\ncall cost, and manage the keys that authorise them.\n\nAuthentication is a bearer token: the JWT from signing in to prowl.chat. A `prowl_...` API\nkey does not open these routes; an agent that holds one reads the same wallet through the\nMCP tool `prowl_get_wallet`. Two operations need no credential at all, because a price list\nthat demands a key cannot be compared before you buy: `GET /api/v1/tools/pricing` and\n`GET /api/v1/tools/catalog`.\n",
+    "description": "The REST surface an agent uses to watch what it is spending.\n\nProwl's product surface is the MCP endpoint at `https://prowl.chat/mcp`, where an agent\ngains 442 market data tools and every call is metered against a prepaid USD\nwallet. This API is the other half of that arrangement: read the balance, read what each\ncall cost, and manage the keys that authorise them.\n\nAuthentication is a bearer token: the JWT from signing in to prowl.chat. A `prowl_...` API\nkey does not open these routes; an agent that holds one reads the same wallet through the\nMCP tool `prowl_get_wallet`. Two operations need no credential at all, because a price list\nthat demands a key cannot be compared before you buy: `GET /api/v1/tools/pricing` and\n`GET /api/v1/tools/catalog`.\n",
     "license": {
       "name": "Proprietary",
       "url": "https://prowl.chat/terms/"

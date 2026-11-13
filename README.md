@@ -1,7 +1,7 @@
 # Prowl documentation
 
 **Real-world market data for your agents.** One MCP endpoint gives any agent —
-Claude Code, Cursor, Codex, or your own stack — **444** market data
+Claude Code, Cursor, Codex, or your own stack — **442** market data
 tools across **17** providers: search, SEO, backlinks, paid ads, app
 stores, reviews, social, trends, finance, web scraping and LLM-mention tracking.
 Billed per call against one USD wallet. The same tools power Prowl Agent, the
@@ -14,7 +14,7 @@ calls, checks its claims and writes a report.
 Endpoint   https://prowl.chat/mcp
 Auth       Authorization: Bearer prowl_<your_key>
 Tools      23 registered (21 logical + legacy aliases)
-Underneath 444 API tools reachable through prowl_call_tool
+Underneath 442 API tools reachable through prowl_call_tool
 ```
 
 ## Start here
@@ -24,7 +24,7 @@ Underneath 444 API tools reachable through prowl_call_tool
 | [Getting started](docs/getting-started.md) | Key → connect → first call, in that order |
 | [Client setup](docs/mcp/client-setup.md) | Cursor, Claude Code, Codex, and a generic MCP client |
 | [MCP tools reference](docs/mcp/tools-reference.md) | The 23 tools your agent sees |
-| [Tool catalog](docs/tools/README.md) | All 444 underlying tools, one page each |
+| [Tool catalog](docs/tools/README.md) | All 442 underlying tools, one page each |
 
 ## Then
 
