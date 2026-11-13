@@ -3,7 +3,7 @@ name: meta_ad_library_ad_details
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T03:51:52Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -33,7 +33,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
   "tool": "prowl_call_tool",
   "tool_name": "meta_ad_library_ad_details",
   "params": {
-    "ad_archive_id": "ad_archive_id_example"
+    "ad_archive_id": "ad_archive_id_example",
+    "ad_details_token": "example"
   }
 }
 ```
@@ -45,7 +46,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `ad_archive_id` | string | yes |  | Ad archive ID (Library ID from Meta Ad Library) |
-| `ad_details_token` | string | no |  | Token from the same meta_ad_library result (`ad_details_token`). Pass it with ad_archive_id — measured 2026-09-26, the id alone returns no results. |
+| `ad_details_token` | string | yes |  | Token from the same meta_ad_library result (`ad_details_token`). Required with ad_archive_id: measured 2026-09-26, the id alone returns no results. |
 | `page_id` | string | no |  | Advertiser's page ID (required when country is specified) |
 | `country` | string | no |  | Country for transparency data (requires page_id) |
 
@@ -61,7 +62,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "ad_details_token": {
       "type": "string",
-      "description": "Token from the same meta_ad_library result (`ad_details_token`). Pass it with ad_archive_id \u2014 measured 2026-09-26, the id alone returns no results."
+      "description": "Token from the same meta_ad_library result (`ad_details_token`). Required with ad_archive_id: measured 2026-09-26, the id alone returns no results."
     },
     "page_id": {
       "type": "string",
@@ -73,8 +74,14 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     }
   },
   "required": [
-    "ad_archive_id"
-  ]
+    "ad_archive_id",
+    "ad_details_token"
+  ],
+  "dependentRequired": {
+    "country": [
+      "page_id"
+    ]
+  }
 }
 ```
 
@@ -82,7 +89,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 ```json
 {
-  "ad_archive_id": "ad_archive_id_example"
+  "ad_archive_id": "ad_archive_id_example",
+  "ad_details_token": "example"
 }
 ```
 
