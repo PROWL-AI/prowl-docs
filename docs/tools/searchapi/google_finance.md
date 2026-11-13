@@ -3,7 +3,7 @@ name: google_finance
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T01:30:01Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -44,7 +44,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `q` | string | yes |  | Stock ticker or company name (e.g. 'GOOG', 'Apple') |
+| `q` | string | yes |  | SYMBOL:EXCHANGE for a stock, index, fund or future ('NVDA:NASDAQ', '.DJI:INDEXDJX', 'VTSAX:MUTF', 'GCW00:COMEX'); BASE-QUOTE for a currency or crypto ('BTC-USD', 'EUR-USD'). A bare ticker or a company name returns nothing. |
 | `hl` | string | no | `en` | Language code (default 'en') |
 | `window` | enum(1D, 5D, 1M, 6M, 1Y, 5Y) | no |  | Time window |
 
@@ -56,7 +56,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
   "properties": {
     "q": {
       "type": "string",
-      "description": "Stock ticker or company name (e.g. 'GOOG', 'Apple')"
+      "pattern": "^[^\\s:]+:[^\\s:]+$|^[A-Za-z0-9]+-[A-Za-z0-9]+$",
+      "description": "SYMBOL:EXCHANGE for a stock, index, fund or future ('NVDA:NASDAQ', '.DJI:INDEXDJX', 'VTSAX:MUTF', 'GCW00:COMEX'); BASE-QUOTE for a currency or crypto ('BTC-USD', 'EUR-USD'). A bare ticker or a company name returns nothing."
     },
     "hl": {
       "type": "string",

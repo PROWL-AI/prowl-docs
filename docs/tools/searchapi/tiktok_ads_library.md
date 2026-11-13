@@ -3,7 +3,7 @@ name: tiktok_ads_library
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T01:30:01Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `query` | string | yes |  | Search query |
-| `country` | string | no |  | Country code (e.g. 'US') |
+| `country` | string | no |  | Upper-case code of an EU/EEA country, CH, TR or GB (e.g. 'FR'), or 'all'. TikTok publishes no ad data for other markets: those are answered with 'all' and a `market_note`. |
 | `time_period` | string | no |  | Date range filter (YYYY-MM-DD..YYYY-MM-DD) |
 
 ### JSON Schema
@@ -60,7 +60,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "country": {
       "type": "string",
-      "description": "Country code (e.g. 'US')"
+      "description": "Upper-case code of an EU/EEA country, CH, TR or GB (e.g. 'FR'), or 'all'. TikTok publishes no ad data for other markets: those are answered with 'all' and a `market_note`."
     },
     "time_period": {
       "type": "string",

@@ -3,7 +3,7 @@ name: apple_app_store
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T01:30:01Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,8 +45,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `q` | string | yes |  | Search query |
-| `lang` | string | no | `en` | Language code (default 'en') |
-| `country` | string | no |  | Store country code (e.g. 'us', 'gb') |
+| `lang` | string | no |  | Store language as xx-yy (e.g. 'en-us', 'de-de'); a bare 'en' is completed with the store country. Omit for the store's default. |
+| `country` | string | no |  | Lower-case store country code (e.g. 'us', 'gb'). A country with no App Store storefront is answered from 'us', said in `market_note`. |
 
 ### JSON Schema
 
@@ -60,12 +60,11 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "lang": {
       "type": "string",
-      "description": "Language code (default 'en')",
-      "default": "en"
+      "description": "Store language as xx-yy (e.g. 'en-us', 'de-de'); a bare 'en' is completed with the store country. Omit for the store's default."
     },
     "country": {
       "type": "string",
-      "description": "Store country code (e.g. 'us', 'gb')"
+      "description": "Lower-case store country code (e.g. 'us', 'gb'). A country with no App Store storefront is answered from 'us', said in `market_note`."
     }
   },
   "required": [

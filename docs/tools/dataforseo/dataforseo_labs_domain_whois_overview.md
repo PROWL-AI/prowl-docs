@@ -3,7 +3,7 @@ name: dataforseo_labs_domain_whois_overview
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T01:30:01Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -48,7 +48,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `target` | string | yes |  | Target domain, subdomain, or URL (e.g. 'example.com') |
 | `limit` | integer | no |  | Max number of results |
 | `offset` | integer | no |  | Offset for pagination |
-| `order_by` | string[] | no |  | Sorting rules (e.g. ['keyword_data.keyword_info.search_volume,desc']) |
+| `order_by` | string[] | no |  | Sorting rules (e.g. ['metrics.organic.etv,desc']) |
 | `filters` | any[] | no |  | DataForSEO filter conditions array |
 
 ### JSON Schema
@@ -80,7 +80,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
       "items": {
         "type": "string"
       },
-      "description": "Sorting rules (e.g. ['keyword_data.keyword_info.search_volume,desc'])"
+      "description": "Sorting rules (e.g. ['metrics.organic.etv,desc'])"
     },
     "filters": {
       "type": "array",
