@@ -3,7 +3,7 @@ name: dataforseo_labs_amazon_product_keyword_intersections
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-11-13T02:31:46Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -44,7 +44,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `asins` | object | yes |  | Dict of ASINs keyed by position string (up to 20). E.g. {'1':'B01LW2SL7R','2':'B0DCCYZ1K2'} — the intersection endpoint takes a position-keyed object, not an array. |
+| `asins` | object | yes |  | Dict of ASINs keyed by position string (up to 20). E.g. {'1':'B01LW2SL7R','2':'B0DCCYZ1K2'}, the intersection endpoint takes a position-keyed object, not an array. |
 | `location_name` | string | no |  | Amazon marketplace location (e.g. 'United States'). Required if location_code omitted. |
 | `location_code` | integer | no |  | Location code (e.g. 2840). Required if location_name omitted. |
 | `language_name` | string | no |  | Language name (e.g. 'English'). Required if language_code omitted. |
@@ -64,7 +64,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
   "properties": {
     "asins": {
       "type": "object",
-      "description": "Dict of ASINs keyed by position string (up to 20). E.g. {'1':'B01LW2SL7R','2':'B0DCCYZ1K2'} \u2014 the intersection endpoint takes a position-keyed object, not an array."
+      "description": "Dict of ASINs keyed by position string (up to 20). E.g. {'1':'B01LW2SL7R','2':'B0DCCYZ1K2'}, the intersection endpoint takes a position-keyed object, not an array."
     },
     "location_name": {
       "type": "string",

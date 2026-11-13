@@ -3,7 +3,7 @@ name: keywords_everywhere_related_keywords
 provider: Keywords Everywhere
 provider_slug: keywords_everywhere
 category: seo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `keyword` | string | yes |  | Seed keyword (UTF-8) |
-| `num` | integer | no | `100` | Maximum results to return (1-10000). Each returned row costs credits — request only what the analysis needs. |
+| `num` | integer | no | `100` | Maximum results to return (1-10000). Each returned row costs credits: request only what the analysis needs. |
 
 ### JSON Schema
 
@@ -62,7 +62,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
       "default": 100,
       "minimum": 1,
       "maximum": 10000,
-      "description": "Maximum results to return (1-10000). Each returned row costs credits \u2014 request only what the analysis needs."
+      "description": "Maximum results to return (1-10000). Each returned row costs credits: request only what the analysis needs."
     }
   },
   "required": [

@@ -3,7 +3,7 @@ name: serpapi_walmart_product
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `product_id` | string | yes |  | Walmart product ID |
-| `store_id` | string | no |  | Walmart store id — price and stock are per store, so without it you get an arbitrary store's shelf. |
+| `store_id` | string | no |  | Walmart store id: price and stock are per store, so without it you get an arbitrary store's shelf. |
 
 ### JSON Schema
 
@@ -59,7 +59,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "store_id": {
       "type": "string",
-      "description": "Walmart store id \u2014 price and stock are per store, so without it you get an arbitrary store's shelf."
+      "description": "Walmart store id: price and stock are per store, so without it you get an arbitrary store's shelf."
     }
   },
   "required": [

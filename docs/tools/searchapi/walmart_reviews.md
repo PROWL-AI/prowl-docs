@@ -3,7 +3,7 @@ name: walmart_reviews
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -44,7 +44,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `product_id` | string | yes |  | Walmart's NUMERIC item id (e.g. '20349310960'). Take it from the `id` field of a walmart_search result — that result's own `product_id` field is a different, alphanumeric id this engine rejects with HTTP 400. |
+| `product_id` | string | yes |  | Walmart's NUMERIC item id (e.g. '20349310960'). Take it from the `id` field of a walmart_search result: that result's own `product_id` field is a different, alphanumeric id this engine rejects with HTTP 400. |
 | `page` | integer | no |  | Page number (for pagination) |
 | `sort_by` | enum(relevancy, submission-desc, submission-asc, rating-desc, rating-asc) | no |  | Sort reviews |
 
@@ -57,7 +57,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     "product_id": {
       "type": "string",
       "pattern": "^[0-9]+$",
-      "description": "Walmart's NUMERIC item id (e.g. '20349310960'). Take it from the `id` field of a walmart_search result \u2014 that result's own `product_id` field is a different, alphanumeric id this engine rejects with HTTP 400."
+      "description": "Walmart's NUMERIC item id (e.g. '20349310960'). Take it from the `id` field of a walmart_search result: that result's own `product_id` field is a different, alphanumeric id this engine rejects with HTTP 400."
     },
     "page": {
       "type": "integer",

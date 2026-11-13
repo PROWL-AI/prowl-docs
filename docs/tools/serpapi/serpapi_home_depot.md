@@ -3,7 +3,7 @@ name: serpapi_home_depot
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -46,7 +46,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 |-------|------|----------|---------|-------------|
 | `q` | string | yes |  | Search query |
 | `page` | integer | no |  | Page number for pagination |
-| `country` | enum(us, ca) | no |  | Market — Home Depot serves only the US and Canada. Defaults to the run's market when one was stated. |
+| `country` | enum(us, ca) | no |  | Market: Home Depot serves only the US and Canada. Defaults to the run's market when one was stated. |
 | `store_id` | string | no |  | Pin results to one US store; prices and stock are per store. |
 | `delivery_zip` | string | no |  | Filter to products that ship to this postcode. |
 | `sort` | enum(top_sellers, price_low_to_high, price_high_to_low, top_rated, best_match) | no |  | Sort order |
@@ -72,7 +72,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
         "us",
         "ca"
       ],
-      "description": "Market \u2014 Home Depot serves only the US and Canada. Defaults to the run's market when one was stated."
+      "description": "Market: Home Depot serves only the US and Canada. Defaults to the run's market when one was stated."
     },
     "store_id": {
       "type": "string",

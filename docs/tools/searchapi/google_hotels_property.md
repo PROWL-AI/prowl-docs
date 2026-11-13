@@ -3,7 +3,7 @@ name: google_hotels_property
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-13T02:31:46Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -47,8 +47,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `property_token` | string | yes |  | Property token from google_hotels results |
-| `check_in_date` | string | yes |  | Check-in date (YYYY-MM-DD) — required by the engine |
-| `check_out_date` | string | yes |  | Check-out date (YYYY-MM-DD) — required by the engine |
+| `check_in_date` | string | yes |  | Check-in date (YYYY-MM-DD): required by the engine |
+| `check_out_date` | string | yes |  | Check-out date (YYYY-MM-DD): required by the engine |
 | `hl` | string | no |  | Language code |
 | `gl` | string | no |  | Country code (e.g. 'us', 'gb') |
 | `currency` | string | no |  | Currency code (e.g. 'USD', 'EUR') |
@@ -65,11 +65,11 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "check_in_date": {
       "type": "string",
-      "description": "Check-in date (YYYY-MM-DD) \u2014 required by the engine"
+      "description": "Check-in date (YYYY-MM-DD): required by the engine"
     },
     "check_out_date": {
       "type": "string",
-      "description": "Check-out date (YYYY-MM-DD) \u2014 required by the engine"
+      "description": "Check-out date (YYYY-MM-DD): required by the engine"
     },
     "hl": {
       "type": "string",

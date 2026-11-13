@@ -3,7 +3,7 @@ name: serpapi_ebay
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -46,9 +46,9 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 |-------|------|----------|---------|-------------|
 | `q` | string | yes |  | Search query |
 | `page` | integer | no |  | Page number for pagination |
-| `ebay_domain` | string | no |  | Regional eBay site, e.g. 'ebay.co.uk', 'ebay.de'. Defaults to ebay.com — set it or you are pricing the US marketplace. |
+| `ebay_domain` | string | no |  | Regional eBay site, e.g. 'ebay.co.uk', 'ebay.de'. Defaults to ebay.com: set it or you are pricing the US marketplace. |
 | `location_id` | string | no |  | Seller-location filter. eBay's OWN numeric id, not an ISO code (US=1, CA=2, GB=3, JP=104; full list at serpapi.com/ebay-location-options). |
-| `delivery_zip` | string | no |  | ZIP/postal code — restricts to items that ship to that area. |
+| `delivery_zip` | string | no |  | ZIP/postal code: restricts to items that ship to that area. |
 | `preferred_location` | enum(Domestic, Regional, Worldwide) | no |  | Preferred seller location. Pass the word; it is translated to eBay's ordinal on the wire (SerpApi documents the words but returns HTTP 400 for them). |
 
 ### JSON Schema
@@ -68,7 +68,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "ebay_domain": {
       "type": "string",
-      "description": "Regional eBay site, e.g. 'ebay.co.uk', 'ebay.de'. Defaults to ebay.com \u2014 set it or you are pricing the US marketplace."
+      "description": "Regional eBay site, e.g. 'ebay.co.uk', 'ebay.de'. Defaults to ebay.com: set it or you are pricing the US marketplace."
     },
     "location_id": {
       "type": "string",
@@ -76,7 +76,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "delivery_zip": {
       "type": "string",
-      "description": "ZIP/postal code \u2014 restricts to items that ship to that area."
+      "description": "ZIP/postal code: restricts to items that ship to that area."
     },
     "preferred_location": {
       "type": "string",

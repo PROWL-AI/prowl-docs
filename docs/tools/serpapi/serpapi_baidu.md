@@ -3,7 +3,7 @@ name: serpapi_baidu
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `q` | string | yes |  | Search query |
-| `pn` | integer | no |  | Result offset — skips the given number of results |
+| `pn` | integer | no |  | Result offset: skips the given number of results |
 | `rn` | integer | no |  | Maximum results to return (max 50) |
 | `ct` | enum(1, 2, 3) | no |  | Language restriction: 1 all, 2 simplified Chinese, 3 traditional Chinese. |
 
@@ -61,7 +61,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "pn": {
       "type": "integer",
-      "description": "Result offset \u2014 skips the given number of results"
+      "description": "Result offset: skips the given number of results"
     },
     "rn": {
       "type": "integer",

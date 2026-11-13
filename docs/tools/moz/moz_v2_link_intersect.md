@@ -3,7 +3,7 @@ name: moz_v2_link_intersect
 provider: Moz
 provider_slug: moz
 category: seo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -48,12 +48,12 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `positive_targets` | string[] | yes |  | Competitor domains the prospects must link to (max 6 across positive + negative) |
-| `negative_targets` | string[] | no |  | Domains the prospects must NOT link to — usually the client |
+| `negative_targets` | string[] | no |  | Domains the prospects must NOT link to: usually the client |
 | `scope` | enum(page, subdomain, root_domain) | no | `root_domain` | Query scope: 'page' (exact URL), 'subdomain', or 'root_domain' |
 | `source_scope` | enum(page, root_domain) | no |  | Scope of the linking sources (Moz default 'page') |
 | `min_matching_targets` | integer | no |  | Only return sources matching at least this many positive targets |
 | `sort` | enum(matching_target_count, source_domain_authority, source_spam_score) | no |  | Sort order (Moz default matching_target_count) |
-| `limit` | integer | no | `25` | Max rows to return (1-50); every returned row bills Moz quota — this is the cost dial |
+| `limit` | integer | no | `25` | Max rows to return (1-50); every returned row bills Moz quota: this is the cost dial |
 | `next_token` | string | no |  | Pagination cursor |
 
 ### JSON Schema
@@ -77,7 +77,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
         "type": "string"
       },
       "maxItems": 6,
-      "description": "Domains the prospects must NOT link to \u2014 usually the client"
+      "description": "Domains the prospects must NOT link to: usually the client"
     },
     "scope": {
       "type": "string",
@@ -116,7 +116,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
       "default": 25,
       "minimum": 1,
       "maximum": 50,
-      "description": "Max rows to return (1-50); every returned row bills Moz quota \u2014 this is the cost dial"
+      "description": "Max rows to return (1-50); every returned row bills Moz quota: this is the cost dial"
     },
     "next_token": {
       "type": "string",

@@ -3,7 +3,7 @@ name: walmart_search
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `q` | string | yes |  | Search query |
-| `store_id` | string | no |  | Walmart store id — prices and availability are per store. Omitted means SearchAPI's default store 3081. |
+| `store_id` | string | no |  | Walmart store id: prices and availability are per store. Omitted means SearchAPI's default store 3081. |
 | `page` | integer | no |  | Page number (for pagination) |
 | `sort_by` | enum(best_seller, best_match, price_low, price_high) | no |  | Sort products |
 
@@ -61,7 +61,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "store_id": {
       "type": "string",
-      "description": "Walmart store id \u2014 prices and availability are per store. Omitted means SearchAPI's default store 3081."
+      "description": "Walmart store id: prices and availability are per store. Omitted means SearchAPI's default store 3081."
     },
     "page": {
       "type": "integer",

@@ -3,7 +3,7 @@ name: dataforseo_domain_domains_by_technology
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-11-13T02:31:46Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -47,7 +47,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `keywords` | any[] | no |  | target keywords in the domain’s title, description or meta keywords |
 | `mode` | string | no |  | search mode |
 | `offset_token` | string | no |  | token for subsequent requests |
-| `technology_paths` | object[] | no |  | target technology paths — objects {path, name}, up to 10, e.g. [{"path": "content.cms", "name": "wordpress"}]. A bare string is rejected by DataForSEO with 40501 (T359). |
+| `technology_paths` | object[] | no |  | target technology paths: objects {path, name}, up to 10, e.g. [{"path": "content.cms", "name": "wordpress"}]. A bare string is rejected by DataForSEO with 40501 (T359). |
 | `technologies` | string[] | no |  | Technology names (e.g. 'WordPress', 'React') |
 | `limit` | integer | no |  | Max number of results |
 | `offset` | integer | no |  | Offset for pagination |
@@ -100,7 +100,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
           "name"
         ]
       },
-      "description": "target technology paths \u2014 objects {path, name}, up to 10, e.g. [{\"path\": \"content.cms\", \"name\": \"wordpress\"}]. A bare string is rejected by DataForSEO with 40501 (T359)."
+      "description": "target technology paths: objects {path, name}, up to 10, e.g. [{\"path\": \"content.cms\", \"name\": \"wordpress\"}]. A bare string is rejected by DataForSEO with 40501 (T359)."
     },
     "technologies": {
       "type": "array",

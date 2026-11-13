@@ -3,7 +3,7 @@ name: resolve_app_store_ids
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-13T02:31:46Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `brand_name` | string | yes |  | Brand or app name to search for |
-| `domain` | string | no |  | Optional: site domain (e.g. esimplus.me) — adds queries like brand+domain and site:apps.apple.com |
+| `domain` | string | no |  | Optional: site domain (e.g. esimplus.me): adds queries like brand+domain and site:apps.apple.com |
 | `company_name` | string | no |  | Optional: legal or display company name if different from brand |
 | `alternate_queries` | string[] | no |  | Optional extra search strings (e.g. 'eSIM Plus', product nicknames) |
 | `gl` | string | no | `us` | Country code (default 'us') |
@@ -62,7 +62,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "domain": {
       "type": "string",
-      "description": "Optional: site domain (e.g. esimplus.me) \u2014 adds queries like brand+domain and site:apps.apple.com"
+      "description": "Optional: site domain (e.g. esimplus.me): adds queries like brand+domain and site:apps.apple.com"
     },
     "company_name": {
       "type": "string",

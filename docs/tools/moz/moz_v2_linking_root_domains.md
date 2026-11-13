@@ -3,7 +3,7 @@ name: moz_v2_linking_root_domains
 provider: Moz
 provider_slug: moz
 category: seo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -48,9 +48,9 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `target_scope` | enum(page, subdomain, root_domain) | no | `root_domain` | Query scope: 'page' (exact URL), 'subdomain', or 'root_domain' |
 | `filter` | enum(external, external+follow, external+nofollow, external+deleted, external+not_deleted, external+gained_last_60_days, external+lost_last_60_days) | no |  | Filter (Moz default 'external'); the gained/lost variants are the velocity read |
 | `sort` | enum(source_domain_authority, source_link_propensity, source_spam_score, date_gained, date_lost) | no |  | Sort order (Moz default source_domain_authority) |
-| `begin_date` | string | no |  | Window start YYYY-MM-DD — only valid with sort=date_gained\|date_lost |
-| `end_date` | string | no |  | Window end YYYY-MM-DD — only valid with sort=date_gained\|date_lost |
-| `limit` | integer | no | `25` | Max rows to return (1-50); every returned row bills Moz quota — this is the cost dial |
+| `begin_date` | string | no |  | Window start YYYY-MM-DD: only valid with sort=date_gained\|date_lost |
+| `end_date` | string | no |  | Window end YYYY-MM-DD: only valid with sort=date_gained\|date_lost |
+| `limit` | integer | no | `25` | Max rows to return (1-50); every returned row bills Moz quota: this is the cost dial |
 | `next_token` | string | no |  | Pagination cursor |
 
 ### JSON Schema
@@ -99,18 +99,18 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "begin_date": {
       "type": "string",
-      "description": "Window start YYYY-MM-DD \u2014 only valid with sort=date_gained|date_lost"
+      "description": "Window start YYYY-MM-DD: only valid with sort=date_gained|date_lost"
     },
     "end_date": {
       "type": "string",
-      "description": "Window end YYYY-MM-DD \u2014 only valid with sort=date_gained|date_lost"
+      "description": "Window end YYYY-MM-DD: only valid with sort=date_gained|date_lost"
     },
     "limit": {
       "type": "integer",
       "default": 25,
       "minimum": 1,
       "maximum": 50,
-      "description": "Max rows to return (1-50); every returned row bills Moz quota \u2014 this is the cost dial"
+      "description": "Max rows to return (1-50); every returned row bills Moz quota: this is the cost dial"
     },
     "next_token": {
       "type": "string",

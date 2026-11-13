@@ -3,7 +3,7 @@ name: moz_v2_anchor_text
 provider: Moz
 provider_slug: moz
 category: seo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -46,7 +46,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 |-------|------|----------|---------|-------------|
 | `target` | string | yes |  | Domain, subdomain, or URL |
 | `scope` | enum(page, subdomain, root_domain) | no | `root_domain` | Query scope: 'page' (exact URL), 'subdomain', or 'root_domain' |
-| `limit` | integer | no | `25` | Max rows to return (1-50); every returned row bills Moz quota — this is the cost dial |
+| `limit` | integer | no | `25` | Max rows to return (1-50); every returned row bills Moz quota: this is the cost dial |
 | `next_token` | string | no |  | Pagination cursor |
 
 ### JSON Schema
@@ -74,7 +74,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
       "default": 25,
       "minimum": 1,
       "maximum": 50,
-      "description": "Max rows to return (1-50); every returned row bills Moz quota \u2014 this is the cost dial"
+      "description": "Max rows to return (1-50); every returned row bills Moz quota: this is the cost dial"
     },
     "next_token": {
       "type": "string",

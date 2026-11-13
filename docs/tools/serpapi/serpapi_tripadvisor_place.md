@@ -3,7 +3,7 @@ name: serpapi_tripadvisor_place
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `data_id` | string | yes |  | Tripadvisor data_id from search results |
-| `tripadvisor_domain` | string | no |  | Regional Tripadvisor site, e.g. 'www.tripadvisor.co.uk'. Use the SAME domain the data_id was found on — otherwise you read the place back in another language and review set. SerpApi requires the www. prefix; it is added for you if omitted. |
+| `tripadvisor_domain` | string | no |  | Regional Tripadvisor site, e.g. 'www.tripadvisor.co.uk'. Use the SAME domain the data_id was found on: otherwise you read the place back in another language and review set. SerpApi requires the www. prefix; it is added for you if omitted. |
 
 ### JSON Schema
 
@@ -59,7 +59,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "tripadvisor_domain": {
       "type": "string",
-      "description": "Regional Tripadvisor site, e.g. 'www.tripadvisor.co.uk'. Use the SAME domain the data_id was found on \u2014 otherwise you read the place back in another language and review set. SerpApi requires the www. prefix; it is added for you if omitted."
+      "description": "Regional Tripadvisor site, e.g. 'www.tripadvisor.co.uk'. Use the SAME domain the data_id was found on: otherwise you read the place back in another language and review set. SerpApi requires the www. prefix; it is added for you if omitted."
     }
   },
   "required": [

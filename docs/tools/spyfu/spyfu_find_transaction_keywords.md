@@ -3,7 +3,7 @@ name: spyfu_find_transaction_keywords
 provider: SpyFu
 provider_slug: spyfu
 category: seo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `adult_filter` | boolean | no |  | Exclude adult keywords considered unsafe. SpyFu's own default is true; set false to include them. |
-| `starting_row` | integer | no |  | Row number to start results with (1-10000) — the only way to read past the first page. |
+| `starting_row` | integer | no |  | Row number to start results with (1-10000): the only way to read past the first page. |
 | `query` | string | yes |  | Keyword or phrase to find transaction keywords for |
 | `page_size` | integer | no | `30` | Number of results (default: 30) |
 | `country_code` | enum(AR, AT, AU, BE, BR, CA, CH, DE, DK, ES, FR, IE, IN, IT, JP, MX, NL, NO, NZ, PL, PT, SE, SG, TR, UA, UK, US, ZA) | no | `US` | Two-letter country code. Supported: AR, AT, AU, BE, BR, CA, CH, DE, DK, ES, FR, IE, IN, IT, JP, MX, NL, NO, NZ, PL, PT, SE, SG, TR, UA, UK, US, ZA. Default: US |
@@ -62,7 +62,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "starting_row": {
       "type": "integer",
-      "description": "Row number to start results with (1-10000) \u2014 the only way to read past the first page.",
+      "description": "Row number to start results with (1-10000): the only way to read past the first page.",
       "minimum": 1,
       "maximum": 10000
     },

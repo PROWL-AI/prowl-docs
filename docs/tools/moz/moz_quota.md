@@ -3,7 +3,7 @@ name: moz_quota
 provider: Moz
 provider_slug: moz
 category: seo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -42,7 +42,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `path` | string | no | `api.limits.data.rows` | Quota path to inspect (default 'api.limits.data.rows' — data rows) |
+| `path` | string | no | `api.limits.data.rows` | Quota path to inspect (default 'api.limits.data.rows': data rows) |
 
 ### JSON Schema
 
@@ -53,7 +53,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     "path": {
       "type": "string",
       "default": "api.limits.data.rows",
-      "description": "Quota path to inspect (default 'api.limits.data.rows' \u2014 data rows)"
+      "description": "Quota path to inspect (default 'api.limits.data.rows': data rows)"
     }
   }
 }

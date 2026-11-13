@@ -3,7 +3,7 @@ name: moz_v2_global_top_pages
 provider: Moz
 provider_slug: moz
 category: seo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -42,7 +42,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `limit` | integer | no | `25` | Max rows to return (1-50); every returned row bills Moz quota — this is the cost dial |
+| `limit` | integer | no | `25` | Max rows to return (1-50); every returned row bills Moz quota: this is the cost dial |
 | `next_token` | string | no |  | Pagination cursor |
 
 ### JSON Schema
@@ -56,7 +56,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
       "default": 25,
       "minimum": 1,
       "maximum": 50,
-      "description": "Max rows to return (1-50); every returned row bills Moz quota \u2014 this is the cost dial"
+      "description": "Max rows to return (1-50); every returned row bills Moz quota: this is the cost dial"
     },
     "next_token": {
       "type": "string",

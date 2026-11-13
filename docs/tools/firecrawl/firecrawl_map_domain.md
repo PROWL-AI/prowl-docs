@@ -3,7 +3,7 @@ name: firecrawl_map_domain
 provider: Firecrawl
 provider_slug: firecrawl
 category: web
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -48,7 +48,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `limit` | integer | no | `10` | Maximum number of pages to return |
 | `search` | string | no |  | Only return pages matching this term, e.g. 'pricing'. |
 | `include_subdomains` | boolean | no |  | Also map pages on subdomains of this domain. |
-| `sitemap` | enum(only, include, skip) | no |  | How the sitemap is used: 'include' (default) maps from the sitemap and discovery, 'only' trusts the sitemap alone, 'skip' ignores it — the mode for a site that has no sitemap. |
+| `sitemap` | enum(only, include, skip) | no |  | How the sitemap is used: 'include' (default) maps from the sitemap and discovery, 'only' trusts the sitemap alone, 'skip' ignores it: the mode for a site that has no sitemap. |
 | `timeout` | integer | no |  | Milliseconds to allow the map before giving up. |
 
 ### JSON Schema
@@ -76,7 +76,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "sitemap": {
       "type": "string",
-      "description": "How the sitemap is used: 'include' (default) maps from the sitemap and discovery, 'only' trusts the sitemap alone, 'skip' ignores it \u2014 the mode for a site that has no sitemap.",
+      "description": "How the sitemap is used: 'include' (default) maps from the sitemap and discovery, 'only' trusts the sitemap alone, 'skip' ignores it: the mode for a site that has no sitemap.",
       "enum": [
         "only",
         "include",

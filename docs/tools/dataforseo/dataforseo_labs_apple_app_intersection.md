@@ -3,7 +3,7 @@ name: dataforseo_labs_apple_app_intersection
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-11-13T02:31:46Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -44,7 +44,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `app_ids` | object | yes |  | Dict of numeric Apple App Store IDs keyed by position string (up to 20). E.g. {'1':'686449807','2':'382617920'} — the intersection endpoint takes a position-keyed object, not an array. |
+| `app_ids` | object | yes |  | Dict of numeric Apple App Store IDs keyed by position string (up to 20). E.g. {'1':'686449807','2':'382617920'}, the intersection endpoint takes a position-keyed object, not an array. |
 | `location_name` | string | no |  | App Store locale location (e.g. 'United States'). Required if location_code omitted. |
 | `location_code` | integer | no |  | Location code (e.g. 2840). Required if location_name omitted. |
 | `language_name` | string | no |  | Language name (e.g. 'English'). Required if language_code omitted. |
@@ -63,7 +63,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
   "properties": {
     "app_ids": {
       "type": "object",
-      "description": "Dict of numeric Apple App Store IDs keyed by position string (up to 20). E.g. {'1':'686449807','2':'382617920'} \u2014 the intersection endpoint takes a position-keyed object, not an array."
+      "description": "Dict of numeric Apple App Store IDs keyed by position string (up to 20). E.g. {'1':'686449807','2':'382617920'}, the intersection endpoint takes a position-keyed object, not an array."
     },
     "location_name": {
       "type": "string",

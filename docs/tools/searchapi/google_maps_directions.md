@@ -3,7 +3,7 @@ name: google_maps_directions
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-13T02:31:46Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,8 +45,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `origin` | string | yes |  | Starting point — address, data ID, or coordinates (lat,long). Mapped to 'from' in the API request. |
-| `destination` | string | yes |  | Destination — address, data ID, or coordinates (lat,long). Mapped to 'to' in the API request. |
+| `origin` | string | yes |  | Starting point: address, data ID, or coordinates (lat,long). Mapped to 'from' in the API request. |
+| `destination` | string | yes |  | Destination: address, data ID, or coordinates (lat,long). Mapped to 'to' in the API request. |
 | `travel_mode` | enum(best, driving, transit, walking, cycling, flying) | no |  | Mode of travel |
 | `hl` | string | no |  | Language code |
 | `gl` | string | no |  | Country code (e.g. 'us', 'gb') |
@@ -59,11 +59,11 @@ Connect an agent to `https://prowl.chat/mcp`, then:
   "properties": {
     "origin": {
       "type": "string",
-      "description": "Starting point \u2014 address, data ID, or coordinates (lat,long). Mapped to 'from' in the API request."
+      "description": "Starting point: address, data ID, or coordinates (lat,long). Mapped to 'from' in the API request."
     },
     "destination": {
       "type": "string",
-      "description": "Destination \u2014 address, data ID, or coordinates (lat,long). Mapped to 'to' in the API request."
+      "description": "Destination: address, data ID, or coordinates (lat,long). Mapped to 'to' in the API request."
     },
     "travel_mode": {
       "type": "string",

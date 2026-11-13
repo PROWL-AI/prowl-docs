@@ -908,7 +908,7 @@
   "paths": {
     "/api/v1/keys": {
       "get": {
-        "description": "Every key on the account with its scope, limits and last use. Secrets are never returned \u2014 only the prefix, which is enough to tell two keys apart.",
+        "description": "Every key on the account with its scope, limits and last use. Secrets are never returned, only the prefix, which is enough to tell two keys apart.",
         "operationId": "getKeys",
         "parameters": [
           {
@@ -977,7 +977,7 @@
         "summary": "List API keys"
       },
       "post": {
-        "description": "Mints a `prowl_...` key, optionally scoped to categories, spend limits and an IP allowlist. **The secret is returned once and is never retrievable again** \u2014 store it when you receive it.",
+        "description": "Mints a `prowl_...` key, optionally scoped to categories, spend limits and an IP allowlist. **The secret is returned once and is never retrievable again**, so store it when you receive it.",
         "operationId": "createKeys",
         "parameters": [
           {
@@ -1160,7 +1160,7 @@
     },
     "/api/v1/tools/health": {
       "get": {
-        "description": "Success rate and latest outcome per tool over a recent window, aggregated across all callers \u2014 no per-user data. A tool missing from the reply had no calls in the window, which reads as idle rather than broken.",
+        "description": "Success rate and latest outcome per tool over a recent window, aggregated across all callers, with no per-user data. A tool missing from the reply had no calls in the window, which reads as idle rather than broken.",
         "operationId": "getToolsHealth",
         "parameters": [
           {
@@ -1241,7 +1241,7 @@
     },
     "/api/v1/tools/pricing": {
       "get": {
-        "description": "What each tool costs to call, with no credential required \u2014 a price you cannot read before signing up is a price you cannot compare. Returns what a call debits from your wallet, and nothing about how that figure is arrived at.",
+        "description": "What each tool costs to call, with no credential required. A price you cannot read before signing up is a price you cannot compare. Returns what a call debits from your wallet, and nothing about how that figure is arrived at.",
         "operationId": "getToolsPricing",
         "parameters": [
           {
@@ -1282,7 +1282,7 @@
     },
     "/api/v1/usage/summary": {
       "get": {
-        "description": "Spend rolled up over the last `days` days \u2014 totals, the twenty tools that cost the most, and the current balances alongside them so a budget decision needs one request rather than two.",
+        "description": "Spend rolled up over the last `days` days: totals, the twenty tools that cost the most, and the current balances alongside them so a budget decision needs one request rather than two.",
         "operationId": "getUsageSummary",
         "parameters": [
           {

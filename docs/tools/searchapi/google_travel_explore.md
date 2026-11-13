@@ -3,7 +3,7 @@ name: google_travel_explore
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-13T02:31:46Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `departure_id` | string | yes |  | Departure city/airport code |
-| `hl` | string | no | `en-US` | Locale code (e.g. 'en-US', 'de') — note: bare 'en' is not supported |
+| `hl` | string | no | `en-US` | Locale code (e.g. 'en-US', 'de'). Note: bare 'en' is not supported |
 | `gl` | string | no |  | Country code (e.g. 'us', 'gb') |
 | `currency` | string | no |  | Currency code (e.g. 'USD', 'EUR') |
 
@@ -61,7 +61,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "hl": {
       "type": "string",
-      "description": "Locale code (e.g. 'en-US', 'de') \u2014 note: bare 'en' is not supported",
+      "description": "Locale code (e.g. 'en-US', 'de'). Note: bare 'en' is not supported",
       "default": "en-US",
       "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },

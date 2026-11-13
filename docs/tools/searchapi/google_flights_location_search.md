@@ -3,7 +3,7 @@ name: google_flights_location_search
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-13T02:31:46Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `q` | string | yes |  | City or airport name |
-| `hl` | string | no | `en-US` | Locale code (e.g. 'en-US', 'de', 'fr') — note: bare 'en' is not supported, use 'en-US' or 'en-GB' |
+| `hl` | string | no | `en-US` | Locale code (e.g. 'en-US', 'de', 'fr'). Note: bare 'en' is not supported, use 'en-US' or 'en-GB' |
 
 ### JSON Schema
 
@@ -59,7 +59,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "hl": {
       "type": "string",
-      "description": "Locale code (e.g. 'en-US', 'de', 'fr') \u2014 note: bare 'en' is not supported, use 'en-US' or 'en-GB'",
+      "description": "Locale code (e.g. 'en-US', 'de', 'fr'). Note: bare 'en' is not supported, use 'en-US' or 'en-GB'",
       "default": "en-US",
       "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     }

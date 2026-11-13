@@ -3,7 +3,7 @@ name: foreplay_get_ads_by_brand_ids
 provider: Foreplay
 provider_slug: foreplay
 category: ads
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -53,11 +53,11 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `display_formats` | string[] | no |  | Filter by ad display formats |
 | `publisher_platforms` | string[] | no |  | Filter by publisher platforms |
 | `niches` | string[] | no |  | Filter by business niches |
-| `market_targets` | string[] | no |  | Filter by who the ad sells to — the cheapest way to keep B2C creatives out of a B2B search. |
+| `market_targets` | string[] | no |  | Filter by who the ad sells to: the cheapest way to keep B2C creatives out of a B2B search. |
 | `languages` | string[] | no |  | Filter by ad language, as two-letter codes (e.g. ['en', 'de']). |
 | `video_duration_min` | integer | no |  | Only videos at least this many seconds long. |
 | `video_duration_max` | integer | no |  | Only videos at most this many seconds long. |
-| `running_duration_min_days` | integer | no |  | Only ads that have been running at least this many days — an ad alive for months is a proven one. |
+| `running_duration_min_days` | integer | no |  | Only ads that have been running at least this many days: an ad alive for months is a proven one. |
 | `running_duration_max_days` | integer | no |  | Only ads running no longer than this many days. |
 | `cursor` | string | no |  | Page token from a previous response's `metadata.cursor`. Without it only the first page is reachable. |
 
@@ -175,7 +175,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
           "b2c"
         ]
       },
-      "description": "Filter by who the ad sells to \u2014 the cheapest way to keep B2C creatives out of a B2B search."
+      "description": "Filter by who the ad sells to: the cheapest way to keep B2C creatives out of a B2B search."
     },
     "languages": {
       "type": "array",
@@ -196,7 +196,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "running_duration_min_days": {
       "type": "integer",
-      "description": "Only ads that have been running at least this many days \u2014 an ad alive for months is a proven one.",
+      "description": "Only ads that have been running at least this many days: an ad alive for months is a proven one.",
       "minimum": 0
     },
     "running_duration_max_days": {

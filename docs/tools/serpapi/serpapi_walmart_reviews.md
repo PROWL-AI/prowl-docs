@@ -3,7 +3,7 @@ name: serpapi_walmart_reviews
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -44,7 +44,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `product_id` | string | yes |  | Walmart item id from serpapi_walmart results — the numeric `us_item_id` (e.g. '3232836167') is the reliable one. |
+| `product_id` | string | yes |  | Walmart item id from serpapi_walmart results: the numeric `us_item_id` (e.g. '3232836167') is the reliable one. |
 
 ### JSON Schema
 
@@ -54,7 +54,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
   "properties": {
     "product_id": {
       "type": "string",
-      "description": "Walmart item id from serpapi_walmart results \u2014 the numeric `us_item_id` (e.g. '3232836167') is the reliable one."
+      "description": "Walmart item id from serpapi_walmart results: the numeric `us_item_id` (e.g. '3232836167') is the reliable one."
     }
   },
   "required": [

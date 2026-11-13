@@ -3,7 +3,7 @@ name: spyfu_keyword_expansions
 provider: SpyFu
 provider_slug: spyfu
 category: seo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `adult_filter` | boolean | no |  | Exclude adult keywords considered unsafe. SpyFu's own default is true; set false to include them. |
-| `starting_row` | integer | no |  | Row number to start results with (1-10000) — the only way to read past the first page. |
+| `starting_row` | integer | no |  | Row number to start results with (1-10000): the only way to read past the first page. |
 | `query` | string | yes |  | Keyword or phrase to expand |
 | `keyword_search_type` | enum(PhraseMatch, Questions, AlsoBuysAdsFor, AlsoRanksFor, Transactions) | no | `PhraseMatch` | Expansion method |
 | `page_size` | integer | no | `30` | Number of results (default: 30) |
@@ -63,7 +63,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "starting_row": {
       "type": "integer",
-      "description": "Row number to start results with (1-10000) \u2014 the only way to read past the first page.",
+      "description": "Row number to start results with (1-10000): the only way to read past the first page.",
       "minimum": 1,
       "maximum": 10000
     },

@@ -3,7 +3,7 @@ name: serpapi_amazon
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `language` | string | no |  | Language code, e.g. 'de'. |
-| `delivery_zip` | string | no |  | Amazon delivery ZIP/postal code — sets the delivery market. |
+| `delivery_zip` | string | no |  | Amazon delivery ZIP/postal code: sets the delivery market. |
 | `shipping_location` | string | no |  | Amazon shipping country. |
 | `device` | enum(desktop, tablet, mobile) | no |  | Device type. |
 | `q` | string | yes |  | Search query |
@@ -65,7 +65,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "delivery_zip": {
       "type": "string",
-      "description": "Amazon delivery ZIP/postal code \u2014 sets the delivery market."
+      "description": "Amazon delivery ZIP/postal code: sets the delivery market."
     },
     "shipping_location": {
       "type": "string",

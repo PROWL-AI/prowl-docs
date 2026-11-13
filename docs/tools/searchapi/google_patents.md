@@ -3,7 +3,7 @@ name: google_patents
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T04:17:33Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,8 +45,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `q` | string | yes |  | Search query |
-| `countries` | string | no |  | Jurisdiction filter — ISO 3166-1 alpha-2 codes, comma separated (e.g. 'US,DE'). Defaults to the run's market when one was stated. |
-| `language` | string | no |  | Patent language NAME, not a code — e.g. 'ENGLISH', 'SWEDISH'. Comma-separate for several. |
+| `countries` | string | no |  | Jurisdiction filter: ISO 3166-1 alpha-2 codes, comma separated (e.g. 'US,DE'). Defaults to the run's market when one was stated. |
+| `language` | string | no |  | Patent language NAME, not a code, e.g. 'ENGLISH', 'SWEDISH'. Comma-separate for several. |
 | `num` | integer | no |  | Number of results to return |
 | `scholar` | boolean | no |  | Include scholar results |
 
@@ -62,11 +62,11 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "countries": {
       "type": "string",
-      "description": "Jurisdiction filter \u2014 ISO 3166-1 alpha-2 codes, comma separated (e.g. 'US,DE'). Defaults to the run's market when one was stated."
+      "description": "Jurisdiction filter: ISO 3166-1 alpha-2 codes, comma separated (e.g. 'US,DE'). Defaults to the run's market when one was stated."
     },
     "language": {
       "type": "string",
-      "description": "Patent language NAME, not a code \u2014 e.g. 'ENGLISH', 'SWEDISH'. Comma-separate for several."
+      "description": "Patent language NAME, not a code, e.g. 'ENGLISH', 'SWEDISH'. Comma-separate for several."
     },
     "num": {
       "type": "integer",

@@ -21,14 +21,14 @@ The machine-readable description of everything below is [`openapi.json`](./opena
 
 ### `GET /api/v1/keys`
 
-**List API keys** — Every key on the account with its scope, limits and last use. Secrets are never returned — only the prefix, which is enough to tell two keys apart.
+**List API keys** — Every key on the account with its scope, limits and last use. Secrets are never returned, only the prefix, which is enough to tell two keys apart.
 
 - Operation id: `getKeys`
 - Bearer token required
 
 ### `POST /api/v1/keys`
 
-**Create an API key** — Mints a `prowl_...` key, optionally scoped to categories, spend limits and an IP allowlist. **The secret is returned once and is never retrievable again** — store it when you receive it.
+**Create an API key** — Mints a `prowl_...` key, optionally scoped to categories, spend limits and an IP allowlist. **The secret is returned once and is never retrievable again**, so store it when you receive it.
 
 - Operation id: `createKeys`
 - Bearer token required
@@ -49,21 +49,21 @@ The machine-readable description of everything below is [`openapi.json`](./opena
 
 ### `GET /api/v1/tools/health`
 
-**Read per-tool health** — Success rate and latest outcome per tool over a recent window, aggregated across all callers — no per-user data. A tool missing from the reply had no calls in the window, which reads as idle rather than broken.
+**Read per-tool health** — Success rate and latest outcome per tool over a recent window, aggregated across all callers, with no per-user data. A tool missing from the reply had no calls in the window, which reads as idle rather than broken.
 
 - Operation id: `getToolsHealth`
 - Bearer token required
 
 ### `GET /api/v1/tools/pricing`
 
-**Read the public price list** — What each tool costs to call, with no credential required — a price you cannot read before signing up is a price you cannot compare. Returns what a call debits from your wallet, and nothing about how that figure is arrived at.
+**Read the public price list** — What each tool costs to call, with no credential required. A price you cannot read before signing up is a price you cannot compare. Returns what a call debits from your wallet, and nothing about how that figure is arrived at.
 
 - Operation id: `getToolsPricing`
 - No credential required
 
 ### `GET /api/v1/usage/summary`
 
-**Summarise spend over a window** — Spend rolled up over the last `days` days — totals, the twenty tools that cost the most, and the current balances alongside them so a budget decision needs one request rather than two.
+**Summarise spend over a window** — Spend rolled up over the last `days` days: totals, the twenty tools that cost the most, and the current balances alongside them so a budget decision needs one request rather than two.
 
 - Operation id: `getUsageSummary`
 - Bearer token required
