@@ -3,7 +3,7 @@ name: google_hotels
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -48,7 +48,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `check_in_date` | string | no |  | Check-in date (YYYY-MM-DD) |
 | `check_out_date` | string | no |  | Check-out date (YYYY-MM-DD) |
 | `adults` | integer | no |  | Number of adults |
-| `hl` | string | no | `en` | Language code (default 'en') |
+| `hl` | string | no |  | Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language |
 | `gl` | string | no |  | Country code (e.g. 'us', 'gb') |
 | `currency` | string | no |  | Currency code (e.g. 'USD', 'EUR') |
 | `sort_by` | enum(lowest_price, highest_rating) | no |  | Sort by |
@@ -79,12 +79,13 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "hl": {
       "type": "string",
-      "description": "Language code (default 'en')",
-      "default": "en"
+      "description": "Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },
     "gl": {
       "type": "string",
-      "description": "Country code (e.g. 'us', 'gb')"
+      "description": "Country code (e.g. 'us', 'gb')",
+      "pattern": "^[A-Za-z]{2}$"
     },
     "currency": {
       "type": "string",

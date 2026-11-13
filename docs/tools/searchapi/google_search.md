@@ -3,7 +3,7 @@ name: google_search
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -56,7 +56,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `q` | string | yes |  | Search query |
 | `device` | enum(desktop, mobile) | no |  | Device type |
 | `location` | string | no |  | Location for geo-targeted results (e.g. 'New York, NY') |
-| `hl` | string | no | `en` | Language code (default 'en') |
+| `hl` | string | no |  | Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language |
 | `gl` | string | no |  | Country code (e.g. 'us', 'gb') |
 | `num` | integer | no |  | Number of results to return |
 | `page` | integer | no |  | Page number (for pagination) |
@@ -125,12 +125,13 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "hl": {
       "type": "string",
-      "description": "Language code (default 'en')",
-      "default": "en"
+      "description": "Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },
     "gl": {
       "type": "string",
-      "description": "Country code (e.g. 'us', 'gb')"
+      "description": "Country code (e.g. 'us', 'gb')",
+      "pattern": "^[A-Za-z]{2}$"
     },
     "num": {
       "type": "integer",

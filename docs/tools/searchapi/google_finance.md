@@ -3,7 +3,7 @@ name: google_finance
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-13T01:30:01Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `q` | string | yes |  | SYMBOL:EXCHANGE for a stock, index, fund or future ('NVDA:NASDAQ', '.DJI:INDEXDJX', 'VTSAX:MUTF', 'GCW00:COMEX'); BASE-QUOTE for a currency or crypto ('BTC-USD', 'EUR-USD'). A bare ticker or a company name returns nothing. |
-| `hl` | string | no | `en` | Language code (default 'en') |
+| `hl` | string | no |  | Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language |
 | `window` | enum(1D, 5D, 1M, 6M, 1Y, 5Y) | no |  | Time window |
 
 ### JSON Schema
@@ -61,8 +61,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "hl": {
       "type": "string",
-      "description": "Language code (default 'en')",
-      "default": "en"
+      "description": "Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },
     "window": {
       "type": "string",

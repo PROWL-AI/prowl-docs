@@ -3,7 +3,7 @@ name: serpapi_google_maps
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -47,7 +47,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `q` | string | yes |  | Search query |
 | `ll` | string | no |  | Latitude/longitude '@lat,long,zoom' (e.g. '@40.7,-74.0,15z') |
 | `type` | enum(search, place) | no |  | Place type filter |
-| `hl` | string | no | `en` | Language code (default 'en') |
+| `hl` | string | no |  | Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language |
 | `gl` | string | no |  | Country code (e.g. 'us', 'gb') |
 
 ### JSON Schema
@@ -74,12 +74,13 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "hl": {
       "type": "string",
-      "description": "Language code (default 'en')",
-      "default": "en"
+      "description": "Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },
     "gl": {
       "type": "string",
-      "description": "Country code (e.g. 'us', 'gb')"
+      "description": "Country code (e.g. 'us', 'gb')",
+      "pattern": "^[A-Za-z]{2}$"
     }
   },
   "required": [

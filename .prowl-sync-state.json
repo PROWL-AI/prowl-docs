@@ -2482,9 +2482,7 @@
         "target"
       ],
       "provider": "DataForSEO",
-      "required": [
-        "target"
-      ]
+      "required": []
     },
     "dataforseo_labs_domain_rank_overview": {
       "errors": [

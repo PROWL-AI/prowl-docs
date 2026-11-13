@@ -3,7 +3,7 @@ name: resolve_app_store_ids
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -78,7 +78,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     "gl": {
       "type": "string",
       "description": "Country code (default 'us')",
-      "default": "us"
+      "default": "us",
+      "pattern": "^[A-Za-z]{2}$"
     }
   },
   "required": [

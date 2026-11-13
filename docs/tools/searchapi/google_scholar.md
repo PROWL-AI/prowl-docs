@@ -3,7 +3,7 @@ name: google_scholar
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -45,7 +45,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `q` | string | yes |  | Search query |
-| `hl` | string | no | `en` | Language code (default 'en') |
+| `hl` | string | no |  | Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language |
 | `num` | integer | no |  | Number of results to return |
 | `as_ylo` | integer | no |  | Published from year (e.g. 2020) |
 | `as_yhi` | integer | no |  | Published until year (e.g. 2025) |
@@ -62,8 +62,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "hl": {
       "type": "string",
-      "description": "Language code (default 'en')",
-      "default": "en"
+      "description": "Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },
     "num": {
       "type": "integer",

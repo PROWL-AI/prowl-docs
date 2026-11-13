@@ -3,7 +3,7 @@ name: serpapi_youtube
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -57,11 +57,13 @@ Connect an agent to `https://prowl.chat/mcp`, then:
   "properties": {
     "gl": {
       "type": "string",
-      "description": "Country code for results, e.g. 'de' (two-letter ISO). Defaults to the run's market."
+      "description": "Country code for results, e.g. 'de' (two-letter ISO). Defaults to the run's market.",
+      "pattern": "^[A-Za-z]{2}$"
     },
     "hl": {
       "type": "string",
-      "description": "Interface language code, e.g. 'de'. Defaults to the run's market."
+      "description": "Interface language code, e.g. 'de'. Defaults to the run's market.",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },
     "q": {
       "type": "string",

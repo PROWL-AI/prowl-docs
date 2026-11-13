@@ -3,7 +3,7 @@ name: dataforseo_labs_domain_metrics_by_categories
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -32,9 +32,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 {
   "tool": "prowl_call_tool",
   "tool_name": "dataforseo_labs_domain_metrics_by_categories",
-  "params": {
-    "target": "example.com"
-  }
+  "params": {}
 }
 ```
 
@@ -44,7 +42,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 
 | Param | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
-| `target` | string | yes |  | Target domain, subdomain, or URL (e.g. 'example.com') |
+| `target` | string | no |  | Optional domain to read inside the categories (sent as a filter on the row's domain, subdomains included); without it the answer ranks the category's top domains |
 | `category_codes` | integer[] | no |  | Google category codes to filter by (default: [10001]) |
 | `first_date` | string | no |  | Starting date (YYYY-MM-DD) |
 | `second_date` | string | no |  | Ending date (YYYY-MM-DD) |
@@ -52,7 +50,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `language_name` | string | no |  | Full language name (e.g. 'English', 'German') |
 | `limit` | integer | no |  | Max number of results |
 | `offset` | integer | no |  | Offset for pagination |
-| `order_by` | string[] | no |  | Sorting rules (e.g. ['keyword_data.keyword_info.search_volume,desc']) |
+| `order_by` | string[] | no |  | Sorting rules over the returned rows (e.g. ['organic_etv,desc']) |
 | `filters` | any[] | no |  | DataForSEO filter conditions array |
 
 ### JSON Schema
@@ -63,7 +61,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
   "properties": {
     "target": {
       "type": "string",
-      "description": "Target domain, subdomain, or URL (e.g. 'example.com')"
+      "description": "Optional domain to read inside the categories (sent as a filter on the row's domain, subdomains included); without it the answer ranks the category's top domains"
     },
     "category_codes": {
       "type": "array",
@@ -103,25 +101,21 @@ Connect an agent to `https://prowl.chat/mcp`, then:
       "items": {
         "type": "string"
       },
-      "description": "Sorting rules (e.g. ['keyword_data.keyword_info.search_volume,desc'])"
+      "description": "Sorting rules over the returned rows (e.g. ['organic_etv,desc'])"
     },
     "filters": {
       "type": "array",
       "description": "DataForSEO filter conditions array"
     }
   },
-  "required": [
-    "target"
-  ]
+  "required": []
 }
 ```
 
 ## Example request
 
 ```json
-{
-  "target": "example.com"
-}
+{}
 ```
 
 ## Output

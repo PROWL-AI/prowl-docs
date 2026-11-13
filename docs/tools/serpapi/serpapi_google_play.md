@@ -3,7 +3,7 @@ name: serpapi_google_play
 provider: SerpAPI
 provider_slug: serpapi
 category: serpapi_serp
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -47,7 +47,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `q` | string | yes |  | Search query |
 | `store` | enum(apps, books, movies) | no |  | Store section |
 | `gl` | string | no |  | Country code (e.g. 'us', 'gb') |
-| `hl` | string | no | `en` | Language code (default 'en') |
+| `hl` | string | no |  | Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language |
 
 ### JSON Schema
 
@@ -70,12 +70,13 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "gl": {
       "type": "string",
-      "description": "Country code (e.g. 'us', 'gb')"
+      "description": "Country code (e.g. 'us', 'gb')",
+      "pattern": "^[A-Za-z]{2}$"
     },
     "hl": {
       "type": "string",
-      "description": "Language code (default 'en')",
-      "default": "en"
+      "description": "Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     }
   },
   "required": [

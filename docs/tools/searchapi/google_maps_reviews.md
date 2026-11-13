@@ -3,7 +3,7 @@ name: google_maps_reviews
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -46,7 +46,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `data_id` | string | no |  | Google Maps data ID (e.g. '0x89c25a21fb011c85:0x33df10e49762f8e4') |
 | `sort_by` | enum(most_relevant, newest, highest_rating, lowest_rating) | no |  | Sort reviews |
 | `topic_id` | string | no |  | KGMID topic filter (e.g. '/m/06mbny' for Hospitality) |
-| `hl` | string | no | `en` | Language code (default 'en') |
+| `hl` | string | no |  | Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language |
 | `gl` | string | no |  | Country code (e.g. 'us', 'gb') |
 | `num` | integer | no |  | Number of reviews (max 20) |
 | `next_page_token` | string | no |  | Pagination token for next page |
@@ -81,12 +81,13 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "hl": {
       "type": "string",
-      "description": "Language code (default 'en')",
-      "default": "en"
+      "description": "Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },
     "gl": {
       "type": "string",
-      "description": "Country code (e.g. 'us', 'gb')"
+      "description": "Country code (e.g. 'us', 'gb')",
+      "pattern": "^[A-Za-z]{2}$"
     },
     "num": {
       "type": "integer",

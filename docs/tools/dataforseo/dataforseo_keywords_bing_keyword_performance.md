@@ -3,7 +3,7 @@ name: dataforseo_keywords_bing_keyword_performance
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -77,7 +77,8 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "language_code": {
       "type": "string",
-      "description": "Language code (e.g. 'en'). Required if language_name omitted."
+      "description": "Language code (e.g. 'en'). Required if language_name omitted.",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },
     "device": {
       "type": "string",

@@ -3,7 +3,7 @@ name: dataforseo_domain_domains_by_technology
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -52,7 +52,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `limit` | integer | no |  | Max number of results |
 | `offset` | integer | no |  | Offset for pagination |
 | `filters` | any[] | no |  | DataForSEO filter conditions array |
-| `order_by` | string[] | no |  | Sorting rules (e.g. ['keyword_data.keyword_info.search_volume,desc']) |
+| `order_by` | string[] | no |  | Sorting rules over the returned rows (e.g. ['domain_rank,desc']) |
 
 ### JSON Schema
 
@@ -128,7 +128,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
       "items": {
         "type": "string"
       },
-      "description": "Sorting rules (e.g. ['keyword_data.keyword_info.search_volume,desc'])"
+      "description": "Sorting rules over the returned rows (e.g. ['domain_rank,desc'])"
     }
   },
   "required": []

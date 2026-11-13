@@ -3,7 +3,7 @@ name: google_flights
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-13T02:31:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -53,7 +53,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `flight_type` | enum(round_trip, one_way, multi_city) | no |  | Flight type |
 | `travel_class` | enum(1, 2, 3, 4) | no |  | Travel class: 1=economy, 2=premium economy, 3=business, 4=first |
 | `adults` | integer | no |  | Number of adults |
-| `hl` | string | no | `en` | Language code (default 'en') |
+| `hl` | string | no |  | Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language |
 | `gl` | string | no |  | Country code (e.g. 'us', 'gb') |
 | `currency` | string | no |  | Currency code (e.g. 'USD', 'EUR') |
 | `stops` | enum(0, 1, 2) | no |  | Max stops: 0=nonstop, 1=one stop, 2=two stops |
@@ -107,12 +107,13 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "hl": {
       "type": "string",
-      "description": "Language code (default 'en')",
-      "default": "en"
+      "description": "Language code (e.g. 'en', 'de', 'pt-BR'); defaults to the run's market language",
+      "pattern": "^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,4})?$"
     },
     "gl": {
       "type": "string",
-      "description": "Country code (e.g. 'us', 'gb')"
+      "description": "Country code (e.g. 'us', 'gb')",
+      "pattern": "^[A-Za-z]{2}$"
     },
     "currency": {
       "type": "string",
