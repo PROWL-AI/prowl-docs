@@ -3,7 +3,7 @@ name: bing_news
 provider: SearchAPI.io
 provider_slug: searchapi
 category: searchapi
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-14T00:40:16Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -54,7 +54,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `q` | string | yes |  | Search query |
 | `num` | integer | no |  | Number of results to return |
 | `market_code` | string | no |  | Market code (e.g. 'en-US') |
-| `time_period` | enum(Day, Week, Month) | no |  | Freshness window |
+| `time_period` | enum(last_minute, last_5_minutes, last_15_minutes, last_30_minutes, last_hour, last_4_hours, last_6_hours, last_24_hours, last_7_days, last_30_days) | no |  | Freshness window: last_24_hours, last_7_days, last_30_days (or a shorter window) |
 | `page` | integer | no |  | Page number (for pagination) |
 
 ### JSON Schema
@@ -116,11 +116,18 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "time_period": {
       "type": "string",
-      "description": "Freshness window",
+      "description": "Freshness window: last_24_hours, last_7_days, last_30_days (or a shorter window)",
       "enum": [
-        "Day",
-        "Week",
-        "Month"
+        "last_minute",
+        "last_5_minutes",
+        "last_15_minutes",
+        "last_30_minutes",
+        "last_hour",
+        "last_4_hours",
+        "last_6_hours",
+        "last_24_hours",
+        "last_7_days",
+        "last_30_days"
       ]
     },
     "page": {
