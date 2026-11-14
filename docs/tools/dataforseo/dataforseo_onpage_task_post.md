@@ -3,7 +3,7 @@ name: dataforseo_onpage_task_post
 provider: DataForSEO
 provider_slug: dataforseo
 category: dataforseo
-generated_at: 2026-11-12T03:00:29Z
+generated_at: 2026-11-14T00:57:46Z
 sources: [tool_defs, tool_bank, tool_profiles]
 ---
 
@@ -66,7 +66,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
 | `disable_page_checks` | any[] | no |  | prevent certain page checks from running |
 | `disable_sitewide_checks` | any[] | no |  | prevent certain sitewide checks from running |
 | `disallowed_subdomains` | any[] | no |  | subdomains not to crawl |
-| `enable_browser_rendering` | boolean | no |  | emulate browser rendering to measure Core Web Vitals |
+| `enable_browser_rendering` | boolean | no |  | emulate browser rendering to measure Core Web Vitals; DataForSEO requires enable_javascript and load_resources with it, so both are turned on (each billed by DataForSEO) |
 | `enable_content_parsing` | boolean | no |  | parse content on crawled pages |
 | `enable_www_redirect_check` | boolean | no |  | check if the domain implemented the www redirection |
 | `enable_xhr` | boolean | no |  | enable XMLHttpRequest on a page |
@@ -184,7 +184,7 @@ Connect an agent to `https://prowl.chat/mcp`, then:
     },
     "enable_browser_rendering": {
       "type": "boolean",
-      "description": "emulate browser rendering to measure Core Web Vitals"
+      "description": "emulate browser rendering to measure Core Web Vitals; DataForSEO requires enable_javascript and load_resources with it, so both are turned on (each billed by DataForSEO)"
     },
     "enable_content_parsing": {
       "type": "boolean",
