@@ -8673,6 +8673,46 @@
         "q"
       ]
     },
+    "xai_web_search": {
+      "errors": [
+        "401",
+        "429",
+        "invalid_params",
+        "no_credential"
+      ],
+      "params": [
+        "allowed_domains",
+        "excluded_domains",
+        "include_x",
+        "query"
+      ],
+      "provider": "xAI",
+      "required": [
+        "query"
+      ]
+    },
+    "xai_x_search": {
+      "errors": [
+        "401",
+        "429",
+        "invalid_params",
+        "no_credential"
+      ],
+      "params": [
+        "allowed_x_handles",
+        "enable_image_understanding",
+        "enable_video_understanding",
+        "excluded_x_handles",
+        "from_date",
+        "max_turns",
+        "query",
+        "to_date"
+      ],
+      "provider": "xAI",
+      "required": [
+        "query"
+      ]
+    },
     "yandex_reverse_image": {
       "errors": [
         "401",

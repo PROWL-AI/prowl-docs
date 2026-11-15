@@ -1,6 +1,6 @@
-# Tool catalog — 442 tools
+# Tool catalog — 444 tools
 
-Every tool an agent can reach through the Prowl MCP endpoint at `https://prowl.chat/mcp`, across 17 providers. Each page carries the input schema, an example request, the response shape, the error table and the tools it chains with.
+Every tool an agent can reach through the Prowl MCP endpoint at `https://prowl.chat/mcp`, across 18 providers. Each page carries the input schema, an example request, the response shape, the error table and the tools it chains with.
 
 Prices are not published here: they are runtime-config, so any figure in a file would be stale. The live catalog at [https://prowl.chat](https://prowl.chat) computes what a call costs.
 
@@ -526,6 +526,13 @@ Prices are not published here: they are runtime-config, so any figure in a file 
 |---|---|
 | `discover_web_funnels` | [crt_sh/discover_web_funnels.md](crt_sh/discover_web_funnels.md) |
 | `find_subdomains` | [crt_sh/find_subdomains.md](crt_sh/find_subdomains.md) |
+
+### xAI (2)
+
+| Tool | Reference |
+|---|---|
+| `xai_web_search` | [xai/xai_web_search.md](xai/xai_web_search.md) |
+| `xai_x_search` | [xai/xai_x_search.md](xai/xai_x_search.md) |
 
 ### NicheMedia (composite: Exa + SearchAPI + Firecrawl) (1)
 
