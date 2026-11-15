@@ -1,7 +1,7 @@
 # Playbooks
 
 By default `prowl_analyze` composes the report for the question: the planner picks which
-of the **33** intelligence modules the request actually
+of the **34** intelligence modules the request actually
 needs, so two different questions produce two differently-shaped reports.
 
 A playbook overrides that. It forces a fixed, persona-tuned shape — the same sections, in

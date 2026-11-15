@@ -86,7 +86,7 @@ did. It does not refuse to run because the biggest tier does not fit.
 
 ## Report modules
 
-A report is composed from a catalog of **33** intelligence
+A report is composed from a catalog of **34** intelligence
 modules; the planner picks the ones the question needs. How many can appear in one
 report depends on the tier: **8** on `basic`,
 **12** on `deep`,
