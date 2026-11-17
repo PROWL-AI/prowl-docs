@@ -1,5 +1,7 @@
 # Prowl documentation
 
+[![mcptry](https://mcptry.com/badge/chat.prowl/prowl-mcp)](https://mcptry.com/servers/chat.prowl/prowl-mcp)
+
 **Real-world market data for your agents.** One MCP endpoint gives any agent —
 Claude Code, Cursor, Codex, or your own stack — **444** market data
 tools across **18** providers: search, SEO, backlinks, paid ads, app
