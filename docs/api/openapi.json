@@ -182,6 +182,18 @@
             ],
             "title": "Last Used At"
           },
+          "monthly_spend_limit_usd": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Spend limit for the UTC calendar month in USD; empty means none.",
+            "title": "Monthly Spend Limit Usd"
+          },
           "name": {
             "anyOf": [
               {
@@ -197,6 +209,12 @@
             "description": "First characters of the key, enough to tell keys apart.",
             "title": "Prefix",
             "type": "string"
+          },
+          "spent_this_month_usd": {
+            "default": 0.0,
+            "description": "What the key has spent this UTC calendar month, in USD.",
+            "title": "Spent This Month Usd",
+            "type": "number"
           },
           "total_spend_limit_usd": {
             "anyOf": [
